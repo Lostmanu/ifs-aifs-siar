@@ -1,5 +1,5 @@
 """Utilidades compartidas: rutas, recibos con SHA-256, peticiones acotadas."""
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -15,6 +15,17 @@ RAW = BASE / 'raw'
 STATE = BASE / 'state'
 DATOS = BASE / 'datos'
 UA = 'MedicionEscala/1.0 (bounded non-commercial research)'
+
+
+def ruta(valor):
+    """Convierte una ruta GUARDADA COMO DATO en un Path del sistema actual.
+
+    Los manifiestos escritos en Windows guardaban el separador '\\', que en POSIX no separa:
+    Path('raw\\heredado\\x.json') seria un unico nombre de fichero. PureWindowsPath trata
+    tanto '/' como '\\' como separador, asi que esto funciona en los dos sistemas y con
+    manifiestos viejos y nuevos.
+    """
+    return Path(*PureWindowsPath(str(valor)).parts)
 
 
 def now():

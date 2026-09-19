@@ -19,7 +19,7 @@ SOURCES = {
 def copy(src, dst):
     dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(src, dst)
-    return {'origen': str(src), 'destino': str(dst.relative_to(BASE)), 'sha256': sha256_file(dst), 'bytes': dst.stat().st_size}
+    return {'origen': str(src), 'destino': dst.relative_to(BASE).as_posix(), 'sha256': sha256_file(dst), 'bytes': dst.stat().st_size}
 
 
 def main():

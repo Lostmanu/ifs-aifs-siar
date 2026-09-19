@@ -302,7 +302,7 @@ def enlace_0618(sp, panel_bulk, state_bulk, fdir=None):
             for o in man[tag]['obs']:
                 if 'sha256' not in o:
                     continue
-                rows = load(BASE / o['destino'])['rows']
+                rows = load(BASE / ruta(o['destino']))['rows']
                 for f, v in semihorario_0618(rows).items():
                     j = di.get(f)
                     if j is not None and v is not None:
@@ -313,7 +313,7 @@ def enlace_0618(sp, panel_bulk, state_bulk, fdir=None):
     for i, code in enumerate(stations_link):
         for tag in src_fc.get(code, []):
             for fobj in man[tag]['forecasts']:
-                name = Path(fobj['destino']).name
+                name = ruta(fobj['destino']).name
                 m = re.match(r'(\d{8})_(ecmwf_ifs025|ecmwf_aifs025_single)_(00|06)\.json$', name)
                 if not m:
                     continue
@@ -321,10 +321,10 @@ def enlace_0618(sp, panel_bulk, state_bulk, fdir=None):
                 j = di.get(target)
                 if j is None:
                     continue
-                body = load(BASE / fobj['destino'])
+                body = load(BASE / ruta(fobj['destino']))
                 if 'error' in body:
                     continue
-                rec = load(BASE / (fobj['destino'] + '.receipt.json'))
+                rec = load(BASE / ruta(fobj['destino'] + '.receipt.json'))
                 exp_run = (date.fromisoformat(target) - timedelta(days=1)).isoformat() + f'T{m[3]}%3A00'
                 if exp_run not in rec['url']:
                     raise ValueError(f'pasada inesperada en {name}: {rec["url"]}')
@@ -382,6 +382,8 @@ def main():
     ap.add_argument('--replicas', type=int, default=None)
     ap.add_argument('--sorteos', type=int, default=None)
     ap.add_argument('--sin-enlace', action='store_true')
+    ap.add_argument('--enlace-opcional', action='store_true',
+                    help='no abortar si el enlace 06-18 UTC falla; marca el resultado como degradado')
     args = ap.parse_args()
     sp = spec()
     replicas = args.replicas or sp['analisis']['bootstrap']['replicas']
@@ -432,7 +434,16 @@ def main():
         try:
             res['enlace_06_18'] = enlace_0618(sp, panel, state, args.forecasts)
         except Exception as e:
-            res['enlace_06_18'] = {'error': f'{type(e).__name__}: {e}'}
+            # Hasta v1.0.1 este fallo se guardaba dentro de resultados.json y el programa
+            # terminaba en 0, de modo que la seccion 6.5 desaparecia en silencio. Ahora
+            # aborta salvo que se pida explicitamente tolerarlo.
+            if not args.enlace_opcional:
+                raise SystemExit(
+                    f'ERROR: no se pudo construir el enlace 06-18 UTC ({type(e).__name__}: {e}).\n'
+                    'Es la seccion 6.5 del informe y necesita los semihorarios heredados de raw/heredado.\n'
+                    'Si de verdad quiere un resultado sin esa seccion, repita con --enlace-opcional.')
+            res['enlace_06_18'] = {'error': f'{type(e).__name__}: {e}', 'degradado': True}
+            print('AVISO: resultados degradados, sin enlace 06-18 UTC:', e, flush=True)
     dump(args.out, res)
     # panel para verificación independiente
     dump(Path(args.out).with_name('panel_analisis.json'), {'calendario': calendar, 'estaciones': panel.codes,
