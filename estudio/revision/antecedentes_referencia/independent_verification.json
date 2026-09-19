@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "receipt_hashes_verified": 73,
+  "inherited_input_hashes_verified": 6,
+  "numeric_comparisons": 14091,
+  "max_absolute_difference": 3.262948391868018e-14,
+  "metadata_records_crosschecked_against_displayed_html": 7,
+  "zero_daily_values": {
+    "AL01": 0,
+    "AL02": 0,
+    "AL10": 0,
+    "AL201": 0,
+    "C01": 0,
+    "C02": 0,
+    "LU01": 0,
+    "MG10050": 0,
+    "MG10141": 0
+  },
+  "scope": "Arithmetic, units, dates, source integrity and headline common-date tables. Not instrument calibration or causal attribution."
+}

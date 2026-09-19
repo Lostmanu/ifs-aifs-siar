@@ -1,0 +1,3039 @@
+{
+  "status": "EXPLORATORY_REFERENCE_AUDIT",
+  "days_requested": 565,
+  "stations": {
+    "AL01": {
+      "name": "La Mojonera",
+      "network": "SiAR",
+      "valid_observed_days": 561,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 521,
+            "mean_observed_kwh_m2": 5.594097888675623,
+            "bias_kwh_m2": 0.4308952015355087,
+            "relative_bias_percent": 7.702675393074344,
+            "mae_kwh_m2": 0.5211320963958201,
+            "correlation": 0.9830454483302359
+          },
+          "SARAH": {
+            "n": 546,
+            "mean_observed_kwh_m2": 5.554756817256817,
+            "bias_kwh_m2": 0.26917541717541726,
+            "relative_bias_percent": 4.845854211640321,
+            "mae_kwh_m2": 0.3775986975986977,
+            "correlation": 0.9823187785700455
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.631349206349206,
+            "bias_kwh_m2": 0.6184317460317461,
+            "relative_bias_percent": 8.10383235401175,
+            "mae_kwh_m2": 0.6194259259259259,
+            "correlation": 0.9270138054457826
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.631349206349206,
+            "bias_kwh_m2": 0.25096031746031755,
+            "relative_bias_percent": 3.288544537465552,
+            "mae_kwh_m2": 0.3304312169312171,
+            "correlation": 0.8926153645943434
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.427843915343916,
+            "bias_kwh_m2": 0.6942013227513228,
+            "relative_bias_percent": 9.345933095299577,
+            "mae_kwh_m2": 0.7102208994708996,
+            "correlation": 0.8933816730561823
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.470171957671958,
+            "bias_kwh_m2": 0.5602447089947094,
+            "relative_bias_percent": 7.49975652728223,
+            "mae_kwh_m2": 0.5636653439153443,
+            "correlation": 0.8802455400200532
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 438,
+            "mean_observed_kwh_m2": 5.350672247590055,
+            "bias_kwh_m2": 0.4021234145104008,
+            "relative_bias_percent": 7.515381169002032,
+            "mae_kwh_m2": 0.5022775494672755,
+            "correlation": 0.9834839290681733
+          },
+          "SARAH": {
+            "n": 463,
+            "mean_observed_kwh_m2": 5.312377009839213,
+            "bias_kwh_m2": 0.23075365970722356,
+            "relative_bias_percent": 4.3436988617305925,
+            "mae_kwh_m2": 0.3547407007439405,
+            "correlation": 0.9827353982921849
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.316124661246612,
+            "bias_kwh_m2": 0.46853387533875346,
+            "relative_bias_percent": 7.418059339669192,
+            "mae_kwh_m2": 0.5288531165311655,
+            "correlation": 0.9071177033689293
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.329742547425474,
+            "bias_kwh_m2": 0.4048915989159893,
+            "relative_bias_percent": 6.396651931454508,
+            "mae_kwh_m2": 0.44512195121951226,
+            "correlation": 0.9017396916007705
+          }
+        }
+      }
+    },
+    "AL10": {
+      "name": "Adra",
+      "network": "SiAR",
+      "valid_observed_days": 565,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 550,
+            "mean_observed_kwh_m2": 5.626747474747475,
+            "bias_kwh_m2": 0.1474352525252527,
+            "relative_bias_percent": 2.6202571412158404,
+            "mae_kwh_m2": 0.3319223232323233,
+            "correlation": 0.983559521404832
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 7.569625603864735,
+            "bias_kwh_m2": 0.2360048309178745,
+            "relative_bias_percent": 3.1177873684714386,
+            "mae_kwh_m2": 0.32,
+            "correlation": 0.8371201379948834
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.386772486772486,
+            "bias_kwh_m2": 0.4851441798941802,
+            "relative_bias_percent": 6.56774228207149,
+            "mae_kwh_m2": 0.4922738095238098,
+            "correlation": 0.914638219088081
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 467,
+            "mean_observed_kwh_m2": 5.40183202474423,
+            "bias_kwh_m2": 0.10176540566262207,
+            "relative_bias_percent": 1.883905408321921,
+            "mae_kwh_m2": 0.3118455864858435,
+            "correlation": 0.984181168397368
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.385636856368563,
+            "bias_kwh_m2": 0.32168021680216824,
+            "relative_bias_percent": 5.037558884692104,
+            "mae_kwh_m2": 0.39633875338753405,
+            "correlation": 0.9085449737769834
+          }
+        }
+      }
+    },
+    "AL02": {
+      "name": "Almería",
+      "network": "SiAR",
+      "valid_observed_days": 564,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 525,
+            "mean_observed_kwh_m2": 5.748989417989418,
+            "bias_kwh_m2": 0.49186696296296306,
+            "relative_bias_percent": 8.555711746900077,
+            "mae_kwh_m2": 0.5032273862433863,
+            "correlation": 0.9889696673045544
+          },
+          "SARAH": {
+            "n": 549,
+            "mean_observed_kwh_m2": 5.72392734264319,
+            "bias_kwh_m2": 0.16486045334952454,
+            "relative_bias_percent": 2.880198218473462,
+            "mae_kwh_m2": 0.30750344059906903,
+            "correlation": 0.9820380168505853
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 46,
+            "mean_observed_kwh_m2": 7.7652777777777775,
+            "bias_kwh_m2": 0.5816417874396137,
+            "relative_bias_percent": 7.490289518091966,
+            "mae_kwh_m2": 0.5816417874396137,
+            "correlation": 0.9603919744078033
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 7.7652777777777775,
+            "bias_kwh_m2": 0.17489613526570086,
+            "relative_bias_percent": 2.2522843389609126,
+            "mae_kwh_m2": 0.22501449275362354,
+            "correlation": 0.949509168828901
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.487632275132274,
+            "bias_kwh_m2": 0.6890296296296295,
+            "relative_bias_percent": 9.20223649227562,
+            "mae_kwh_m2": 0.6890296296296295,
+            "correlation": 0.9360919889095786
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 7.514550264550264,
+            "bias_kwh_m2": 0.4031044973544976,
+            "relative_bias_percent": 5.3643196620313365,
+            "mae_kwh_m2": 0.44760978835978854,
+            "correlation": 0.8963181293802752
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 442,
+            "mean_observed_kwh_m2": 5.514096279537457,
+            "bias_kwh_m2": 0.46059353946706894,
+            "relative_bias_percent": 8.353019536062677,
+            "mae_kwh_m2": 0.4740872549019608,
+            "correlation": 0.9895963635121947
+          },
+          "SARAH": {
+            "n": 466,
+            "mean_observed_kwh_m2": 5.493049594659037,
+            "bias_kwh_m2": 0.13036134954697204,
+            "relative_bias_percent": 2.37320539894131,
+            "mae_kwh_m2": 0.29200011921793045,
+            "correlation": 0.9827307823445607
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.500203252032518,
+            "bias_kwh_m2": 0.6270382113821139,
+            "relative_bias_percent": 9.646440073793817,
+            "mae_kwh_m2": 0.6270382113821139,
+            "correlation": 0.9448344602365187
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.513753387533875,
+            "bias_kwh_m2": 0.31291734417344197,
+            "relative_bias_percent": 4.803948285366594,
+            "mae_kwh_m2": 0.340188346883469,
+            "correlation": 0.9394462142807926
+          }
+        }
+      }
+    },
+    "AL201": {
+      "name": "Cajamar - PITA",
+      "network": "SiAR",
+      "valid_observed_days": 373,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 348,
+            "mean_observed_kwh_m2": 4.930994572158364,
+            "bias_kwh_m2": 0.7688321519795658,
+            "relative_bias_percent": 15.591827180678424,
+            "mae_kwh_m2": 0.8081320881226053,
+            "correlation": 0.8722222214222495
+          },
+          "SARAH": {
+            "n": 364,
+            "mean_observed_kwh_m2": 4.8895299145299145,
+            "bias_kwh_m2": 0.42862393162393175,
+            "relative_bias_percent": 8.76615828344186,
+            "mae_kwh_m2": 0.5978403540903542,
+            "correlation": 0.8725235735001056
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 46,
+            "mean_observed_kwh_m2": 7.302536231884059,
+            "bias_kwh_m2": 1.0545181159420292,
+            "relative_bias_percent": 14.440436616224268,
+            "mae_kwh_m2": 1.0545181159420292,
+            "correlation": 0.5911947493559411
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 7.302536231884059,
+            "bias_kwh_m2": 0.5941050724637684,
+            "relative_bias_percent": 8.135599106921363,
+            "mae_kwh_m2": 0.5987596618357491,
+            "correlation": 0.5910527260347805
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 348,
+            "mean_observed_kwh_m2": 4.930994572158364,
+            "bias_kwh_m2": 0.7688321519795658,
+            "relative_bias_percent": 15.591827180678424,
+            "mae_kwh_m2": 0.8081320881226053,
+            "correlation": 0.8722222214222495
+          },
+          "SARAH": {
+            "n": 364,
+            "mean_observed_kwh_m2": 4.8895299145299145,
+            "bias_kwh_m2": 0.42862393162393175,
+            "relative_bias_percent": 8.76615828344186,
+            "mae_kwh_m2": 0.5978403540903542,
+            "correlation": 0.8725235735001056
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          },
+          "SARAH": {
+            "n": 0,
+            "bias_kwh_m2": null,
+            "relative_bias_percent": null
+          }
+        }
+      }
+    },
+    "C01": {
+      "name": "A Capela",
+      "network": "SiAR",
+      "valid_observed_days": 564,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 514,
+            "mean_observed_kwh_m2": 3.974632511889321,
+            "bias_kwh_m2": 0.44391145698227413,
+            "relative_bias_percent": 11.168616360239632,
+            "mae_kwh_m2": 0.5052719844357977,
+            "correlation": 0.9846958082869408
+          },
+          "SARAH": {
+            "n": 549,
+            "mean_observed_kwh_m2": 3.9984213721918636,
+            "bias_kwh_m2": 0.27825622343655143,
+            "relative_bias_percent": 6.959152063655969,
+            "mae_kwh_m2": 0.42623800850030363,
+            "correlation": 0.9786462570792497
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 43,
+            "mean_observed_kwh_m2": 5.4855943152454785,
+            "bias_kwh_m2": 0.9192103359173127,
+            "relative_bias_percent": 16.756804880059352,
+            "mae_kwh_m2": 0.9224082687338501,
+            "correlation": 0.9842263175362318
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.583393719806762,
+            "bias_kwh_m2": 0.6556606280193238,
+            "relative_bias_percent": 11.743048420415096,
+            "mae_kwh_m2": 0.7025326086956523,
+            "correlation": 0.9776447804614167
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 39,
+            "mean_observed_kwh_m2": 6.0986467236467234,
+            "bias_kwh_m2": 0.42297635327635336,
+            "relative_bias_percent": 6.935577226277375,
+            "mae_kwh_m2": 0.5272726495726496,
+            "correlation": 0.979607271850408
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 6.082142857142857,
+            "bias_kwh_m2": 0.4490238095238097,
+            "relative_bias_percent": 7.382658054413784,
+            "mae_kwh_m2": 0.6346560846560847,
+            "correlation": 0.9283276975672777
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 433,
+            "mean_observed_kwh_m2": 3.7079484218629712,
+            "bias_kwh_m2": 0.4416418783679754,
+            "relative_bias_percent": 11.91068019619547,
+            "mae_kwh_m2": 0.5000926353605337,
+            "correlation": 0.9839984242915155
+          },
+          "SARAH": {
+            "n": 466,
+            "mean_observed_kwh_m2": 3.747508345255126,
+            "bias_kwh_m2": 0.25097877920839307,
+            "relative_bias_percent": 6.697217353129248,
+            "mae_kwh_m2": 0.40487386742966147,
+            "correlation": 0.9789365491107911
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 4.751719576719576,
+            "bias_kwh_m2": 0.48674947089947096,
+            "relative_bias_percent": 10.243648915736438,
+            "mae_kwh_m2": 0.538239417989418,
+            "correlation": 0.9848143553227997
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 4.715718157181572,
+            "bias_kwh_m2": 0.4133550135501357,
+            "relative_bias_percent": 8.765473248663875,
+            "mae_kwh_m2": 0.45555826558265605,
+            "correlation": 0.9835261574820056
+          }
+        }
+      }
+    },
+    "C02": {
+      "name": "Boimorto",
+      "network": "SiAR",
+      "valid_observed_days": 563,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 525,
+            "mean_observed_kwh_m2": 4.097211640211641,
+            "bias_kwh_m2": 0.5551245502645503,
+            "relative_bias_percent": 13.548837575690268,
+            "mae_kwh_m2": 0.587715746031746,
+            "correlation": 0.9849781996171892
+          },
+          "SARAH": {
+            "n": 548,
+            "mean_observed_kwh_m2": 4.095833333333333,
+            "bias_kwh_m2": 0.3528774330900244,
+            "relative_bias_percent": 8.615522272798156,
+            "mae_kwh_m2": 0.4228687145174372,
+            "correlation": 0.9874874169967022
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.983635265700482,
+            "bias_kwh_m2": 1.0231495169082125,
+            "relative_bias_percent": 17.099129065789345,
+            "mae_kwh_m2": 1.0231495169082125,
+            "correlation": 0.9898586171965358
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.983635265700482,
+            "bias_kwh_m2": 0.7259299516908213,
+            "relative_bias_percent": 12.131921807667858,
+            "mae_kwh_m2": 0.7447342995169085,
+            "correlation": 0.990256019940455
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 6.596891534391535,
+            "bias_kwh_m2": 0.4586203703703702,
+            "relative_bias_percent": 6.952067772820691,
+            "mae_kwh_m2": 0.5337642857142856,
+            "correlation": 0.9704607671450788
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 6.662698412698412,
+            "bias_kwh_m2": 0.3702658730158731,
+            "relative_bias_percent": 5.557296009529483,
+            "mae_kwh_m2": 0.4480410052910052,
+            "correlation": 0.9731304284334958
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 441,
+            "mean_observed_kwh_m2": 3.766087175610985,
+            "bias_kwh_m2": 0.5627413958175863,
+            "relative_bias_percent": 14.942335893387567,
+            "mae_kwh_m2": 0.5916684807256235,
+            "correlation": 0.9846234962555053
+          },
+          "SARAH": {
+            "n": 465,
+            "mean_observed_kwh_m2": 3.77942054958184,
+            "bias_kwh_m2": 0.33929127837514944,
+            "relative_bias_percent": 8.977335914964241,
+            "mae_kwh_m2": 0.4129624850657109,
+            "correlation": 0.986412620527891
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 5.074338624338624,
+            "bias_kwh_m2": 0.5716518518518519,
+            "relative_bias_percent": 11.26554402794432,
+            "mae_kwh_m2": 0.6001634920634922,
+            "correlation": 0.985356023436085
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 5.054945799457994,
+            "bias_kwh_m2": 0.4891517615176153,
+            "relative_bias_percent": 9.676696465668606,
+            "mae_kwh_m2": 0.5094336043360435,
+            "correlation": 0.9889710595461696
+          }
+        }
+      }
+    },
+    "LU01": {
+      "name": "Castro de Rei",
+      "network": "SiAR",
+      "valid_observed_days": 565,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 527,
+            "mean_observed_kwh_m2": 3.863967952772507,
+            "bias_kwh_m2": 0.7934248366013072,
+            "relative_bias_percent": 20.533939367483686,
+            "mae_kwh_m2": 0.8015833017077798,
+            "correlation": 0.9719299566702969
+          },
+          "SARAH": {
+            "n": 550,
+            "mean_observed_kwh_m2": 3.8547727272727275,
+            "bias_kwh_m2": 0.6066963636363637,
+            "relative_bias_percent": 15.738836153528684,
+            "mae_kwh_m2": 0.6150046464646465,
+            "correlation": 0.9782321234616304
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.278140096618357,
+            "bias_kwh_m2": 1.7705425120772953,
+            "relative_bias_percent": 33.54481843351715,
+            "mae_kwh_m2": 1.7705425120772953,
+            "correlation": 0.8836202050997259
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.278140096618357,
+            "bias_kwh_m2": 1.4191533816425121,
+            "relative_bias_percent": 26.88737615266687,
+            "mae_kwh_m2": 1.4191533816425121,
+            "correlation": 0.8942553363159604
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 5.90132275132275,
+            "bias_kwh_m2": 1.0434367724867724,
+            "relative_bias_percent": 17.681404940153314,
+            "mae_kwh_m2": 1.066370105820106,
+            "correlation": 0.9220017760794726
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 5.931679894179894,
+            "bias_kwh_m2": 0.9005343915343915,
+            "relative_bias_percent": 15.18177662314494,
+            "mae_kwh_m2": 0.9085767195767198,
+            "correlation": 0.956959075808582
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 443,
+            "mean_observed_kwh_m2": 3.595366190117883,
+            "bias_kwh_m2": 0.766554125909205,
+            "relative_bias_percent": 21.32061340555888,
+            "mae_kwh_m2": 0.7740853022322548,
+            "correlation": 0.9699435501901452
+          },
+          "SARAH": {
+            "n": 467,
+            "mean_observed_kwh_m2": 3.5997382821793953,
+            "bias_kwh_m2": 0.5671589340946943,
+            "relative_bias_percent": 15.755560255656095,
+            "mae_kwh_m2": 0.576220556745182,
+            "correlation": 0.9761180434337698
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 4.659722222222222,
+            "bias_kwh_m2": 0.8268349206349205,
+            "relative_bias_percent": 17.744296359378325,
+            "mae_kwh_m2": 0.8268349206349205,
+            "correlation": 0.9821416864836381
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 4.632113821138212,
+            "bias_kwh_m2": 0.7560325203252035,
+            "relative_bias_percent": 16.321544537077667,
+            "mae_kwh_m2": 0.7560325203252035,
+            "correlation": 0.9878613372397255
+          }
+        }
+      }
+    },
+    "MG10141": {
+      "name": "Aldea Nova",
+      "network": "MeteoGalicia",
+      "valid_observed_days": 564,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 519,
+            "mean_observed_kwh_m2": 4.253703703703704,
+            "bias_kwh_m2": 0.3052722115178762,
+            "relative_bias_percent": 7.176621428805098,
+            "mae_kwh_m2": 0.39396508242346384,
+            "correlation": 0.9848683753500515
+          },
+          "SARAH": {
+            "n": 549,
+            "mean_observed_kwh_m2": 4.265320785266141,
+            "bias_kwh_m2": 0.05987320380489778,
+            "relative_bias_percent": 1.4037210052692888,
+            "mae_kwh_m2": 0.28366777980165964,
+            "correlation": 0.9881073398446293
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 45,
+            "mean_observed_kwh_m2": 5.898456790123457,
+            "bias_kwh_m2": 0.6592365432098763,
+            "relative_bias_percent": 11.176424048977026,
+            "mae_kwh_m2": 0.6709886419753085,
+            "correlation": 0.9749232259210345
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 5.941606280193236,
+            "bias_kwh_m2": 0.1380132850241546,
+            "relative_bias_percent": 2.3228278434441476,
+            "mae_kwh_m2": 0.34678864734299525,
+            "correlation": 0.9777006100269873
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.48489159891599,
+            "bias_kwh_m2": 0.11122059620596184,
+            "relative_bias_percent": 1.7150725576438846,
+            "mae_kwh_m2": 0.3432813008130079,
+            "correlation": 0.9688025494981574
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 6.544576719576719,
+            "bias_kwh_m2": -0.08281481481481491,
+            "relative_bias_percent": -1.2653960426056565,
+            "mae_kwh_m2": 0.3186164021164022,
+            "correlation": 0.9677672531514314
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 436,
+            "mean_observed_kwh_m2": 3.9631944444444445,
+            "bias_kwh_m2": 0.33123583078491325,
+            "relative_bias_percent": 8.357799129670145,
+            "mae_kwh_m2": 0.40828022426095817,
+            "correlation": 0.9845716740042455
+          },
+          "SARAH": {
+            "n": 466,
+            "mean_observed_kwh_m2": 3.990438721983786,
+            "bias_kwh_m2": 0.06806986170720075,
+            "relative_bias_percent": 1.7058240070746118,
+            "mae_kwh_m2": 0.281192417739628,
+            "correlation": 0.9881674289030044
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 5.091402116402118,
+            "bias_kwh_m2": 0.22517645502645484,
+            "relative_bias_percent": 4.422680626639989,
+            "mae_kwh_m2": 0.2948373015873015,
+            "correlation": 0.9882993599373413
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 5.054742547425474,
+            "bias_kwh_m2": 0.11287940379403795,
+            "relative_bias_percent": 2.2331385374222608,
+            "mae_kwh_m2": 0.2760013550135501,
+            "correlation": 0.984337911891606
+          }
+        }
+      }
+    },
+    "MG10050": {
+      "name": "CIS Ferrol",
+      "network": "MeteoGalicia",
+      "valid_observed_days": 564,
+      "periods": {
+        "full": {
+          "LSA": {
+            "n": 515,
+            "mean_observed_kwh_m2": 4.491375404530745,
+            "bias_kwh_m2": 0.21090071197410992,
+            "relative_bias_percent": 4.695682123595381,
+            "mae_kwh_m2": 0.3063815318230852,
+            "correlation": 0.9902534705786419
+          },
+          "SARAH": {
+            "n": 549,
+            "mean_observed_kwh_m2": 4.483970856102004,
+            "bias_kwh_m2": -0.08572768670309655,
+            "relative_bias_percent": -1.9118698460413537,
+            "mae_kwh_m2": 0.32897439789516286,
+            "correlation": 0.9801931667376361
+          }
+        },
+        "summer_2025": {
+          "LSA": {
+            "n": 41,
+            "mean_observed_kwh_m2": 6.5803523035230365,
+            "bias_kwh_m2": 0.35880379403794005,
+            "relative_bias_percent": 5.452653254535342,
+            "mae_kwh_m2": 0.4371842818428182,
+            "correlation": 0.9694722682892497
+          },
+          "SARAH": {
+            "n": 46,
+            "mean_observed_kwh_m2": 6.53955314009662,
+            "bias_kwh_m2": -0.1988574879227054,
+            "relative_bias_percent": -3.0408421441433133,
+            "mae_kwh_m2": 0.44770772946859905,
+            "correlation": 0.9449238347844046
+          }
+        },
+        "summer_2026": {
+          "LSA": {
+            "n": 39,
+            "mean_observed_kwh_m2": 6.723860398860397,
+            "bias_kwh_m2": 0.1250216524216521,
+            "relative_bias_percent": 1.8593731131425866,
+            "mae_kwh_m2": 0.37596467236467224,
+            "correlation": 0.9660047562000353
+          },
+          "SARAH": {
+            "n": 42,
+            "mean_observed_kwh_m2": 6.5891534391534385,
+            "bias_kwh_m2": -0.04265343915343918,
+            "relative_bias_percent": -0.6473280603846312,
+            "mae_kwh_m2": 0.3283359788359787,
+            "correlation": 0.9615374328835985
+          }
+        },
+        "before_june_2026": {
+          "LSA": {
+            "n": 434,
+            "mean_observed_kwh_m2": 4.216545058883769,
+            "bias_kwh_m2": 0.21323028673835115,
+            "relative_bias_percent": 5.056990587331678,
+            "mae_kwh_m2": 0.29829695340501783,
+            "correlation": 0.9907849350127307
+          },
+          "SARAH": {
+            "n": 466,
+            "mean_observed_kwh_m2": 4.228683834048641,
+            "bias_kwh_m2": -0.09453576537911303,
+            "relative_bias_percent": -2.235583673055128,
+            "mae_kwh_m2": 0.3247849308536004,
+            "correlation": 0.9813340851303887
+          }
+        },
+        "after_july_2026": {
+          "LSA": {
+            "n": 42,
+            "mean_observed_kwh_m2": 5.258267195767196,
+            "bias_kwh_m2": 0.2665732804232804,
+            "relative_bias_percent": 5.069603169611971,
+            "mae_kwh_m2": 0.32530925925925924,
+            "correlation": 0.9858079754680946
+          },
+          "SARAH": {
+            "n": 41,
+            "mean_observed_kwh_m2": 5.2289972899729,
+            "bias_kwh_m2": -0.029741192411924102,
+            "relative_bias_percent": -0.5687742938585122,
+            "mae_kwh_m2": 0.3772452574525745,
+            "correlation": 0.9467755772783646
+          }
+        }
+      }
+    }
+  },
+  "same_date_contrasts": [
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "period": "full",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "period": "full",
+      "n": 546,
+      "mean_residual_difference_kwh_m2": 0.12193294668294667,
+      "target_same_dates": {
+        "n": 546,
+        "mean_observed_kwh_m2": 5.554756817256817,
+        "bias_kwh_m2": 0.26917541717541726,
+        "relative_bias_percent": 4.845854211640321,
+        "mae_kwh_m2": 0.3775986975986977,
+        "correlation": 0.9823187785700455
+      },
+      "neighbor_same_dates": {
+        "n": 546,
+        "mean_observed_kwh_m2": 5.61100936100936,
+        "bias_kwh_m2": 0.14724247049247066,
+        "relative_bias_percent": 2.6241708223773714,
+        "mae_kwh_m2": 0.3330810948310949,
+        "correlation": 0.9834900968730899
+      },
+      "observed_correlation": {
+        "n": 546,
+        "r": 0.9787006917897276
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.05252714126269493,
+          0.1858298417632204
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.009026455026455013,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.631349206349206,
+        "bias_kwh_m2": 0.25096031746031755,
+        "relative_bias_percent": 3.288544537465552,
+        "mae_kwh_m2": 0.3304312169312171,
+        "correlation": 0.8926153645943434
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.550066137566137,
+        "bias_kwh_m2": 0.24193386243386256,
+        "relative_bias_percent": 3.204393948684708,
+        "mae_kwh_m2": 0.3339285714285715,
+        "correlation": 0.8382775018383725
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.7610462792777609
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.0751005291005292,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.470171957671958,
+        "bias_kwh_m2": 0.5602447089947094,
+        "relative_bias_percent": 7.49975652728223,
+        "mae_kwh_m2": 0.5636653439153443,
+        "correlation": 0.8802455400200532
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.386772486772486,
+        "bias_kwh_m2": 0.4851441798941802,
+        "relative_bias_percent": 6.56774228207149,
+        "mae_kwh_m2": 0.4922738095238098,
+        "correlation": 0.914638219088081
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.8445837400405334
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 463,
+      "mean_residual_difference_kwh_m2": 0.12961015118790498,
+      "target_same_dates": {
+        "n": 463,
+        "mean_observed_kwh_m2": 5.312377009839213,
+        "bias_kwh_m2": 0.23075365970722356,
+        "relative_bias_percent": 4.3436988617305925,
+        "mae_kwh_m2": 0.3547407007439405,
+        "correlation": 0.9827353982921849
+      },
+      "neighbor_same_dates": {
+        "n": 463,
+        "mean_observed_kwh_m2": 5.381329493640509,
+        "bias_kwh_m2": 0.1011435085193186,
+        "relative_bias_percent": 1.8795264002854113,
+        "mae_kwh_m2": 0.3130386369090473,
+        "correlation": 0.9840628996546041
+      },
+      "observed_correlation": {
+        "n": 463,
+        "r": 0.9782482095819258
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": 0.08321138211382105,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.329742547425474,
+        "bias_kwh_m2": 0.4048915989159893,
+        "relative_bias_percent": 6.396651931454508,
+        "mae_kwh_m2": 0.44512195121951226,
+        "correlation": 0.9017396916007705
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.385636856368563,
+        "bias_kwh_m2": 0.32168021680216824,
+        "relative_bias_percent": 5.037558884692104,
+        "mae_kwh_m2": 0.39633875338753405,
+        "correlation": 0.9085449737769834
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.9441811798332083
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "period": "full",
+      "n": 521,
+      "mean_residual_difference_kwh_m2": -0.05863766261462992,
+      "target_same_dates": {
+        "n": 521,
+        "mean_observed_kwh_m2": 5.594097888675623,
+        "bias_kwh_m2": 0.4308952015355087,
+        "relative_bias_percent": 7.702675393074344,
+        "mae_kwh_m2": 0.5211320963958201,
+        "correlation": 0.9830454483302359
+      },
+      "neighbor_same_dates": {
+        "n": 521,
+        "mean_observed_kwh_m2": 5.733210705907443,
+        "bias_kwh_m2": 0.48953286415013864,
+        "relative_bias_percent": 8.538546536336591,
+        "mae_kwh_m2": 0.5009805075709107,
+        "correlation": 0.9889428997863428
+      },
+      "observed_correlation": {
+        "n": 521,
+        "r": 0.9750385136534139
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.14734787041771097,
+          0.02877628307258416
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.05719391534391516,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.631349206349206,
+        "bias_kwh_m2": 0.6184317460317461,
+        "relative_bias_percent": 8.10383235401175,
+        "mae_kwh_m2": 0.6194259259259259,
+        "correlation": 0.9270138054457826
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.761574074074074,
+        "bias_kwh_m2": 0.5612378306878307,
+        "relative_bias_percent": 7.230979506625198,
+        "mae_kwh_m2": 0.5612378306878307,
+        "correlation": 0.9648370131168033
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.8880129551112658
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.005171693121693273,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.427843915343916,
+        "bias_kwh_m2": 0.6942013227513228,
+        "relative_bias_percent": 9.345933095299577,
+        "mae_kwh_m2": 0.7102208994708996,
+        "correlation": 0.8933816730561823
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.487632275132274,
+        "bias_kwh_m2": 0.6890296296296295,
+        "relative_bias_percent": 9.20223649227562,
+        "mae_kwh_m2": 0.6890296296296295,
+        "correlation": 0.9360919889095786
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9284199127165089
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 438,
+      "mean_residual_difference_kwh_m2": -0.05540811770674779,
+      "target_same_dates": {
+        "n": 438,
+        "mean_observed_kwh_m2": 5.350672247590055,
+        "bias_kwh_m2": 0.4021234145104008,
+        "relative_bias_percent": 7.515381169002032,
+        "mae_kwh_m2": 0.5022775494672755,
+        "correlation": 0.9834839290681733
+      },
+      "neighbor_same_dates": {
+        "n": 438,
+        "mean_observed_kwh_m2": 5.49318239472349,
+        "bias_kwh_m2": 0.45753153221714865,
+        "relative_bias_percent": 8.329079563362638,
+        "mae_kwh_m2": 0.4711484779299847,
+        "correlation": 0.9895698446921962
+      },
+      "observed_correlation": {
+        "n": 438,
+        "r": 0.9748627787645091
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": -0.15850433604336045,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.316124661246612,
+        "bias_kwh_m2": 0.46853387533875346,
+        "relative_bias_percent": 7.418059339669192,
+        "mae_kwh_m2": 0.5288531165311655,
+        "correlation": 0.9071177033689293
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.500203252032518,
+        "bias_kwh_m2": 0.6270382113821139,
+        "relative_bias_percent": 9.646440073793817,
+        "mae_kwh_m2": 0.6270382113821139,
+        "correlation": 0.9448344602365187
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.8779548415086929
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "period": "full",
+      "n": 545,
+      "mean_residual_difference_kwh_m2": 0.10605117227319062,
+      "target_same_dates": {
+        "n": 545,
+        "mean_observed_kwh_m2": 5.5589551478083585,
+        "bias_kwh_m2": 0.2697356778797147,
+        "relative_bias_percent": 4.8522729669092435,
+        "mae_kwh_m2": 0.3782251783893987,
+        "correlation": 0.9822839237736065
+      },
+      "neighbor_same_dates": {
+        "n": 545,
+        "mean_observed_kwh_m2": 5.708659531090723,
+        "bias_kwh_m2": 0.1636845056065241,
+        "relative_bias_percent": 2.8673019421645165,
+        "mae_kwh_m2": 0.30737441386340475,
+        "correlation": 0.9819344134471281
+      },
+      "observed_correlation": {
+        "n": 545,
+        "r": 0.9744232584700231
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.03084302078841786,
+          0.18378494760844027
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.09036772486772462,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.631349206349206,
+        "bias_kwh_m2": 0.25096031746031755,
+        "relative_bias_percent": 3.288544537465552,
+        "mae_kwh_m2": 0.3304312169312171,
+        "correlation": 0.8926153645943434
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.761574074074074,
+        "bias_kwh_m2": 0.16059259259259295,
+        "relative_bias_percent": 2.0690724724127696,
+        "mae_kwh_m2": 0.21548412698412728,
+        "correlation": 0.9523644341912268
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.8880129551112658
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.15714021164021177,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.470171957671958,
+        "bias_kwh_m2": 0.5602447089947094,
+        "relative_bias_percent": 7.49975652728223,
+        "mae_kwh_m2": 0.5636653439153443,
+        "correlation": 0.8802455400200532
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.514550264550264,
+        "bias_kwh_m2": 0.4031044973544976,
+        "relative_bias_percent": 5.3643196620313365,
+        "mae_kwh_m2": 0.44760978835978854,
+        "correlation": 0.8963181293802752
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9249098934202431
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 462,
+      "mean_residual_difference_kwh_m2": 0.1026559644059644,
+      "target_same_dates": {
+        "n": 462,
+        "mean_observed_kwh_m2": 5.3168049543049545,
+        "bias_kwh_m2": 0.23133140933140944,
+        "relative_bias_percent": 4.350947821475059,
+        "mae_kwh_m2": 0.35543025493025493,
+        "correlation": 0.9827063317873699
+      },
+      "neighbor_same_dates": {
+        "n": 462,
+        "mean_observed_kwh_m2": 5.473039923039924,
+        "bias_kwh_m2": 0.12867544492544505,
+        "relative_bias_percent": 2.3510781345438114,
+        "mae_kwh_m2": 0.2917136844636845,
+        "correlation": 0.9826045782119149
+      },
+      "observed_correlation": {
+        "n": 462,
+        "r": 0.9740849738683584
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": 0.09197425474254735,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.329742547425474,
+        "bias_kwh_m2": 0.4048915989159893,
+        "relative_bias_percent": 6.396651931454508,
+        "mae_kwh_m2": 0.44512195121951226,
+        "correlation": 0.9017396916007705
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 6.513753387533875,
+        "bias_kwh_m2": 0.31291734417344197,
+        "relative_bias_percent": 4.803948285366594,
+        "mae_kwh_m2": 0.340188346883469,
+        "correlation": 0.9394462142807926
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.8825198817051446
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "period": "full",
+      "n": 344,
+      "mean_residual_difference_kwh_m2": -0.38923091085271316,
+      "target_same_dates": {
+        "n": 344,
+        "mean_observed_kwh_m2": 5.210424741602067,
+        "bias_kwh_m2": 0.3778435723514212,
+        "relative_bias_percent": 7.251684672356372,
+        "mae_kwh_m2": 0.4635884043927649,
+        "correlation": 0.9863133956406887
+      },
+      "neighbor_same_dates": {
+        "n": 344,
+        "mean_observed_kwh_m2": 4.898554586563307,
+        "bias_kwh_m2": 0.7670744832041343,
+        "relative_bias_percent": 15.659200477385985,
+        "mae_kwh_m2": 0.8068313953488371,
+        "correlation": 0.8699213232263798
+      },
+      "observed_correlation": {
+        "n": 344,
+        "r": 0.8555557617666789
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.6832470422536985,
+          -0.15805488451944472
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": -0.44889841269841296,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.631349206349206,
+        "bias_kwh_m2": 0.6184317460317461,
+        "relative_bias_percent": 8.10383235401175,
+        "mae_kwh_m2": 0.6194259259259259,
+        "correlation": 0.9270138054457826
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.2626984126984135,
+        "bias_kwh_m2": 1.0673301587301587,
+        "relative_bias_percent": 14.696055075947985,
+        "mae_kwh_m2": 1.0673301587301587,
+        "correlation": 0.5864455862518727
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.45329627905140474
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 344,
+      "mean_residual_difference_kwh_m2": -0.38923091085271316,
+      "target_same_dates": {
+        "n": 344,
+        "mean_observed_kwh_m2": 5.210424741602067,
+        "bias_kwh_m2": 0.3778435723514212,
+        "relative_bias_percent": 7.251684672356372,
+        "mae_kwh_m2": 0.4635884043927649,
+        "correlation": 0.9863133956406887
+      },
+      "neighbor_same_dates": {
+        "n": 344,
+        "mean_observed_kwh_m2": 4.898554586563307,
+        "bias_kwh_m2": 0.7670744832041343,
+        "relative_bias_percent": 15.659200477385985,
+        "mae_kwh_m2": 0.8068313953488371,
+        "correlation": 0.8699213232263798
+      },
+      "observed_correlation": {
+        "n": 344,
+        "r": 0.8555557617666789
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "period": "full",
+      "n": 360,
+      "mean_residual_difference_kwh_m2": -0.24225200617283948,
+      "target_same_dates": {
+        "n": 360,
+        "mean_observed_kwh_m2": 5.174521604938271,
+        "bias_kwh_m2": 0.18714645061728408,
+        "relative_bias_percent": 3.616690873194578,
+        "mae_kwh_m2": 0.313979475308642,
+        "correlation": 0.9851499558578778
+      },
+      "neighbor_same_dates": {
+        "n": 360,
+        "mean_observed_kwh_m2": 4.858070987654321,
+        "bias_kwh_m2": 0.4293984567901236,
+        "relative_bias_percent": 8.83886748220316,
+        "mae_kwh_m2": 0.6004950617283952,
+        "correlation": 0.8703126771981228
+      },
+      "observed_correlation": {
+        "n": 360,
+        "r": 0.8565852559827567
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.5222606008316448,
+          -0.005930838427937025
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": -0.36554365079365103,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.631349206349206,
+        "bias_kwh_m2": 0.25096031746031755,
+        "relative_bias_percent": 3.288544537465552,
+        "mae_kwh_m2": 0.3304312169312171,
+        "correlation": 0.8926153645943434
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 7.2626984126984135,
+        "bias_kwh_m2": 0.6165039682539686,
+        "relative_bias_percent": 8.488635121844613,
+        "mae_kwh_m2": 0.6216018518518521,
+        "correlation": 0.5875262178935103
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.45329627905140474
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 360,
+      "mean_residual_difference_kwh_m2": -0.24225200617283948,
+      "target_same_dates": {
+        "n": 360,
+        "mean_observed_kwh_m2": 5.174521604938271,
+        "bias_kwh_m2": 0.18714645061728408,
+        "relative_bias_percent": 3.616690873194578,
+        "mae_kwh_m2": 0.313979475308642,
+        "correlation": 0.9851499558578778
+      },
+      "neighbor_same_dates": {
+        "n": 360,
+        "mean_observed_kwh_m2": 4.858070987654321,
+        "bias_kwh_m2": 0.4293984567901236,
+        "relative_bias_percent": 8.83886748220316,
+        "mae_kwh_m2": 0.6004950617283952,
+        "correlation": 0.8703126771981228
+      },
+      "observed_correlation": {
+        "n": 360,
+        "r": 0.8565852559827567
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 0,
+      "mean_residual_difference_kwh_m2": null,
+      "target_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "neighbor_same_dates": {
+        "n": 0,
+        "bias_kwh_m2": null,
+        "relative_bias_percent": null
+      },
+      "observed_correlation": {
+        "n": 0,
+        "r": null
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "period": "full",
+      "n": 512,
+      "mean_residual_difference_kwh_m2": -0.10734915364583329,
+      "target_same_dates": {
+        "n": 512,
+        "mean_observed_kwh_m2": 3.9709201388888884,
+        "bias_kwh_m2": 0.44496638454861115,
+        "relative_bias_percent": 11.2056241119248,
+        "mae_kwh_m2": 0.5065666015625001,
+        "correlation": 0.9847075577459681
+      },
+      "neighbor_same_dates": {
+        "n": 512,
+        "mean_observed_kwh_m2": 4.064344618055555,
+        "bias_kwh_m2": 0.5523155381944445,
+        "relative_bias_percent": 13.589289051445657,
+        "mae_kwh_m2": 0.5857342447916667,
+        "correlation": 0.9847707329564738
+      },
+      "observed_correlation": {
+        "n": 512,
+        "r": 0.9477736538509566
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.16522354338323714,
+          -0.0512073698278045
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 43,
+      "mean_residual_difference_kwh_m2": -0.09770981912144708,
+      "target_same_dates": {
+        "n": 43,
+        "mean_observed_kwh_m2": 5.4855943152454785,
+        "bias_kwh_m2": 0.9192103359173127,
+        "relative_bias_percent": 16.756804880059352,
+        "mae_kwh_m2": 0.9224082687338501,
+        "correlation": 0.9842263175362318
+      },
+      "neighbor_same_dates": {
+        "n": 43,
+        "mean_observed_kwh_m2": 5.909496124031007,
+        "bias_kwh_m2": 1.0169201550387597,
+        "relative_bias_percent": 17.20823795625226,
+        "mae_kwh_m2": 1.0169201550387597,
+        "correlation": 0.9897062199596833
+      },
+      "observed_correlation": {
+        "n": 43,
+        "r": 0.9072514717630743
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 39,
+      "mean_residual_difference_kwh_m2": -0.02216666666666643,
+      "target_same_dates": {
+        "n": 39,
+        "mean_observed_kwh_m2": 6.0986467236467234,
+        "bias_kwh_m2": 0.42297635327635336,
+        "relative_bias_percent": 6.935577226277375,
+        "mae_kwh_m2": 0.5272726495726496,
+        "correlation": 0.979607271850408
+      },
+      "neighbor_same_dates": {
+        "n": 39,
+        "mean_observed_kwh_m2": 6.537749287749288,
+        "bias_kwh_m2": 0.44514301994301975,
+        "relative_bias_percent": 6.808811417365725,
+        "mae_kwh_m2": 0.5260672364672363,
+        "correlation": 0.971520735325633
+      },
+      "observed_correlation": {
+        "n": 39,
+        "r": 0.7750848423709303
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 431,
+      "mean_residual_difference_kwh_m2": -0.1172444702242846,
+      "target_same_dates": {
+        "n": 431,
+        "mean_observed_kwh_m2": 3.7023008507347255,
+        "bias_kwh_m2": 0.44288453209590106,
+        "relative_bias_percent": 11.962413373510966,
+        "mae_kwh_m2": 0.5016065222995618,
+        "correlation": 0.9840049598613768
+      },
+      "neighbor_same_dates": {
+        "n": 431,
+        "mean_observed_kwh_m2": 3.7421113689095127,
+        "bias_kwh_m2": 0.5601290023201857,
+        "relative_bias_percent": 14.968261152618037,
+        "mae_kwh_m2": 0.5897272492910545,
+        "correlation": 0.9844251134794886
+      },
+      "observed_correlation": {
+        "n": 431,
+        "r": 0.9559447211520612
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": -0.08490238095238087,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 4.751719576719576,
+        "bias_kwh_m2": 0.48674947089947096,
+        "relative_bias_percent": 10.243648915736438,
+        "mae_kwh_m2": 0.538239417989418,
+        "correlation": 0.9848143553227997
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.074338624338624,
+        "bias_kwh_m2": 0.5716518518518519,
+        "relative_bias_percent": 11.26554402794432,
+        "mae_kwh_m2": 0.6001634920634922,
+        "correlation": 0.985356023436085
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.8535464552110114
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "period": "full",
+      "n": 548,
+      "mean_residual_difference_kwh_m2": -0.07463017031630167,
+      "target_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 4.000547445255474,
+        "bias_kwh_m2": 0.2782472627737228,
+        "relative_bias_percent": 6.955229667472521,
+        "mae_kwh_m2": 0.4264990875912409,
+        "correlation": 0.9786368780053508
+      },
+      "neighbor_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 4.095833333333333,
+        "bias_kwh_m2": 0.3528774330900244,
+        "relative_bias_percent": 8.615522272798156,
+        "mae_kwh_m2": 0.4228687145174372,
+        "correlation": 0.9874874169967022
+      },
+      "observed_correlation": {
+        "n": 548,
+        "r": 0.9491383288175846
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.14374338575812176,
+          -0.002250952086316298
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 46,
+      "mean_residual_difference_kwh_m2": -0.07026932367149763,
+      "target_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.583393719806762,
+        "bias_kwh_m2": 0.6556606280193238,
+        "relative_bias_percent": 11.743048420415096,
+        "mae_kwh_m2": 0.7025326086956523,
+        "correlation": 0.9776447804614167
+      },
+      "neighbor_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.983635265700482,
+        "bias_kwh_m2": 0.7259299516908213,
+        "relative_bias_percent": 12.131921807667858,
+        "mae_kwh_m2": 0.7447342995169085,
+        "correlation": 0.990256019940455
+      },
+      "observed_correlation": {
+        "n": 46,
+        "r": 0.9085456508846573
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.0787579365079367,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.082142857142857,
+        "bias_kwh_m2": 0.4490238095238097,
+        "relative_bias_percent": 7.382658054413784,
+        "mae_kwh_m2": 0.6346560846560847,
+        "correlation": 0.9283276975672777
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.662698412698412,
+        "bias_kwh_m2": 0.3702658730158731,
+        "relative_bias_percent": 5.557296009529483,
+        "mae_kwh_m2": 0.4480410052910052,
+        "correlation": 0.9731304284334958
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.8163669202046198
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 465,
+      "mean_residual_difference_kwh_m2": -0.08838172043010752,
+      "target_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 3.7494743130227,
+        "bias_kwh_m2": 0.25090955794504194,
+        "relative_bias_percent": 6.691859631457699,
+        "mae_kwh_m2": 0.4051356033452808,
+        "correlation": 0.9789304024218681
+      },
+      "neighbor_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 3.77942054958184,
+        "bias_kwh_m2": 0.33929127837514944,
+        "relative_bias_percent": 8.977335914964241,
+        "mae_kwh_m2": 0.4129624850657109,
+        "correlation": 0.986412620527891
+      },
+      "observed_correlation": {
+        "n": 465,
+        "r": 0.957087280575017
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": -0.07579674796747965,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 4.715718157181572,
+        "bias_kwh_m2": 0.4133550135501357,
+        "relative_bias_percent": 8.765473248663875,
+        "mae_kwh_m2": 0.45555826558265605,
+        "correlation": 0.9835261574820056
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 5.054945799457994,
+        "bias_kwh_m2": 0.4891517615176153,
+        "relative_bias_percent": 9.676696465668606,
+        "mae_kwh_m2": 0.5094336043360435,
+        "correlation": 0.9889710595461696
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.8534138681395681
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "period": "full",
+      "n": 513,
+      "mean_residual_difference_kwh_m2": -0.3496910331384015,
+      "target_same_dates": {
+        "n": 513,
+        "mean_observed_kwh_m2": 3.9687026207494043,
+        "bias_kwh_m2": 0.4447272038119992,
+        "relative_bias_percent": 11.205858596883786,
+        "mae_kwh_m2": 0.5062073424301494,
+        "correlation": 0.9847149991564088
+      },
+      "neighbor_same_dates": {
+        "n": 513,
+        "mean_observed_kwh_m2": 3.84462854667533,
+        "bias_kwh_m2": 0.7944182369504007,
+        "relative_bias_percent": 20.66306867635833,
+        "mae_kwh_m2": 0.801825774312324,
+        "correlation": 0.9723850256023867
+      },
+      "observed_correlation": {
+        "n": 513,
+        "r": 0.9168747887291822
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.46720531910059926,
+          -0.24905501065721
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 43,
+      "mean_residual_difference_kwh_m2": -0.8493043927648579,
+      "target_same_dates": {
+        "n": 43,
+        "mean_observed_kwh_m2": 5.4855943152454785,
+        "bias_kwh_m2": 0.9192103359173127,
+        "relative_bias_percent": 16.756804880059352,
+        "mae_kwh_m2": 0.9224082687338501,
+        "correlation": 0.9842263175362318
+      },
+      "neighbor_same_dates": {
+        "n": 43,
+        "mean_observed_kwh_m2": 5.2550387596899215,
+        "bias_kwh_m2": 1.7685147286821707,
+        "relative_bias_percent": 33.65369523528544,
+        "mae_kwh_m2": 1.7685147286821707,
+        "correlation": 0.8847443954951713
+      },
+      "observed_correlation": {
+        "n": 43,
+        "r": 0.6344614257506004
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 39,
+      "mean_residual_difference_kwh_m2": -0.6680116809116807,
+      "target_same_dates": {
+        "n": 39,
+        "mean_observed_kwh_m2": 6.0986467236467234,
+        "bias_kwh_m2": 0.42297635327635336,
+        "relative_bias_percent": 6.935577226277375,
+        "mae_kwh_m2": 0.5272726495726496,
+        "correlation": 0.979607271850408
+      },
+      "neighbor_same_dates": {
+        "n": 39,
+        "mean_observed_kwh_m2": 5.845299145299145,
+        "bias_kwh_m2": 1.0909880341880343,
+        "relative_bias_percent": 18.664366135399913,
+        "mae_kwh_m2": 1.1028792022792024,
+        "correlation": 0.9328952130501187
+      },
+      "observed_correlation": {
+        "n": 39,
+        "r": 0.7990036868558206
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 432,
+      "mean_residual_difference_kwh_m2": -0.3218876286008231,
+      "target_same_dates": {
+        "n": 432,
+        "mean_observed_kwh_m2": 3.7002893518518514,
+        "bias_kwh_m2": 0.44260532407407416,
+        "relative_bias_percent": 11.961370638557423,
+        "mae_kwh_m2": 0.501191383744856,
+        "correlation": 0.9840100767674194
+      },
+      "neighbor_same_dates": {
+        "n": 432,
+        "mean_observed_kwh_m2": 3.584767232510288,
+        "bias_kwh_m2": 0.7644929526748973,
+        "relative_bias_percent": 21.326153222493872,
+        "mae_kwh_m2": 0.7722158950617284,
+        "correlation": 0.9702353913100584
+      },
+      "observed_correlation": {
+        "n": 432,
+        "r": 0.9189103285601745
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": -0.3400854497354496,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 4.751719576719576,
+        "bias_kwh_m2": 0.48674947089947096,
+        "relative_bias_percent": 10.243648915736438,
+        "mae_kwh_m2": 0.538239417989418,
+        "correlation": 0.9848143553227997
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 4.659722222222222,
+        "bias_kwh_m2": 0.8268349206349205,
+        "relative_bias_percent": 17.744296359378325,
+        "mae_kwh_m2": 0.8268349206349205,
+        "correlation": 0.9821416864836381
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.81893258231869
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "period": "full",
+      "n": 549,
+      "mean_residual_difference_kwh_m2": -0.32899220805504953,
+      "target_same_dates": {
+        "n": 549,
+        "mean_observed_kwh_m2": 3.9984213721918636,
+        "bias_kwh_m2": 0.27825622343655143,
+        "relative_bias_percent": 6.959152063655969,
+        "mae_kwh_m2": 0.42623800850030363,
+        "correlation": 0.9786462570792497
+      },
+      "neighbor_same_dates": {
+        "n": 549,
+        "mean_observed_kwh_m2": 3.858353572151386,
+        "bias_kwh_m2": 0.6072484314916009,
+        "relative_bias_percent": 15.738537698425713,
+        "mae_kwh_m2": 0.6155718478040882,
+        "correlation": 0.9781974245267313
+      },
+      "observed_correlation": {
+        "n": 549,
+        "r": 0.9128334436233667
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          -0.4269690178022058,
+          -0.24545201877924186
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 46,
+      "mean_residual_difference_kwh_m2": -0.7634927536231884,
+      "target_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.583393719806762,
+        "bias_kwh_m2": 0.6556606280193238,
+        "relative_bias_percent": 11.743048420415096,
+        "mae_kwh_m2": 0.7025326086956523,
+        "correlation": 0.9776447804614167
+      },
+      "neighbor_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.278140096618357,
+        "bias_kwh_m2": 1.4191533816425121,
+        "relative_bias_percent": 26.88737615266687,
+        "mae_kwh_m2": 1.4191533816425121,
+        "correlation": 0.8942553363159604
+      },
+      "observed_correlation": {
+        "n": 46,
+        "r": 0.6115989746345072
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": -0.45151058201058186,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.082142857142857,
+        "bias_kwh_m2": 0.4490238095238097,
+        "relative_bias_percent": 7.382658054413784,
+        "mae_kwh_m2": 0.6346560846560847,
+        "correlation": 0.9283276975672777
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.931679894179894,
+        "bias_kwh_m2": 0.9005343915343915,
+        "relative_bias_percent": 15.18177662314494,
+        "mae_kwh_m2": 0.9085767195767198,
+        "correlation": 0.956959075808582
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.7963146332960233
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 466,
+      "mean_residual_difference_kwh_m2": -0.3167457081545064,
+      "target_same_dates": {
+        "n": 466,
+        "mean_observed_kwh_m2": 3.747508345255126,
+        "bias_kwh_m2": 0.25097877920839307,
+        "relative_bias_percent": 6.697217353129248,
+        "mae_kwh_m2": 0.40487386742966147,
+        "correlation": 0.9789365491107911
+      },
+      "neighbor_same_dates": {
+        "n": 466,
+        "mean_observed_kwh_m2": 3.603409632808774,
+        "bias_kwh_m2": 0.5677244873628995,
+        "relative_bias_percent": 15.755202577964232,
+        "mae_kwh_m2": 0.5768055555555557,
+        "correlation": 0.9760829480958642
+      },
+      "observed_correlation": {
+        "n": 466,
+        "r": 0.9144392106515359
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": -0.3426775067750677,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 4.715718157181572,
+        "bias_kwh_m2": 0.4133550135501357,
+        "relative_bias_percent": 8.765473248663875,
+        "mae_kwh_m2": 0.45555826558265605,
+        "correlation": 0.9835261574820056
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 4.632113821138212,
+        "bias_kwh_m2": 0.7560325203252035,
+        "relative_bias_percent": 16.321544537077667,
+        "mae_kwh_m2": 0.7560325203252035,
+        "correlation": 0.9878613372397255
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.8167028499654568
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "LSA",
+      "period": "full",
+      "n": 506,
+      "mean_residual_difference_kwh_m2": 0.13667830478700058,
+      "target_same_dates": {
+        "n": 506,
+        "mean_observed_kwh_m2": 3.9538098375054895,
+        "bias_kwh_m2": 0.4455982652613088,
+        "relative_bias_percent": 11.270098552398832,
+        "mae_kwh_m2": 0.5079289196310935,
+        "correlation": 0.9845190795332024
+      },
+      "neighbor_same_dates": {
+        "n": 506,
+        "mean_observed_kwh_m2": 4.2365118577075105,
+        "bias_kwh_m2": 0.3089199604743082,
+        "relative_bias_percent": 7.291846945082624,
+        "mae_kwh_m2": 0.39533625384277554,
+        "correlation": 0.9848261152891677
+      },
+      "observed_correlation": {
+        "n": 506,
+        "r": 0.970964089018369
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.06801382392827292,
+          0.20468181286549728
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.23356798941798956,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.439550264550265,
+        "bias_kwh_m2": 0.9203306878306877,
+        "relative_bias_percent": 16.91924227318046,
+        "mae_kwh_m2": 0.9236047619047618,
+        "correlation": 0.9839692923718771
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.778968253968254,
+        "bias_kwh_m2": 0.6867626984126983,
+        "relative_bias_percent": 11.883828881411793,
+        "mae_kwh_m2": 0.6993542328042327,
+        "correlation": 0.9745414040939666
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9378693489399321
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 38,
+      "mean_residual_difference_kwh_m2": 0.27262865497076055,
+      "target_same_dates": {
+        "n": 38,
+        "mean_observed_kwh_m2": 6.062792397660818,
+        "bias_kwh_m2": 0.4149497076023393,
+        "relative_bias_percent": 6.844201159888596,
+        "mae_kwh_m2": 0.5219906432748539,
+        "correlation": 0.9791777554633917
+      },
+      "neighbor_same_dates": {
+        "n": 38,
+        "mean_observed_kwh_m2": 6.496052631578948,
+        "bias_kwh_m2": 0.1423210526315787,
+        "relative_bias_percent": 2.190885152926875,
+        "mae_kwh_m2": 0.3320456140350874,
+        "correlation": 0.9705123576142576
+      },
+      "observed_correlation": {
+        "n": 38,
+        "r": 0.9267862958068508
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 426,
+      "mean_residual_difference_kwh_m2": 0.1122377151799688,
+      "target_same_dates": {
+        "n": 426,
+        "mean_observed_kwh_m2": 3.6870174752217006,
+        "bias_kwh_m2": 0.44427501304121025,
+        "relative_bias_percent": 12.049712702120999,
+        "mae_kwh_m2": 0.5036862284820031,
+        "correlation": 0.983838747930357
+      },
+      "neighbor_same_dates": {
+        "n": 426,
+        "mean_observed_kwh_m2": 3.950671622326552,
+        "bias_kwh_m2": 0.3320372978612414,
+        "relative_bias_percent": 8.404578502166286,
+        "mae_kwh_m2": 0.41089024517475214,
+        "correlation": 0.9842753405856597
+      },
+      "observed_correlation": {
+        "n": 426,
+        "r": 0.9715905275965951
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.2615730158730161,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 4.751719576719576,
+        "bias_kwh_m2": 0.48674947089947096,
+        "relative_bias_percent": 10.243648915736438,
+        "mae_kwh_m2": 0.538239417989418,
+        "correlation": 0.9848143553227997
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.091402116402118,
+        "bias_kwh_m2": 0.22517645502645484,
+        "relative_bias_percent": 4.422680626639989,
+        "mae_kwh_m2": 0.2948373015873015,
+        "correlation": 0.9882993599373413
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9432976299465582
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "SARAH",
+      "period": "full",
+      "n": 548,
+      "mean_residual_difference_kwh_m2": 0.21897850770478516,
+      "target_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 3.9982664233576646,
+        "bias_kwh_m2": 0.27859580291970815,
+        "relative_bias_percent": 6.9679149266333535,
+        "mae_kwh_m2": 0.42684762773722634,
+        "correlation": 0.9786520675491323
+      },
+      "neighbor_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 4.268060624493106,
+        "bias_kwh_m2": 0.059617295214922934,
+        "relative_bias_percent": 1.39682400181472,
+        "mae_kwh_m2": 0.28382025547445255,
+        "correlation": 0.9881002300568384
+      },
+      "observed_correlation": {
+        "n": 548,
+        "r": 0.969940340189366
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.12680278396898936,
+          0.31971766044061317
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 46,
+      "mean_residual_difference_kwh_m2": 0.5176473429951691,
+      "target_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.583393719806762,
+        "bias_kwh_m2": 0.6556606280193238,
+        "relative_bias_percent": 11.743048420415096,
+        "mae_kwh_m2": 0.7025326086956523,
+        "correlation": 0.9776447804614167
+      },
+      "neighbor_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.941606280193236,
+        "bias_kwh_m2": 0.1380132850241546,
+        "relative_bias_percent": 2.3228278434441476,
+        "mae_kwh_m2": 0.34678864734299525,
+        "correlation": 0.9777006100269873
+      },
+      "observed_correlation": {
+        "n": 46,
+        "r": 0.9404238929947407
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.5318386243386247,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.082142857142857,
+        "bias_kwh_m2": 0.4490238095238097,
+        "relative_bias_percent": 7.382658054413784,
+        "mae_kwh_m2": 0.6346560846560847,
+        "correlation": 0.9283276975672777
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.544576719576719,
+        "bias_kwh_m2": -0.08281481481481491,
+        "relative_bias_percent": -1.2653960426056565,
+        "mae_kwh_m2": 0.3186164021164022,
+        "correlation": 0.9677672531514314
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9249493010196616
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 465,
+      "mean_residual_difference_kwh_m2": 0.18353440860215064,
+      "target_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 3.74678614097969,
+        "bias_kwh_m2": 0.251320310633214,
+        "relative_bias_percent": 6.707623578630513,
+        "mae_kwh_m2": 0.4055463560334528,
+        "correlation": 0.9789417318574983
+      },
+      "neighbor_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 3.993076463560334,
+        "bias_kwh_m2": 0.06778590203106331,
+        "relative_bias_percent": 1.697585875193173,
+        "mae_kwh_m2": 0.2813667861409797,
+        "correlation": 0.9881623757176337
+      },
+      "observed_correlation": {
+        "n": 465,
+        "r": 0.9707309450321201
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10141",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": 0.3004756097560977,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 4.715718157181572,
+        "bias_kwh_m2": 0.4133550135501357,
+        "relative_bias_percent": 8.765473248663875,
+        "mae_kwh_m2": 0.45555826558265605,
+        "correlation": 0.9835261574820056
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 5.054742547425474,
+        "bias_kwh_m2": 0.11287940379403795,
+        "relative_bias_percent": 2.2331385374222608,
+        "mae_kwh_m2": 0.2760013550135501,
+        "correlation": 0.984337911891606
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.9423693886593488
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "LSA",
+      "period": "full",
+      "n": 503,
+      "mean_residual_difference_kwh_m2": 0.23056622487298448,
+      "target_same_dates": {
+        "n": 503,
+        "mean_observed_kwh_m2": 3.9655953169869673,
+        "bias_kwh_m2": 0.44197844046830137,
+        "relative_bias_percent": 11.145323845200464,
+        "mae_kwh_m2": 0.5046808482438702,
+        "correlation": 0.9843132537720806
+      },
+      "neighbor_same_dates": {
+        "n": 503,
+        "mean_observed_kwh_m2": 4.4751601502098515,
+        "bias_kwh_m2": 0.21141221559531684,
+        "relative_bias_percent": 4.724126254686174,
+        "mae_kwh_m2": 0.30652226640159036,
+        "correlation": 0.9902048510365186
+      },
+      "observed_correlation": {
+        "n": 503,
+        "r": 0.9479963853658034
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.14786912701222374,
+          0.31600294699372106
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "LSA",
+      "period": "summer_2025",
+      "n": 38,
+      "mean_residual_difference_kwh_m2": 0.5868657894736844,
+      "target_same_dates": {
+        "n": 38,
+        "mean_observed_kwh_m2": 5.525292397660818,
+        "bias_kwh_m2": 0.9560681286549706,
+        "relative_bias_percent": 17.30348477231233,
+        "mae_kwh_m2": 0.959686842105263,
+        "correlation": 0.9825714011365779
+      },
+      "neighbor_same_dates": {
+        "n": 38,
+        "mean_observed_kwh_m2": 6.497660818713449,
+        "bias_kwh_m2": 0.36920233918128637,
+        "relative_bias_percent": 5.682080820808203,
+        "mae_kwh_m2": 0.4537707602339179,
+        "correlation": 0.9688844618310832
+      },
+      "observed_correlation": {
+        "n": 38,
+        "r": 0.8628730296112203
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "LSA",
+      "period": "summer_2026",
+      "n": 37,
+      "mean_residual_difference_kwh_m2": 0.2678042042042046,
+      "target_same_dates": {
+        "n": 37,
+        "mean_observed_kwh_m2": 6.069444444444444,
+        "bias_kwh_m2": 0.40905285285285287,
+        "relative_bias_percent": 6.739543571030987,
+        "mae_kwh_m2": 0.5189867867867868,
+        "correlation": 0.9800481603786555
+      },
+      "neighbor_same_dates": {
+        "n": 37,
+        "mean_observed_kwh_m2": 6.647297297297297,
+        "bias_kwh_m2": 0.14124864864864836,
+        "relative_bias_percent": 2.12490343565765,
+        "mae_kwh_m2": 0.3699045045045044,
+        "correlation": 0.9686013527711897
+      },
+      "observed_correlation": {
+        "n": 37,
+        "r": 0.9187849524769087
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "LSA",
+      "period": "before_june_2026",
+      "n": 424,
+      "mean_residual_difference_kwh_m2": 0.228345885744235,
+      "target_same_dates": {
+        "n": 424,
+        "mean_observed_kwh_m2": 3.7041339098532498,
+        "bias_kwh_m2": 0.44041679769392034,
+        "relative_bias_percent": 11.889872461748254,
+        "mae_kwh_m2": 0.5001082547169812,
+        "correlation": 0.9835885210982811
+      },
+      "neighbor_same_dates": {
+        "n": 424,
+        "mean_observed_kwh_m2": 4.208038522012578,
+        "bias_kwh_m2": 0.21207091194968541,
+        "relative_bias_percent": 5.0396618481586115,
+        "mae_kwh_m2": 0.29913029350104814,
+        "correlation": 0.9906708502706417
+      },
+      "observed_correlation": {
+        "n": 424,
+        "r": 0.9478565447216073
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "LSA",
+      "period": "after_july_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.2201761904761906,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 4.751719576719576,
+        "bias_kwh_m2": 0.48674947089947096,
+        "relative_bias_percent": 10.243648915736438,
+        "mae_kwh_m2": 0.538239417989418,
+        "correlation": 0.9848143553227997
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 5.258267195767196,
+        "bias_kwh_m2": 0.2665732804232804,
+        "relative_bias_percent": 5.069603169611971,
+        "mae_kwh_m2": 0.32530925925925924,
+        "correlation": 0.9858079754680946
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9003416720219086
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "SARAH",
+      "period": "full",
+      "n": 548,
+      "mean_residual_difference_kwh_m2": 0.3649777980535281,
+      "target_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 4.004384630981346,
+        "bias_kwh_m2": 0.2782494931062451,
+        "relative_bias_percent": 6.948620543428042,
+        "mae_kwh_m2": 0.4265013179237632,
+        "correlation": 0.9785715422241612
+      },
+      "neighbor_same_dates": {
+        "n": 548,
+        "mean_observed_kwh_m2": 4.487520275750203,
+        "bias_kwh_m2": -0.08672830494728306,
+        "relative_bias_percent": -1.9326554448332656,
+        "mae_kwh_m2": 0.3287305352798054,
+        "correlation": 0.9802155889092196
+      },
+      "observed_correlation": {
+        "n": 548,
+        "r": 0.9498288135963101
+      },
+      "bootstrap_30days": {
+        "block_days": 30,
+        "replicates": 5000,
+        "ci95": [
+          0.2364002413366824,
+          0.4975707093516363
+        ],
+        "unit": "kWh/m2/day",
+        "scope": "Exploratory window-conditional interval; not a sensor accuracy certificate."
+      }
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "SARAH",
+      "period": "summer_2025",
+      "n": 46,
+      "mean_residual_difference_kwh_m2": 0.8545181159420293,
+      "target_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 5.583393719806762,
+        "bias_kwh_m2": 0.6556606280193238,
+        "relative_bias_percent": 11.743048420415096,
+        "mae_kwh_m2": 0.7025326086956523,
+        "correlation": 0.9776447804614167
+      },
+      "neighbor_same_dates": {
+        "n": 46,
+        "mean_observed_kwh_m2": 6.53955314009662,
+        "bias_kwh_m2": -0.1988574879227054,
+        "relative_bias_percent": -3.0408421441433133,
+        "mae_kwh_m2": 0.44770772946859905,
+        "correlation": 0.9449238347844046
+      },
+      "observed_correlation": {
+        "n": 46,
+        "r": 0.8880932663550606
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "SARAH",
+      "period": "summer_2026",
+      "n": 42,
+      "mean_residual_difference_kwh_m2": 0.49167724867724905,
+      "target_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.082142857142857,
+        "bias_kwh_m2": 0.4490238095238097,
+        "relative_bias_percent": 7.382658054413784,
+        "mae_kwh_m2": 0.6346560846560847,
+        "correlation": 0.9283276975672777
+      },
+      "neighbor_same_dates": {
+        "n": 42,
+        "mean_observed_kwh_m2": 6.5891534391534385,
+        "bias_kwh_m2": -0.04265343915343918,
+        "relative_bias_percent": -0.6473280603846312,
+        "mae_kwh_m2": 0.3283359788359787,
+        "correlation": 0.9615374328835985
+      },
+      "observed_correlation": {
+        "n": 42,
+        "r": 0.9125758846967587
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "SARAH",
+      "period": "before_june_2026",
+      "n": 465,
+      "mean_residual_difference_kwh_m2": 0.34664611708482684,
+      "target_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 3.7539964157706094,
+        "bias_kwh_m2": 0.25091218637992846,
+        "relative_bias_percent": 6.683868565399839,
+        "mae_kwh_m2": 0.40513823178016733,
+        "correlation": 0.9788621208845727
+      },
+      "neighbor_same_dates": {
+        "n": 465,
+        "mean_observed_kwh_m2": 4.23231780167264,
+        "bias_kwh_m2": -0.09573393070489845,
+        "relative_bias_percent": -2.261974057502576,
+        "mae_kwh_m2": 0.3244885304659498,
+        "correlation": 0.9813673018917277
+      },
+      "observed_correlation": {
+        "n": 465,
+        "r": 0.9501553382172817
+      },
+      "bootstrap_30days": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "MG10050",
+      "product": "SARAH",
+      "period": "after_july_2026",
+      "n": 41,
+      "mean_residual_difference_kwh_m2": 0.44309620596205984,
+      "target_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 4.715718157181572,
+        "bias_kwh_m2": 0.4133550135501357,
+        "relative_bias_percent": 8.765473248663875,
+        "mae_kwh_m2": 0.45555826558265605,
+        "correlation": 0.9835261574820056
+      },
+      "neighbor_same_dates": {
+        "n": 41,
+        "mean_observed_kwh_m2": 5.2289972899729,
+        "bias_kwh_m2": -0.029741192411924102,
+        "relative_bias_percent": -0.5687742938585122,
+        "mae_kwh_m2": 0.3772452574525745,
+        "correlation": 0.9467755772783646
+      },
+      "observed_correlation": {
+        "n": 41,
+        "r": 0.8989652579667279
+      },
+      "bootstrap_30days": null
+    }
+  ],
+  "focused_06_18_comparisons": [
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "LSA",
+      "n": 0,
+      "target_bias_w_m2": null,
+      "neighbor_bias_w_m2": null,
+      "residual_difference_w_m2": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL10",
+      "product": "SARAH",
+      "n": 43,
+      "target_bias_w_m2": 49.31882751937985,
+      "neighbor_bias_w_m2": 40.52601744186045,
+      "residual_difference_w_m2": 8.7928100775194
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "LSA",
+      "n": 42,
+      "target_bias_w_m2": 58.69178571428571,
+      "neighbor_bias_w_m2": 56.48713293650793,
+      "residual_difference_w_m2": 2.2046527777777656
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL02",
+      "product": "SARAH",
+      "n": 43,
+      "target_bias_w_m2": 49.31882751937985,
+      "neighbor_bias_w_m2": 34.68423449612404,
+      "residual_difference_w_m2": 14.634593023255812
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "LSA",
+      "n": 0,
+      "target_bias_w_m2": null,
+      "neighbor_bias_w_m2": null,
+      "residual_difference_w_m2": null
+    },
+    {
+      "target": "AL01",
+      "neighbor": "AL201",
+      "product": "SARAH",
+      "n": 0,
+      "target_bias_w_m2": null,
+      "neighbor_bias_w_m2": null,
+      "residual_difference_w_m2": null
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "LSA",
+      "n": 39,
+      "target_bias_w_m2": 38.64476495726494,
+      "neighbor_bias_w_m2": 36.44543803418802,
+      "residual_difference_w_m2": 2.1993269230769297
+    },
+    {
+      "target": "C01",
+      "neighbor": "C02",
+      "product": "SARAH",
+      "n": 43,
+      "target_bias_w_m2": 35.767674418604656,
+      "neighbor_bias_w_m2": 32.48356589147287,
+      "residual_difference_w_m2": 3.284108527131783
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "LSA",
+      "n": 39,
+      "target_bias_w_m2": 38.64476495726494,
+      "neighbor_bias_w_m2": 84.84119658119657,
+      "residual_difference_w_m2": -46.19643162393162
+    },
+    {
+      "target": "C01",
+      "neighbor": "LU01",
+      "product": "SARAH",
+      "n": 43,
+      "target_bias_w_m2": 35.767674418604656,
+      "neighbor_bias_w_m2": 68.00393410852713,
+      "residual_difference_w_m2": -32.23625968992248
+    }
+  ]
+}

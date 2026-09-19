@@ -1,3 +1,5 @@
+> **Actualización v1.0.1:** este texto documenta la revisión inicial. Se ha restituido contexto y corregido el alcance del encargo; véase [correccion_v1.0.1.md](correccion_v1.0.1.md). El informe vigente es [outputs/informe.md](../outputs/informe.md).
+
 # Revisión de cierre — medición a escala de IFS y AIFS
 
 19 de septiembre de 2026. Continuación del encargo v2 y del informe terminado el 19 de septiembre a las 08:07 UTC. Esta revisión conserva los informes anteriores y no abre una fase experimental.
@@ -41,7 +43,7 @@ La igualdad de la reproducción verifica la implementación y la conservación d
 
 **Cerrar esta medición como resultado de investigación reproducible con mejoras condicionadas a SiAR y sensibilidad de escala no resuelta.** Es defendible para portfolio con esas condiciones visibles. No presentar los residuos como prueba de sensores defectuosos, el centrado como habilidad libre de error instrumental ni la falta de robustez como prueba de ausencia de habilidad. El estudio no mide disponibilidad real de publicación, ahorro económico ni rentabilidad y no justifica tales afirmaciones.
 
-Se respeta el alcance del encargo v2: no se entrenan correcciones, no se añaden aerosoles, estaciones o satélites y no se propone un nuevo experimento. Esta revisión tampoco completa la evaluación AIFS/IFS frente a MeteoGalicia que quedó pendiente en otro paquete.
+Se respeta el alcance del encargo v2: no se entrenan correcciones, no se añaden aerosoles, estaciones o satélites y no se propone un nuevo experimento. La evaluación AIFS/IFS frente a MeteoGalicia era otro encargo (`evaluacion_meteogalicia`) y nunca estuvo incluida en este estudio de 34 estaciones.
 
 [Informe completo revisado](../outputs/informe.md)
 

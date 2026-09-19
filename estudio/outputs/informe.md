@@ -1,14 +1,16 @@
 # Medición a escala: valor de la actualización (IFS 00→06 UTC) e IA frente a física (AIFS vs IFS)
 
-Informe generado el 2026-09-19T08:29:25 UTC · radiación global diaria · observaciones SiAR · pronósticos ECMWF servidos por Open-Meteo (Single Runs API)
+Informe generado el 2026-09-19T13:47:55 UTC · radiación global diaria · observaciones SiAR · pronósticos ECMWF servidos por Open-Meteo (Single Runs API)
 
 Cálculo de `resultados.json`: 2026-09-16T18:39:34 UTC; ninguna cifra preespecificada ha cambiado desde entonces. Posteriores a ese cálculo, y por tanto escritos sabiendo ya el resultado: el anexo A entero (2026-09-19); la redacción del titular de §1; el párrafo sobre el alcance del Monte Carlo de §5; la tabla de pasadas ausentes de §3; las desviaciones declaradas de §2; las viñetas de §7 sobre las magnitudes medidas de la discrepancia, sobre la dispersión del sesgo por estación, sobre la identificación del eje k y la corrección sobre la interpolación horaria; y las dos figuras, que añaden la línea y el panel del análisis determinista. El veredicto de §1 lo produce la regla congelada de sensibilidad, no la redacción.
 
 Revisión de cierre del 19-09-2026: se corrigen atribuciones causales, el alcance del centrado y las rutas de reproducción. No cambian datos, selección, método congelado ni resultados numéricos; el informe original queda conservado. Ver revision/cambios.json.
 
+Corrección v1.0.1: se restituye contexto omitido y se declara el cambio de vocabulario. Los cálculos preespecificados permanecen intactos. Las nuevas comprobaciones de escala secundaria están separadas en datos/sensibilidad_secundaria_posterior.json.
+
 ## 1. Resultado en una frase
 
-**Las mejoras de las dos comparaciones primarias no superan todos los escenarios de sensibilidad de escala preespecificados, aunque las dos superan la corrección de multiplicidad con la observación tal cual; medido en 34 estaciones SiAR y 110 días objetivo de mayo a agosto de 2026, con una sola versión de cada modelo y sin invierno.** Con la observación tal cual, del 14 de mayo al 31 de agosto de 2026: actualizar IFS del ciclo 00 al 06 UTC reduce el MAE un 1,47 % (IC95 con bloques de 7 días [0,69; 2,26], supera Holm) y AIFS mejora a IFS a igual ciclo un 7,57 % ([4,60; 10,48], supera Holm). Las dos fallan de maneras distintas al dividir la observación por un factor de escala común k: con k = 0,95 la actualización cae a 0,44 % y pierde el intervalo [-0,58; 1,39] sin cambiar de signo, mientras que la ventaja de AIFS se invierte a -5,64 % [-10,08; -1,33]. La sensibilidad no estima el error real de los sensores. El resultado es una mejora condicionada a la referencia SiAR que no supera todos los escenarios de escala preespecificados; tampoco demuestra ausencia de capacidad predictiva. Con errores independientes de ±5 % por estación (el Monte Carlo preespecificado) el signo sobrevive en el 100,0 % y el 100,0 % de los 1.000 sorteos, bajo una hipótesis de factores independientes y centrados en 1 que no incluye un desplazamiento común de red. Y ese eje no está identificado: dividir la observación por k es algebraicamente idéntico a multiplicar los cuatro pronósticos por k, de modo que estos datos no distinguen un sensor que mide de menos de unos pronósticos que vienen altos.
+**Las mejoras de las dos comparaciones primarias no superan todos los escenarios de sensibilidad de escala preespecificados, aunque las dos superan la corrección de multiplicidad con la observación tal cual; medido en 34 estaciones SiAR y 110 días objetivo de mayo a agosto de 2026, con una sola versión de cada modelo y sin invierno.** Con la observación tal cual, del 14 de mayo al 31 de agosto de 2026: actualizar IFS del ciclo 00 al 06 UTC reduce el MAE un 1,47 % (IC95 con bloques de 7 días [0,69; 2,26], supera Holm) y AIFS mejora a IFS a igual ciclo un 7,57 % ([4,60; 10,48], supera Holm). Las dos fallan de maneras distintas al dividir la observación por un factor de escala común k: con k = 0,95 la actualización cae a 0,44 % y pierde el intervalo [-0,58; 1,39] sin cambiar de signo, mientras que la ventaja de AIFS se invierte a -5,64 % [-10,08; -1,33]. La sensibilidad no estima el error real de los sensores. El resultado es una mejora condicionada a la referencia SiAR que no supera todos los escenarios de escala preespecificados; tampoco demuestra ausencia de capacidad predictiva. Con errores independientes de ±5 % por estación (el Monte Carlo preespecificado) el signo sobrevive en el 100,0 % y el 100,0 % de los 1.000 sorteos, bajo una hipótesis de factores independientes y centrados en 1 que no incluye un desplazamiento común de red. Y ese eje no está identificado: dividir la observación por k es algebraicamente idéntico a multiplicar los cuatro pronósticos por k, de modo que estos datos no distinguen un sensor que mide de menos de unos pronósticos que vienen altos. La inversión de H2 no aparece en el escenario k=0,95 de la ventana secundaria: sus efectos puntuales son H1 +2,36 % y H2 +5,33 %. Esa extensión de escala es posterior; cambia la lectura entre ventanas, no el veredicto primario. La diferencia de periodo y versiones impide atribuirla solo a la estación del año. Véanse §6.2 bis y los antecedentes restituidos en §7.1.
 
 ## 2. Qué se decidió antes de medir
 
@@ -16,7 +18,7 @@ Revisión de cierre del 19-09-2026: se corrigen atribuciones causales, el alcanc
 - Selección de estaciones por regla: rejilla 1,5°×1,5° (centros de latitud [36.0, 37.5, 39.0, 40.5, 42.0, 43.5] y longitud [-9.0, -7.5, -6.0, -4.5, -3.0, -1.5, 0.0, 1.5, 3.0]), la estación activa más próxima al centro de cada celda con estación (33 celdas), más la primera de Canarias por orden alfabético. Catálogo SiAR del 2026-09-14 07:41 UTC (SHA-256 `c1af4cc4e60fa83bdb9214c243abecd214e21233fc37039f632915c231d99ff6`), 520 estaciones activas, heredado de un trabajo previo del mismo día y anterior a la congelación. Ninguna sustitución tras ver datos; exclusión solo por < 80 % de días válidos en la ventana primaria.
 - Hipótesis primarias: H1, reducción de MAE de IFS_00 → IFS_06 > 0; H2, reducción de MAE de IFS_00 → AIFS_00 > 0. Corrección de Holm-Bonferroni (α = 0,05) sobre los dos p bootstrap bilaterales. Secundarias exploratorias: AIFS_00 → AIFS_06, IFS_06 → AIFS_06, la ventana secundaria y la restricción 06-18 UTC.
 - Ventanas definidas por la hora de inicialización de las pasadas, no por el día objetivo: el cambio de versión (IFS 50r1 y AIFS Single v2) ocurre en la pasada del 2026-05-12 06 UTC; la primaria son los días objetivo del 14 de mayo al 31 de agosto (110 días, todas las pasadas de la versión nueva) y la secundaria del 3 de abril al 12 de mayo (versión anterior; el archivo de Open-Meteo empieza el 2 de abril de 2026). El 13 de mayo es mixto y se excluye. El encargo escribía 12 de mayo–31 de agosto; se corrigió antes de descargar (C1 de la especificación).
-- Bootstrap por días completos (todas las estaciones de cada día remuestreado), bloques circulares de 1, 7 y 14 días, 10.000 réplicas, semilla 20260914. Sensibilidad al instrumento: k ∈ {0,95; 1,00; 1,05} global y 1.000 sorteos de k_i ~ U(0,95; 1,05) por estación, semilla 20260915.
+- Bootstrap por días completos (todas las estaciones de cada día remuestreado), bloques circulares de 1, 7 y 14 días, 10.000 réplicas, semilla 20260914. Sensibilidad de escala: k ∈ {0,95; 1,00; 1,05} global y 1.000 sorteos de k_i ~ U(0,95; 1,05) por estación, semilla 20260915.
 - Métrica: error relativo r = (pronóstico − observación)/media de la observación de la estación; MAE_rel = media de |r|; efecto = (MAE_A − MAE_B)/MAE_A × 100 sobre los mismos estación-días (pares completos por comparación).
 
 **Desviaciones respecto a la especificación congelada, y exposición previa a los datos:**
@@ -25,6 +27,8 @@ Revisión de cierre del 19-09-2026: se corrigen atribuciones causales, el alcanc
 - *Exposición previa.* Dos de las 34 estaciones, AL10 y LU01, aparecen en la auditoría de vecinas del 14 de septiembre y sus semihorarios del 16 de junio al 31 de julio ya se habían descargado antes de la congelación; son 92 de los 3.731 estación-días observacionales de la ventana primaria (2,5 %). Las estaciones del piloto y de la réplica anteriores (AL01, C01, M01) no están entre las 34 salvo por la sección 6.5, que las usa explícitamente. La regla de rejilla se fijó y se aplicó sin sustituciones, pero el resultado del piloto (una mejora del orden del 8 % al actualizar el ciclo) era conocido al redactar las hipótesis.
 - *Recuento por celda.* El programa de selección aplica «estación activa de huso 30 más próxima al centro», pero no implementa el filtro C5 (excluir nombres con «Invernadero» o «(malla)»). El recuento publicado de estaciones dentro de la celda (39,0, 0,0) es 33 e incluye una estación inelegible; bajo C5 serían 32. La estación seleccionada no cambia en ninguna celda, ni la canaria.
 - *Anexo A.* Las métricas alternativas, el LOSO, la curva frente a k y la comparación de sorteos del anexo A no están en la especificación congelada; se calcularon el 2026-09-19, después de ver los resultados, y no entran en las hipótesis ni en Holm.
+- *Cambio de vocabulario posterior al resultado (v1.0.1).* La especificación denomina el criterio «robusto al instrumento»; el informe usa «robustez frente a escenarios de escala» porque k no identifica el instrumento. Se conservan la fórmula, los tres k, la regla de decisión y la clave JSON robusto_al_instrumento, sin reescribir el método congelado. La extensión de escala a la ventana secundaria y su rejilla ampliada de cruces se calculan después de los resultados y se identifican como exploratorias. Se restituyen además antecedentes bibliográficos, el contraste con MeteoGalicia y la descomposición del MSE, sin nuevos datos.
+
 - *Figuras.* La especificación fija `figura_principal` como «efecto por estación con intervalo L = 7 y el efecto agregado» y `figura_sensibilidad` como «histograma del efecto de H1 y H2 en los 1.000 sorteos». Las dos añaden el análisis determinista: la primera, la línea del agregado con k = 0,95; la segunda, las marcas de k = 0,95 y k = 1,05 y un panel con la curva del efecto frente a k. Son adiciones posteriores al cálculo y no cambian ninguna cifra.
 
 ## 3. Muestra
@@ -105,9 +109,9 @@ Veredicto tras Holm (α = 0,05), por largo de bloque:
 
 ![Efecto por estación](figura_principal.png)
 
-## 5. Robustez al instrumento
+## 5. Robustez frente a escenarios de escala
 
-Esta es la sección que decide el titular. El modelo es observación medida = k × observación real; el análisis divide la observación por k, de modo que k < 1 representa un sensor que mide de menos.
+Esta sección aplica el criterio congelado a la ventana primaria. Se evalúa O/k: k < 1 aumenta la observación usada para puntuar. Es un escenario de escala, no una afirmación sobre el sensor ni una estimación de k.
 
 **Qué mide en realidad el eje k, y qué no.** Como el error relativo es |pronóstico − observación/k| dividido por la media de observación/k, el factor sale fuera y la expresión equivale a |k × pronóstico − observación| dividido por la media de la observación. Es decir, dividir la observación por k es *algebraicamente idéntico* a multiplicar los cuatro pronósticos por k: comprobado numéricamente en las cuatro comparaciones y en k ∈ {0,95; 1,00; 1,05}, con diferencia máxima 5.8e-14. Este análisis mide, pues, la sensibilidad a un factor multiplicativo común entre pronóstico y observación, y **no distingue un sensor que mide de menos de unos pronósticos que vienen altos** (sin identificar su origen). Ni este cálculo ni las comparaciones con otras referencias citadas en §7 identifican la causa en las 34 estaciones y el periodo evaluado. Esta comprobación es posterior al cálculo (anexo A).
 
@@ -131,7 +135,7 @@ Monte Carlo (1000 sorteos de k_i ~ U(0,95; 1,05) independiente por estación, se
 | S2 | 6,33 % | 1,49 | 3,37 | 6,37 | 9,18 | 100,0 % | — | — |
 **El Monte Carlo y el escenario común responden a preguntas distintas.** El sorteo preespecificado asigna factores independientes k_i ~ U(0,95; 1,05) a las 34 estaciones. La media de esos factores se concentra alrededor de 1 (desviación 0,0049, frente a 0,0288 para el factor común del diagnóstico posterior). Eso no convierte el efecto sobre el MAE en una función de la media: intervienen los 34 factores, sus pesos y los errores diarios. La supervivencia del signo es del 100 % en ese Monte Carlo; la supervivencia del signo y del intervalo es la que figura en la tabla. El contraste posterior con un único k aleatorio invierte el signo de H2 en el 25,8 % de los sorteos y el de H1 en el 0,0 %. Son probabilidades condicionadas a leyes de simulación, no probabilidades de error real de la red. El criterio determinista de tres valores de k estaba congelado y sigue siendo el que decide el veredicto.
 
-![Sensibilidad al instrumento](figura_sensibilidad.png)
+![Sensibilidad de escala](figura_sensibilidad.png)
 
 ## 6. Secundarias y estratos (exploratorio, sin corrección)
 
@@ -152,6 +156,21 @@ Días objetivo 2026-04-03 a 2026-05-12 (40 días; inicio ajustado al primer día
 | H2: IFS_00 → AIFS_00 | 1324 | 13,80 % | 12,11 % | 12,24 % | [8,32; 15,66] | [7,96; 15,65] | [6,99; 15,59] | < 0,0002 | < 0,0002 | < 0,0002 |
 | S1: AIFS_00 → AIFS_06 | 1324 | 12,11 % | 12,03 % | 0,61 % | [-0,69; 1,84] | [-0,56; 1,57] | [-0,54; 1,44] | 0,3362 | 0,2846 | 0,2884 |
 | S2: IFS_06 → AIFS_06 | 1324 | 13,44 % | 12,03 % | 10,45 % | [6,50; 14,05] | [6,61; 13,77] | [6,68; 12,97] | < 0,0002 | < 0,0002 | < 0,0002 |
+
+### 6.2 bis. Escala en la ventana secundaria: extensión posterior al resultado
+
+**La ventana estaba preespecificada; este cálculo adicional de escala es posterior, solicitado al corregir el cierre.** Se reutilizan sus fechas y pares, sin modificar resultados.json ni el veredicto primario. Los IC de esta tabla son exploratorios, sin Holm; usan 10.000 réplicas y los mismos bloques y semilla que el método original.
+
+| Ventana y versiones | Contraste | N | Efecto con k=0,95 | IC95 L=7 | Cruce de k, posterior |
+|---|---|---:|---:|---:|---:|
+| Primaria, 110 días, versiones nuevas | H1 | 3664 | 0,44 % | [-0,58; 1,39] | 0,932 |
+| Primaria, 110 días, versiones nuevas | H2 | 3697 | -5,64 % | [-10,08; -1,33] | 0,975 |
+| Secundaria, 40 días, versiones anteriores | H1 | 1324 | 2,36 % | [-0,87; 4,89] | 0,821 |
+| Secundaria, 40 días, versiones anteriores | H2 | 1324 | 5,33 % | [0,73; 9,06] | 0,897 |
+
+En la secundaria los puntos de H1 y H2 permanecen positivos en los tres escenarios k=0,95; 1; 1,05. H1 sigue teniendo un intervalo que incluye cero con k=0,95. Por tanto, conservar el signo no equivale a demostrar robustez inferencial de ambas comparaciones.
+La inversión de H2 con k=0,95 se observa en la ventana primaria y no en la secundaria. Cambian simultáneamente periodo del año, duración y versiones de los modelos; no se puede atribuir esa diferencia solo al verano o solo a la versión. El veredicto congelado sobre la primaria se conserva.
+Los cruces se interpolan en una rejilla 0,80–1,10 de paso 0,0025, ampliada después de recibir la objeción para comprobar los valores alegados. Son descripciones posteriores, no valores estimados del error instrumental. Datos y controles: `datos/sensibilidad_secundaria_posterior.json`.
 
 ### 6.3 Estratos de la ventana primaria (efecto puntual e IC95 con bloques de 7 días; los tres largos están en resultados.json)
 
@@ -236,7 +255,7 @@ La decisión D2 del encargo prohíbe medir el sesgo absoluto del modelo, precisa
 - Ventana corta y sin invierno: 110 días de mayo a agosto de 2026 con una sola versión; la ventana secundaria (versión anterior, 40 días de primavera) se reporta aparte y no se mezcla. Nada aquí habla de otoño ni invierno.
 - El error del sensor se acepta como dato: no se valida ningún piranómetro (D1). Por eso solo se interpretan comparaciones relativas; MAE y sesgo por serie se listan como contexto y no son resultado.
 - La comparación de errores absolutos no es, en general, invariante a un factor común aplicado a la observación. La sensibilidad calculada documenta esa dependencia. Los residuos medios de §6.6 mezclan modelo, referencia y representatividad; su signo por sí solo no explica el signo de la diferencia de MAE.
-- **Alcance de los antecedentes sobre la referencia.** [Urraca et al. (2019)](https://doi.org/10.3390/s19112483) revisan problemas históricos de las redes españolas y citan un contraste anterior SiAR–AEMET con incertidumbres de aproximadamente ±15 % diaria y ±5 % anual. No son certificados de las estaciones de este estudio en 2026. La auditoría previa encontró diferencias SARAH-3 menos SiAR del +2,63 % al +15,75 % en seis estaciones durante otro periodo; solo AL10 y LU01 coinciden con las 34 actuales. Las diferencias entre productos, con representatividad espacial y errores propios, no estiman un k común de esta muestra ni la probabilidad de k = 0,95. Aquí ±5 % sigue siendo la hipótesis de sensibilidad fijada por D1; no se recalibra a partir de esos antecedentes.
+- Los antecedentes de escala histórica y de contraste entre redes se restituyen íntegramente en §7.1. No se usan para recalibrar k ni para cambiar el criterio congelado.
 - **La distribución del error instrumental no está identificada.** IFS_00 presenta una desviación entre estaciones de sus residuos medios relativos del 6,42 %; AIFS_00, del 6,19 %. Esa dispersión no es una medida del error de los sensores: un residuo compartido también puede proceder de errores comunes de los modelos o de la representatividad punto-celda. No permite aceptar ni rechazar la distribución de k_i del Monte Carlo. Su independencia y centrado son supuestos de sensibilidad.
 - **Tratamiento temporal del proveedor.** Se comparan las series horarias servidas por Open-Meteo. Compartir un procedimiento de interpolación dentro de un modelo no garantiza que sus efectos se cancelen entre ciclos en una comparación de MAE: depende de los campos de cada pasada y de la agregación. El archivo conservado no permite verificar la conservación del total diario frente a los campos nativos. No se cuantifica ni se atribuye a ese tratamiento la diferencia observada entre modelos.
 - La celda usada es la de 0,25° más próxima (`cell_selection=nearest`), que en costa puede ser marina; es la misma para las dos series de cada comparación, pero la representatividad punto-celda no se corrige.
@@ -247,17 +266,45 @@ La decisión D2 del encargo prohíbe medir el sesgo absoluto del modelo, precisa
 - Cinco pasadas no están en el archivo del proveedor (tabla de la sección 3); ningún ciclo se sustituye por otro y por eso N difiere entre comparaciones.
 - Por D4 no se investigan: la calibración de estaciones concretas, la causa de los días inválidos, la diferencia entre productos de referencia, ni la física de los errores.
 
+### 7.1 Antecedentes recuperados: escala histórica y contraste entre redes
+
+[Urraca et al. (2019)](https://doi.org/10.3390/s19112483) citan una comparación previa de fotodiodos SiAR con patrones secundarios AEMET a menos de 20 km: aproximadamente ±15 % de incertidumbre diaria y ±5 % anual, después de excluir defectos y fotodiodos dudosos. También describen, desde 2010, una desviación negativa de alrededor del **−1 % para la mayoría de los fotodiodos estudiados**. Es un contrapeso histórico relevante: k=0,95 es el borde inferior de la banda fijada, no su centro. Esos datos no estiman el k de estas 34 estaciones en 2026 ni convierten la banda anual en una distribución uniforme de errores para esta muestra.
+
+Como escenario descriptivo adicional, k=0,99 da efectos puntuales primarios de H1 1,35 % y H2 4,56 %. No se adopta k=0,99 como calibración ni como mejor estimación actual.
+
+La auditoría previa de referencias solicitó 25-feb-2025–12-sep-2026. En **546 fechas comunes** de Galicia encontró las siguientes diferencias SARAH-3 menos medida, expresadas como 100 × suma(SARAH-3 − medida)/suma(medida):
+
+| Estación | Red | Diferencia relativa |
+|---|---|---:|
+| A Capela | SiAR | 6,95 % |
+| Boimorto | SiAR | 8,62 % |
+| Castro de Rei | SiAR | 15,75 % |
+| Aldea Nova | MeteoGalicia | 1,38 % |
+| CIS Ferrol | MeteoGalicia | -1,96 % |
+
+Los contrastes emparejados de residuos `(SARAH-3 − medida)_A Capela − (SARAH-3 − medida)_vecina` también se conservan:
+
+| Pareja | Fechas comunes | Diferencia, kWh/m²/día | IC95 exploratorio |
+|---|---:|---:|---:|
+| A Capela − Aldea Nova | 548 | 0,219 | [0,127; 0,320] |
+| A Capela − CIS Ferrol | 548 | 0,365 | [0,236; 0,498] |
+
+Son 5.000 remuestreos en bloques de 30 días, conservando huecos. Los pares tienen 548 fechas cada uno; no deben confundirse con las 546 fechas comunes de las cinco estaciones. Aldea Nova y CIS Ferrol están a 14,2 y 16,7 km de A Capela; sus altitudes son 278 y 37 m, frente a 374 m de A Capela.
+La diferencia entre redes cuestiona una explicación basada únicamente en un desplazamiento uniforme del satélite. Aporta información sobre la referencia, pero no separa por sí sola sensor, error local del satélite, relieve, nubes y representatividad. No es un ensayo con instrumentos colocados juntos. Los promedios próximos a cero de MeteoGalicia incluyen compensaciones estacionales; en enero y febrero de 2026 las diferencias mensuales frente al satélite rondaban +8 % a +14 %.
+Solo AL10 y LU01 de aquella auditoría coinciden con la muestra actual. El contraste entre redes es un antecedente; **la evaluación de pronósticos frente a MeteoGalicia pertenece al encargo separado `evaluacion_meteogalicia`, que quedó incompleto. Nunca fue un contraste previsto dentro del encargo de 34 estaciones.**
+Se restituyen antecedentes ya existentes, sin nueva descarga ni recalibración. Fuentes completas y hashes en `datos/contexto_referencia_cierre.json` y `revision/antecedentes_referencia/`.
+
 ## 8. Reproducción
 
 - `metodo_fijado.json` SHA-256 `4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3`; `resultados.json` y `estaciones.json` los generan `code/analizar.py` y `code/preparar_observaciones.py` desde los recibos de `raw/`.
-- Esta revisión se entrega en `datos_y_analisis_portable.zip`, con respuestas y recibos originales, especificación congelada, motor numérico sin cambios, textos y figuras corregidos, manifiesto de integridad y `reproducir_offline.py`. La carpeta `revision/` identifica los cambios y conserva los resultados de la reproducción. El ZIP anterior se conserva intacto.
+- Esta revisión se entrega en `datos_y_analisis_portable_v1.0.1.zip`, con respuestas y recibos originales, especificación congelada, motor numérico sin cambios, textos y figuras corregidos, manifiesto de integridad y `reproducir_offline.py`. La carpeta `revision/` identifica los cambios y conserva los resultados de la reproducción. El ZIP anterior se conserva intacto.
 - Extraer el ZIP en una carpeta nueva y ejecutar `python reproducir_offline.py` desde su raíz (Python 3.12 y NumPy; matplotlib opcional para las figuras). El lanzador verifica el manifiesto y ejecuta en una copia local dentro de `reproduccion/`, con conexión de red bloqueada en el proceso. Compara todos los resultados numéricos y los huecos con los entregados; solo excluye marcas de generación. No escribe sobre los archivos entregados ni fuera de la carpeta extraída. Ver `LEEME.md`.
 - Los recibos de `raw/heredado/` son del 13 de septiembre porque son datos de los trabajos previos; el manifiesto que documenta su copia es del 14 a las 14:52 UTC, posterior a la congelación. Se usan solo en la sección 6.5.
 - Gasto contratado en datos y servicios durante todo el encargo: 0 €. No se han comprado datos ni usado claves de pago.
 
 ## Anexo A. Diagnóstico posterior (no preespecificado, no es resultado)
 
-Calculado el 2026-09-19T08:03:53 UTC, después de ver los resultados, para interpretar la sensibilidad al instrumento de la sección 5. No entra en las hipótesis, no se corrige por multiplicidad y no cambia ningún veredicto. Los intervalos usan el mismo bootstrap por días completos, semilla y largos de bloque que el análisis principal (10.000 réplicas; 2.000 para la mediana).
+Calculado el 2026-09-19T08:03:53 UTC, después de ver los resultados, para interpretar la sensibilidad de escala de la sección 5. No entra en las hipótesis, no se corrige por multiplicidad y no cambia ningún veredicto. Los intervalos usan el mismo bootstrap por días completos, semilla y largos de bloque que el análisis principal (10.000 réplicas; 2.000 para la mediana).
 
 **A.1 El mismo efecto medido de otras maneras** (efecto, IC95 con bloques de 7 días y p bilateral):
 
@@ -269,6 +316,21 @@ Calculado el 2026-09-19T08:03:53 UTC, después de ver los resultados, para inter
 | S2 | 6,34 % [3,47; 9,09] p=< 0,0002 | 5,86 % [2,97; 8,63] p=< 0,0002 | 6,97 % [3,93; 10,04] p=< 0,0002 | 0,51 % [-7,17; 6,99] p=0,9520 | 0,48 % [-2,99; 3,72] p=0,8026 |
 
 - **Centrar los residuos elimina un desplazamiento aditivo, no la sensibilidad multiplicativa.** Tras restar el residuo medio de cada serie y estación, H2 queda en 0,63 % [-2,96; 4,18] y H1 en 0,79 % [-0,96; 2,54] para k = 1. Estos intervalos incluyen cero; no prueban igualdad ni ausencia de habilidad. Para un factor k, el residuo centrado es (F − media(F)) − (O − media(O))/k, por lo que aún depende de k. El propio diagnóstico guardado da, para k = 0,95; 1; 1,05, H1 = 0,8545; 0,7912; 0,7582 % y H2 = 0,6988; 0,6308; 0,4570 %. El centrado usa toda la muestra de evaluación: no es una corrección predictiva validada fuera de muestra.
+
+**A.1 bis. Descomposición descriptiva del error cuadrático, restituida**
+
+Para cada serie y sus pares válidos se usa MSE = media(residuo)² + varianza(residuo), con media y varianza **globales**, agrupando estaciones y días (ddof=0). No es una descomposición aditiva del MAE ni la misma operación que centrar por estación en A.1. Unidades: (Wh/m²)².
+
+| Serie | MSE | Media global del residuo² | Varianza global del residuo |
+|---|---:|---:|---:|
+| IFS_00 | 672.350 | 135.118 | 537.232 |
+| IFS_06 | 650.194 | 125.154 | 525.040 |
+| AIFS_00 | 571.714 | 51.876 | 519.837 |
+| AIFS_06 | 562.753 | 51.654 | 511.099 |
+
+En IFS_00→AIFS_00, sobre los mismos 3.697 pares, la componente de media global al cuadrado baja un 61,6 % y la varianza global un 3,2 %. Son cifras del diagnóstico posterior original, ahora visibles de nuevo y verificadas contra el panel. No identifican qué parte corresponde al sensor o al modelo.
+El centrado por estación es invariante a desplazamientos aditivos constantes en cada estación. Los efectos centrados de H1 y H2, 0,79 % y 0,63 % con k=1, tienen intervalos que incluyen cero. Esa falta de significación no prueba equivalencia, no crea un componente causalmente identificable y no garantiza la misma inferencia para todo k. Los puntos centrados varían poco entre los tres k examinados, pero sí varían; los intervalos publicados son los de k=1.
+
 - Con la mediana del error absoluto, menos sensible a la magnitud de los extremos, H2 queda en 1,17 % [-5,48; 7,48] y H1 en 1,47 % [-1,43; 4,82].
 
 **A.2 El efecto en función de un factor de escala común k** (escenario de observación O/k; no estimación de k):

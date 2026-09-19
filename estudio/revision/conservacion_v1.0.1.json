@@ -1,0 +1,20 @@
+{
+  "version": "v1.0.1",
+  "base": "v1.0.0",
+  "numeros_originales_identicos": {
+    "outputs/resultados.json": true,
+    "outputs/panel_analisis.json": true,
+    "outputs/estaciones.json": true,
+    "datos/observaciones_diarias.json": true,
+    "datos/cobertura_observaciones.json": true,
+    "datos/diagnostico_posterior.json": true,
+    "metodo_fijado.json": true
+  },
+  "motores_originales_identicos": {
+    "metodo.py": true,
+    "analizar.py": true,
+    "preparar_observaciones.py": true,
+    "diagnostico_posterior.py": true
+  },
+  "estado": "PASS"
+}

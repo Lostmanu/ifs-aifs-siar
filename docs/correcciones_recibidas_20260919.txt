@@ -1,0 +1,69 @@
+Antes de opinar sobre el cierre tengo que mirar lo que hay en esa carpeta y comprobar que mi entrega sigue intacta. Es una entrega ajena y no la doy por buena sin leerla.
+
+Mis entregables están intactos: el hash del paquete coincide con el verificado. La carpeta nueva es separada. Leo qué dice esa revisión y qué cambió exactamente del informe.
+
+He leído la revisión entera y el diff. Antes de opinar, compruebo mecánicamente lo que afirma: que no cambió ningún número, que conservó lo anterior, y si el defecto de portabilidad que me atribuye es real.
+
+Confirmado lo esencial: **ningún número del análisis cambió**, las copias de datos son idénticas, y **el defecto de portabilidad que me atribuyen es real**. Mi `comun.py` calcula la carpeta de salida subiendo dos niveles, así que al extraer en una carpeta cualquiera escribiría fuera de ella; mi prueba pasó solo porque recreé la estructura exacta del proyecto. Lanzo la auditoría de la revisión.
+
+Te doy mi lectura ahora, y la auditoría la corrige o la confirma cuando termine.
+
+**Lo que la revisión hace bien, y me corrige.** Cuatro errores míos, reales:
+
+- Escribí que un sesgo compartido por los dos modelos es «por construcción, del lado de la observación». Es falso: dos pronósticos que sean la verdad más una constante tienen residuo común con un sensor perfecto.
+- Llamé a la métrica sin sesgo «la parte que el instrumento no puede mover». También falso: el residuo centrado sigue dependiendo de k, y mi propio fichero lo mostraba, de 0,70 % a 0,46 % para H2 entre k=0,95 y k=1,05.
+- Dije que para H1 la interpolación horaria «es idéntica en ambas series y se cancela». No lo es: son pasadas distintas con plazos distintos.
+- Y la portabilidad que di por arreglada no lo estaba. Mi código calcula la carpeta de salida subiendo dos niveles, así que al extraer en una carpeta cualquiera escribiría fuera de ella. Mi prueba pasó porque recreé la estructura exacta del proyecto, que es justo el sesgo que una prueba así debe evitar. Ese es el fallo que más me molesta de los cuatro.
+
+**Donde tengo una objeción.** Sacar del titular las discrepancias medidas contra satélite es defendible, porque eran seis estaciones de otro periodo y solo dos coinciden con las treinta y cuatro. Pero la revisión también retira el contraste con MeteoGalicia, y ese era el único dato que distinguía «SiAR mide bajo» de «el producto satelital mide alto»: las tres SiAR quedaban entre 6,95 % y 15,75 % por debajo de SARAH-3, y las dos de MeteoGalicia en +1,38 % y −1,96 %. Sin ese contraste, la banda del ±5 % vuelve a parecer una elección arbitraria en lugar de una posiblemente estrecha. También desaparece la descomposición del error cuadrático, que era descriptiva y verificada. Eso me parece pasarse de prudente.
+
+**Sobre el titular.** El suyo es más vago que el mío, pero también más consistente: yo lo llamaba «sensibilidad al instrumento» y dos frases después decía que ese eje no identifica el instrumento. Lo que sí es una desviación que debería declararse es el cambio de vocabulario respecto a la especificación congelada, que dice «robusto al instrumento».
+
+**Mi posición sobre cerrar.** Coincido en cerrar, pero no con la frase «mejora condicionada a SiAR» a secas. Lo que queda demostrado es más estrecho: hay una mejora medida contra SiAR que no sobrevive a uno de los tres escenarios de escala congelados, cuyo componente invariante a un desplazamiento aditivo no se distingue de cero, y cuyo eje de sensibilidad no separa el sensor del pronóstico. Esa última parte es el hallazgo transferible del proyecto y conviene que sobreviva al cierre.
+
+Y una corrección a tu resumen: la evaluación contra MeteoGalicia pertenece a otro encargo, el de `evaluacion_meteogalicia`, no a este. Este nunca la incluyó, así que su ausencia no es una pregunta original sin resolver de este estudio, sino un paquete distinto que quedó a medias.
+
+La auditoría cerró completa. Leo todos los hallazgos y el veredicto del crítico.
+
+El crítico encontró algo que nadie más miró y que cambia la lectura. Lo verifico yo antes de aceptarlo.
+
+Los números de la ventana secundaria se confirman exactamente. Ahora la cita de Urraca, que el crítico dice que la revisión trajo y no reportó.
+
+La fuente confirma la dirección y el ±15 % diario, pero tengo que comprobar el −1 % concreto antes de repetirlo.
+
+Verificado literalmente en la fuente que la propia revisión descargó, y cambia mi respuesta anterior. Me equivoqué en algo importante.
+
+## El número que yo no tenía
+
+El artículo de Urraca dice, en el mismo párrafo del ±15 %, algo que ni la revisión ni yo reportamos: *«most photodiodes still showed a negative deviation of around −1% compared to AEMET stations since 2010»*. Es la única estimación directa de escala del expediente: sensores SiAR contra patrones secundarios de AEMET a menos de 20 km. Dirección confirmada, k por debajo de 1, pero magnitud en torno al 1 %, no al 5 %.
+
+Eso deja mi marco anterior mal. Yo te dije que el mínimo medido rozaba el umbral y que k = 0,95 era el centro del rango plausible. No lo es: usaba diferencias contra satélite, que mezclan error del sensor, error del producto y representatividad, y son otra magnitud. La comparación directa contra patrón da cinco veces menos. Con k ≈ 0,99 las dos hipótesis siguen positivas: H2 cruza cero en 0,975 y H1 en 0,932. El ±5 % congelado coincide casi exactamente con la incertidumbre **anual** que da esa misma fuente, así que es una banda de incertidumbre razonable, pero k = 0,95 está en su borde, no en su centro.
+
+## Lo que nadie había calculado
+
+El análisis de escala nunca se corrió sobre la ventana secundaria, que sí estaba preespecificada. Lo he calculado desde el panel entregado:
+
+| Ventana | H1 con k=0,95 | H1 cruza en | H2 con k=0,95 | H2 cruza en |
+|---|---|---|---|---|
+| Primaria, 110 días | +0,44 % | 0,932 | **−5,64 %** | 0,975 |
+| Secundaria, 40 días | +2,36 % | 0,821 | **+5,33 %** | 0,897 |
+
+En la ventana secundaria, con las versiones anteriores de los dos modelos, ninguna de las dos hipótesis cambia de signo en toda la banda del ±5 %. El vuelco que sostiene el veredicto es específico del verano. No cambia el veredicto congelado, que se define sobre la primaria, pero sí cuánto debe pesar.
+
+## Lo que sigue en contra, y no se mueve con k
+
+Quitando a cada serie su desplazamiento medio por estación, lo que queda es 0,79 % para H1 y 0,63 % para H2, con intervalos que incluyen cero y p de 0,37 y 0,76. Esa parte apenas se mueve en toda la banda: para H2 va de 0,70 % a 0,46 %. Es decir, casi todo lo que separa a los dos modelos es un desplazamiento constante por estación, y lo que no lo es no se distingue de cero. Eso no depende de cuánto valga k, y es el hecho más duro del expediente. Se suma a que el eje k no separa el sensor del pronóstico.
+
+Así que sí, hay buenas noticias, y más de las que te di antes: el escenario que invierte H2 está a cinco veces la mejor estimación externa disponible, y en la otra ventana preespecificada no se invierte nada. Pero la mejora sigue siendo pequeña y su componente identificable sigue sin distinguirse de cero.
+
+## Sobre cerrar
+
+Estoy de acuerdo en cerrar. La auditoría independiente confirma que la revisión no tocó ningún número, que las copias de datos son idénticas, que mis entregables siguen intactos, y que el arreglo de portabilidad funciona de verdad en la ruta que se ejecuta. Los defectos que encontró en el paquete son menores y se declaran, no bloquean: el guardián solo intercepta la apertura de ficheros y no el borrado, queda una ruta heredada en un script fuera de la cadena, hay un límite de longitud de ruta de unos 141 caracteres, y el selector de estaciones conserva rutas absolutas a tu máquina.
+
+Antes de cerrar hay tres cosas de texto que sí cambiaría, todas para que el lector pueda juzgar por sí mismo:
+
+- **Restituir el −1 % de Urraca y el contraste con MeteoGalicia.** Sin el primero, el escenario k = 0,95 queda sin contrapeso y parece central cuando no lo es. Sin el segundo, se pierde lo único que distingue «SiAR mide bajo» de «el satélite mide alto»: las tres SiAR de Galicia quedaban entre 6,95 % y 15,75 % por debajo de SARAH-3 y las dos de MeteoGalicia en +1,38 % y −1,96 %, con contrastes emparejados cuyo intervalo excluye cero.
+- **Añadir la fila de la ventana secundaria.** Está preespecificada, el dato ya viaja en el paquete y es lo que más mueve la lectura del titular.
+- **Quitar la contradicción interna.** El informe revisado habla de «escenarios de escala» en el titular pero la sección 5 sigue titulando «Robustez al instrumento» y diciendo «un sensor que mide de menos». Y el cambio de vocabulario respecto a la especificación congelada, que dice «robusto al instrumento», no está en la lista de desviaciones.
+
+Son tres ediciones de texto sobre un informe que produjo Codex, no yo, y afectan al documento que te llevas. Dime si las aplico o si prefieres pasárselas a él.

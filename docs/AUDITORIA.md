@@ -7,3 +7,7 @@ Su alcance es una revisión del texto de cierre: declara que no tuvo acceso al i
 Antes de publicar se añadieron la fórmula exacta y sus pesos, el esquema de bloques contemporáneos, la familia Holm con sus seis filas de p-valores y una tabla que vincula las cifras de cierre con archivos y campos. Se conserva el método congelado. Los cruces de k siguen identificados como diagnósticos posteriores.
 
 [Trazabilidad y guía de inspección](TRAZABILIDAD.md) · [Decisión de cierre](../CIERRE.md)
+
+## Objeción posterior
+
+El usuario aportó una nueva revisión, conservada en [correcciones_recibidas_20260919.txt](correcciones_recibidas_20260919.txt). La respuesta comprobada y los matices están en [CORRECCION_v1.0.1.md](CORRECCION_v1.0.1.md). Esta corrección no confunde la ventana secundaria predefinida con una sensibilidad secundaria preespecificada.

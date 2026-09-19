@@ -1,6 +1,6 @@
 # Archivo histórico
 
-Los paquetes se conservan con sus bytes originales. Los nombres se prefijan para evitar colisiones. El paquete recomendado para reproducir el cierre es `datos_y_analisis_portable.zip`.
+Los paquetes se conservan con sus bytes originales. Los nombres se prefijan para evitar colisiones. Esta tabla conserva v1.0.0. El paquete recomendado tras la corrección es `datos_y_analisis_portable_v1.0.1.zip`, enlazado al final.
 
 [Descargar en la versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.0-cierre)
 
@@ -39,3 +39,7 @@ Se copian sin editar; las advertencias y conclusiones vigentes están en el cier
 - [revision_critica/respuesta_y_comprobaciones.md](historico/revision_critica/respuesta_y_comprobaciones.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
 - [revision_diseno/revision_del_diseno.md](historico/revision_diseno/revision_del_diseno.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
 - [validacion_calibracion/informe_validacion.md](historico/validacion_calibracion/informe_validacion.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
+
+## Corrección v1.0.1
+
+[Paquete corregido](https://github.com/Lostmanu/ifs-aifs-siar/releases/download/v1.0.1-cierre/datos_y_analisis_portable_v1.0.1.zip) — 114875018 bytes, SHA-256 `421d2af84c439009abee798f897e0c9a3f8dfe8bbe200be603c49948dde38795`. La versión v1.0.0 y sus 14 paquetes permanecen intactos.

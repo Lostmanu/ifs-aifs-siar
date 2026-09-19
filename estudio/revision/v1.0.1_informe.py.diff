@@ -1,0 +1,121 @@
+--- v1.0.0/informe.py
++++ v1.0.1/informe.py
+@@ -4,6 +4,7 @@
+ Uso: python informe.py [--resultados F] [--out F]
+ """
+ from comun import *
++from contexto_cierre import secundaria, antecedentes, descomposicion
+ from datetime import date, timedelta
+ import argparse
+ 
+@@ -60,9 +61,9 @@
+         L.append(f'**Las mejoras de las dos comparaciones primarias no superan todos los escenarios de sensibilidad de escala preespecificados, aunque las dos superan la corrección de multiplicidad con la observación tal cual; medido en {n_st} estaciones SiAR y {n_days} días objetivo de mayo a agosto de 2026, con una sola versión de cada modelo y sin invierno.**')
+     elif len(robustas) == 1:
+         otra = 'H2' if robustas[0] == 'H1' else 'H1'
+-        L.append(f'**{otra} no sobrevive al análisis de sensibilidad al instrumento; {robustas[0]} sí; medido en {n_st} estaciones SiAR y {n_days} días objetivo de mayo a agosto de 2026, sin invierno.**')
++        L.append(f'**{otra} no sobrevive al análisis de sensibilidad de escala; {robustas[0]} sí; medido en {n_st} estaciones SiAR y {n_days} días objetivo de mayo a agosto de 2026, sin invierno.**')
+     else:
+-        L.append(f'**Las dos hipótesis primarias sobreviven al análisis de sensibilidad al instrumento, en {n_st} estaciones SiAR y {n_days} días objetivo de mayo a agosto de 2026, sin invierno.**')
++        L.append(f'**Las dos hipótesis primarias sobreviven al análisis de sensibilidad de escala, en {n_st} estaciones SiAR y {n_days} días objetivo de mayo a agosto de 2026, sin invierno.**')
+     L.append('Con la observación tal cual, del 14 de mayo al 31 de agosto de 2026:')
+     v1 = 'reduce' if (e1['efecto'] or 0) > 0 else 'aumenta'
+     L.append(f'actualizar IFS del ciclo 00 al 06 UTC {v1} el MAE un {f(abs(e1["efecto"]))} % (IC95 con bloques de 7 días {ic(e1)}, {"supera" if apoy["H1"] else "no supera"} Holm) y AIFS mejora a IFS a igual ciclo un {f(e2["efecto"])} % ({ic(e2)}, {"supera" if apoy["H2"] else "no supera"} Holm).')
+@@ -73,6 +74,7 @@
+     s1 = {k: mc[k]['supervivencia_nivel1_signo'] for k in ('H1', 'H2')}
+     L.append(f'Con errores independientes de ±5 % por estación (el Monte Carlo preespecificado) el signo sobrevive en el {f(100 * s1["H1"], 1)} % y el {f(100 * s1["H2"], 1)} % de los 1.000 sorteos, bajo una hipótesis de factores independientes y centrados en 1 que no incluye un desplazamiento común de red.')
+     L.append('Y ese eje no está identificado: dividir la observación por k es algebraicamente idéntico a multiplicar los cuatro pronósticos por k, de modo que estos datos no distinguen un sensor que mide de menos de unos pronósticos que vienen altos.')
++    L.append('La inversión de H2 no aparece en el escenario k=0,95 de la ventana secundaria: sus efectos puntuales son H1 +2,36 % y H2 +5,33 %. Esa extensión de escala es posterior; cambia la lectura entre ventanas, no el veredicto primario. La diferencia de periodo y versiones impide atribuirla solo a la estación del año. Véanse §6.2 bis y los antecedentes restituidos en §7.1.')
+     return ' '.join(L)
+ 
+ 
+@@ -116,6 +118,7 @@
+               'la redacción del titular de §1; el párrafo sobre el alcance del Monte Carlo de §5; la tabla de pasadas ausentes de §3; las desviaciones declaradas de §2; las viñetas de §7 sobre las magnitudes medidas de la discrepancia, sobre la dispersión del sesgo por estación, sobre la identificación del eje k y la corrección sobre la interpolación horaria; '
+               'y las dos figuras, que añaden la línea y el panel del análisis determinista. El veredicto de §1 lo produce la regla congelada de sensibilidad, no la redacción.\n') if dg else '')
+     L.append('Revisión de cierre del 19-09-2026: se corrigen atribuciones causales, el alcance del centrado y las rutas de reproducción. No cambian datos, selección, método congelado ni resultados numéricos; el informe original queda conservado. Ver revision/cambios.json.\n')
++    L.append('Corrección v1.0.1: se restituye contexto omitido y se declara el cambio de vocabulario. Los cálculos preespecificados permanecen intactos. Las nuevas comprobaciones de escala secundaria están separadas en datos/sensibilidad_secundaria_posterior.json.\n')
+     L.append('## 1. Resultado en una frase\n')
+     L.append(titular(res, sp, dg) + '\n')
+ 
+@@ -124,7 +127,7 @@
+     L.append(f'- Selección de estaciones por regla: rejilla 1,5°×1,5° (centros de latitud {sp["estaciones"]["rejilla"]["celdas_lat"]} y longitud {sp["estaciones"]["rejilla"]["celdas_lon"]}), la estación activa más próxima al centro de cada celda con estación ({sp["estaciones"]["rejilla"]["celdas_con_estacion"]} celdas), más la primera de Canarias por orden alfabético. Catálogo SiAR del 2026-09-14 07:41 UTC (SHA-256 `{sp["estaciones"]["catalogo"]["sha256"]}`), 520 estaciones activas, heredado de un trabajo previo del mismo día y anterior a la congelación. Ninguna sustitución tras ver datos; exclusión solo por < 80 % de días válidos en la ventana primaria.')
+     L.append('- Hipótesis primarias: H1, reducción de MAE de IFS_00 → IFS_06 > 0; H2, reducción de MAE de IFS_00 → AIFS_00 > 0. Corrección de Holm-Bonferroni (α = 0,05) sobre los dos p bootstrap bilaterales. Secundarias exploratorias: AIFS_00 → AIFS_06, IFS_06 → AIFS_06, la ventana secundaria y la restricción 06-18 UTC.')
+     L.append('- Ventanas definidas por la hora de inicialización de las pasadas, no por el día objetivo: el cambio de versión (IFS 50r1 y AIFS Single v2) ocurre en la pasada del 2026-05-12 06 UTC; la primaria son los días objetivo del 14 de mayo al 31 de agosto (110 días, todas las pasadas de la versión nueva) y la secundaria del 3 de abril al 12 de mayo (versión anterior; el archivo de Open-Meteo empieza el 2 de abril de 2026). El 13 de mayo es mixto y se excluye. El encargo escribía 12 de mayo–31 de agosto; se corrigió antes de descargar (C1 de la especificación).')
+-    L.append('- Bootstrap por días completos (todas las estaciones de cada día remuestreado), bloques circulares de 1, 7 y 14 días, 10.000 réplicas, semilla 20260914. Sensibilidad al instrumento: k ∈ {0,95; 1,00; 1,05} global y 1.000 sorteos de k_i ~ U(0,95; 1,05) por estación, semilla 20260915.')
++    L.append('- Bootstrap por días completos (todas las estaciones de cada día remuestreado), bloques circulares de 1, 7 y 14 días, 10.000 réplicas, semilla 20260914. Sensibilidad de escala: k ∈ {0,95; 1,00; 1,05} global y 1.000 sorteos de k_i ~ U(0,95; 1,05) por estación, semilla 20260915.')
+     L.append('- Métrica: error relativo r = (pronóstico − observación)/media de la observación de la estación; MAE_rel = media de |r|; efecto = (MAE_A − MAE_B)/MAE_A × 100 sobre los mismos estación-días (pares completos por comparación).')
+     L.append('')
+     L.append('**Desviaciones respecto a la especificación congelada, y exposición previa a los datos:**\n')
+@@ -132,6 +135,7 @@
+     L.append('- *Exposición previa.* Dos de las 34 estaciones, AL10 y LU01, aparecen en la auditoría de vecinas del 14 de septiembre y sus semihorarios del 16 de junio al 31 de julio ya se habían descargado antes de la congelación; son 92 de los 3.731 estación-días observacionales de la ventana primaria (2,5 %). Las estaciones del piloto y de la réplica anteriores (AL01, C01, M01) no están entre las 34 salvo por la sección 6.5, que las usa explícitamente. La regla de rejilla se fijó y se aplicó sin sustituciones, pero el resultado del piloto (una mejora del orden del 8 % al actualizar el ciclo) era conocido al redactar las hipótesis.')
+     L.append('- *Recuento por celda.* El programa de selección aplica «estación activa de huso 30 más próxima al centro», pero no implementa el filtro C5 (excluir nombres con «Invernadero» o «(malla)»). El recuento publicado de estaciones dentro de la celda (39,0, 0,0) es 33 e incluye una estación inelegible; bajo C5 serían 32. La estación seleccionada no cambia en ninguna celda, ni la canaria.')
+     L.append(f'- *Anexo A.* Las métricas alternativas, el LOSO, la curva frente a k y la comparación de sorteos del anexo A no están en la especificación congelada; se calcularon el {dg["generado_utc"][:10] if dg else "n/d"}, después de ver los resultados, y no entran en las hipótesis ni en Holm.')
++    L.append('- *Cambio de vocabulario posterior al resultado (v1.0.1).* La especificación denomina el criterio «robusto al instrumento»; el informe usa «robustez frente a escenarios de escala» porque k no identifica el instrumento. Se conservan la fórmula, los tres k, la regla de decisión y la clave JSON robusto_al_instrumento, sin reescribir el método congelado. La extensión de escala a la ventana secundaria y su rejilla ampliada de cruces se calculan después de los resultados y se identifican como exploratorias. Se restituyen además antecedentes bibliográficos, el contraste con MeteoGalicia y la descomposición del MSE, sin nuevos datos.\n')
+     L.append('- *Figuras.* La especificación fija `figura_principal` como «efecto por estación con intervalo L = 7 y el efecto agregado» y `figura_sensibilidad` como «histograma del efecto de H1 y H2 en los 1.000 sorteos». Las dos añaden el análisis determinista: la primera, la línea del agregado con k = 0,95; la segunda, las marcas de k = 0,95 y k = 1,05 y un panel con la curva del efecto frente a k. Son adiciones posteriores al cálculo y no cambian ninguna cifra.\n')
+ 
+     L.append('## 3. Muestra\n')
+@@ -172,8 +176,8 @@
+         L.append(f'| {Lb} {"día" if Lb == "1" else "días"} | {pval(h["H1"]["p_ajustado"])} | {"sí" if h["H1"]["apoyada"] else "no"} | {pval(h["H2"]["p_ajustado"])} | {"sí" if h["H2"]["apoyada"] else "no"} |')
+     L.append('\n![Efecto por estación](figura_principal.png)\n')
+ 
+-    L.append('## 5. Robustez al instrumento\n')
+-    L.append('Esta es la sección que decide el titular. El modelo es observación medida = k × observación real; el análisis divide la observación por k, de modo que k < 1 representa un sensor que mide de menos.\n')
++    L.append('## 5. Robustez frente a escenarios de escala\n')
++    L.append('Esta sección aplica el criterio congelado a la ventana primaria. Se evalúa O/k: k < 1 aumenta la observación usada para puntuar. Es un escenario de escala, no una afirmación sobre el sensor ni una estimación de k.\n')
+     if dg and dg.get('identificacion_del_eje_k'):
+         idt = dg['identificacion_del_eje_k']
+         L.append(f'**Qué mide en realidad el eje k, y qué no.** Como el error relativo es |pronóstico − observación/k| dividido por la media de observación/k, el factor sale fuera y la expresión equivale a |k × pronóstico − observación| dividido por la media de la observación. Es decir, dividir la observación por k es *algebraicamente idéntico* a multiplicar los cuatro pronósticos por k: comprobado numéricamente en las cuatro comparaciones y en k ∈ {{0,95; 1,00; 1,05}}, con diferencia máxima {idt["diferencia_maxima"]:.1e}. Este análisis mide, pues, la sensibilidad a un factor multiplicativo común entre pronóstico y observación, y **no distingue un sensor que mide de menos de unos pronósticos que vienen altos** (sin identificar su origen). Ni este cálculo ni las comparaciones con otras referencias citadas en §7 identifican la causa en las 34 estaciones y el periodo evaluado. Esta comprobación es posterior al cálculo (anexo A).\n')
+@@ -193,7 +197,7 @@
+     if dg:
+         kk = dg['k_comun_vs_independiente']
+         L.append('**El Monte Carlo y el escenario común responden a preguntas distintas.** El sorteo preespecificado asigna factores independientes k_i ~ U(0,95; 1,05) a las 34 estaciones. La media de esos factores se concentra alrededor de 1 (desviación 0,0049, frente a 0,0288 para el factor común del diagnóstico posterior). Eso no convierte el efecto sobre el MAE en una función de la media: intervienen los 34 factores, sus pesos y los errores diarios. La supervivencia del signo es del 100 % en ese Monte Carlo; la supervivencia del signo y del intervalo es la que figura en la tabla. El contraste posterior con un único k aleatorio invierte el signo de H2 en el 25,8 % de los sorteos y el de H1 en el 0,0 %. Son probabilidades condicionadas a leyes de simulación, no probabilidades de error real de la red. El criterio determinista de tres valores de k estaba congelado y sigue siendo el que decide el veredicto.\n')
+-    L.append('![Sensibilidad al instrumento](figura_sensibilidad.png)\n')
++    L.append('![Sensibilidad de escala](figura_sensibilidad.png)\n')
+ 
+     L.append('## 6. Secundarias y estratos (exploratorio, sin corrección)\n')
+     L.append('### 6.1 Comparaciones secundarias, ventana primaria\n')
+@@ -205,6 +209,7 @@
+         L.append(tabla_comparacion(sec['comparaciones']) + '\n')
+     else:
+         L.append(f'{sec}\n')
++    L.append(secundaria())
+     L.append('### 6.3 Estratos de la ventana primaria (efecto puntual e IC95 con bloques de 7 días; los tres largos están en resultados.json)\n')
+     L.append('| Estrato | N (H1) | H1 efecto | H1 IC95 L7 | H2 efecto | H2 IC95 L7 | S1 efecto | S2 efecto |\n|---|---:|---:|---:|---:|---:|---:|---:|')
+     for name, v in pr['estratos'].items():
+@@ -245,7 +250,7 @@
+     L.append('- La comparación de errores absolutos no es, en general, invariante a un factor común aplicado a la observación. La sensibilidad calculada documenta esa dependencia. Los residuos medios de §6.6 mezclan modelo, referencia y representatividad; su signo por sí solo no explica el signo de la diferencia de MAE.')
+     if dg:
+         d2 = dg['cruce_k_comun']['H2']['discrepancia_equivalente_pct']; d1 = dg['cruce_k_comun']['H1']['discrepancia_equivalente_pct']
+-        L.append('- **Alcance de los antecedentes sobre la referencia.** [Urraca et al. (2019)](https://doi.org/10.3390/s19112483) revisan problemas históricos de las redes españolas y citan un contraste anterior SiAR–AEMET con incertidumbres de aproximadamente ±15 % diaria y ±5 % anual. No son certificados de las estaciones de este estudio en 2026. La auditoría previa encontró diferencias SARAH-3 menos SiAR del +2,63 % al +15,75 % en seis estaciones durante otro periodo; solo AL10 y LU01 coinciden con las 34 actuales. Las diferencias entre productos, con representatividad espacial y errores propios, no estiman un k común de esta muestra ni la probabilidad de k = 0,95. Aquí ±5 % sigue siendo la hipótesis de sensibilidad fijada por D1; no se recalibra a partir de esos antecedentes.')
++        L.append('- Los antecedentes de escala histórica y de contraste entre redes se restituyen íntegramente en §7.1. No se usan para recalibrar k ni para cambiar el criterio congelado.')
+     if dg:
+         se = dg['sesgo_por_estacion']['IFS_00']
+         L.append('- **La distribución del error instrumental no está identificada.** IFS_00 presenta una desviación entre estaciones de sus residuos medios relativos del 6,42 %; AIFS_00, del 6,19 %. Esa dispersión no es una medida del error de los sensores: un residuo compartido también puede proceder de errores comunes de los modelos o de la representatividad punto-celda. No permite aceptar ni rechazar la distribución de k_i del Monte Carlo. Su independencia y centrado son supuestos de sensibilidad.')
+@@ -258,9 +263,10 @@
+     L.append(f'- Cinco pasadas no están en el archivo del proveedor (tabla de la sección 3); ningún ciclo se sustituye por otro y por eso N difiere entre comparaciones.')
+     L.append('- Por D4 no se investigan: la calibración de estaciones concretas, la causa de los días inválidos, la diferencia entre productos de referencia, ni la física de los errores.\n')
+ 
++    L.append(antecedentes())
+     L.append('## 8. Reproducción\n')
+     L.append(f'- `metodo_fijado.json` SHA-256 `{rec["sha256"]}`; `resultados.json` y `estaciones.json` los generan `code/analizar.py` y `code/preparar_observaciones.py` desde los recibos de `raw/`.')
+-    L.append('- Esta revisión se entrega en `datos_y_analisis_portable.zip`, con respuestas y recibos originales, especificación congelada, motor numérico sin cambios, textos y figuras corregidos, manifiesto de integridad y `reproducir_offline.py`. La carpeta `revision/` identifica los cambios y conserva los resultados de la reproducción. El ZIP anterior se conserva intacto.')
++    L.append('- Esta revisión se entrega en `datos_y_analisis_portable_v1.0.1.zip`, con respuestas y recibos originales, especificación congelada, motor numérico sin cambios, textos y figuras corregidos, manifiesto de integridad y `reproducir_offline.py`. La carpeta `revision/` identifica los cambios y conserva los resultados de la reproducción. El ZIP anterior se conserva intacto.')
+     L.append('- Extraer el ZIP en una carpeta nueva y ejecutar `python reproducir_offline.py` desde su raíz (Python 3.12 y NumPy; matplotlib opcional para las figuras). El lanzador verifica el manifiesto y ejecuta en una copia local dentro de `reproduccion/`, con conexión de red bloqueada en el proceso. Compara todos los resultados numéricos y los huecos con los entregados; solo excluye marcas de generación. No escribe sobre los archivos entregados ni fuera de la carpeta extraída. Ver `LEEME.md`.')
+     L.append('- Los recibos de `raw/heredado/` son del 13 de septiembre porque son datos de los trabajos previos; el manifiesto que documenta su copia es del 14 a las 14:52 UTC, posterior a la congelación. Se usan solo en la sección 6.5.')
+     L.append('- Gasto contratado en datos y servicios durante todo el encargo: 0 €. No se han comprado datos ni usado claves de pago.\n')
+@@ -268,7 +274,7 @@
+     if dg:
+         L.append('## Anexo A. Diagnóstico posterior (no preespecificado, no es resultado)\n')
+         nrep = f'{dg["replicas_bootstrap"]:,}'.replace(',', '.'); nmed = f'{dg["replicas_mediana"]:,}'.replace(',', '.')
+-        L.append(f'Calculado el {dg["generado_utc"][:19]} UTC, después de ver los resultados, para interpretar la sensibilidad al instrumento de la sección 5. No entra en las hipótesis, no se corrige por multiplicidad y no cambia ningún veredicto. Los intervalos usan el mismo bootstrap por días completos, semilla y largos de bloque que el análisis principal ({nrep} réplicas; {nmed} para la mediana).\n')
++        L.append(f'Calculado el {dg["generado_utc"][:19]} UTC, después de ver los resultados, para interpretar la sensibilidad de escala de la sección 5. No entra en las hipótesis, no se corrige por multiplicidad y no cambia ningún veredicto. Los intervalos usan el mismo bootstrap por días completos, semilla y largos de bloque que el análisis principal ({nrep} réplicas; {nmed} para la mediana).\n')
+         L.append('**A.1 El mismo efecto medido de otras maneras** (efecto, IC95 con bloques de 7 días y p bilateral):\n')
+         L.append('| Comparación | MAE relativo (oficial) | MAE absoluto | RMSE | Mediana del error absoluto | MAE relativo con el sesgo de cada serie restado por estación |\n|---|---|---|---|---|---|')
+         for c in ('H1', 'H2', 'S1', 'S2'):
+@@ -279,6 +285,7 @@
+         sd = dg['sesgo_dispersion']
+         ma = dg['metricas_alternativas']
+         L.append('- **Centrar los residuos elimina un desplazamiento aditivo, no la sensibilidad multiplicativa.** Tras restar el residuo medio de cada serie y estación, H2 queda en 0,63 % [-2,96; 4,18] y H1 en 0,79 % [-0,96; 2,54] para k = 1. Estos intervalos incluyen cero; no prueban igualdad ni ausencia de habilidad. Para un factor k, el residuo centrado es (F − media(F)) − (O − media(O))/k, por lo que aún depende de k. El propio diagnóstico guardado da, para k = 0,95; 1; 1,05, H1 = 0,8545; 0,7912; 0,7582 % y H2 = 0,6988; 0,6308; 0,4570 %. El centrado usa toda la muestra de evaluación: no es una corrección predictiva validada fuera de muestra.')
++        L.append(descomposicion(dg))
+         L.append(f'- Con la mediana del error absoluto, menos sensible a la magnitud de los extremos, H2 queda en {f(ma["H2"]["7"]["mediana_abs"]["efecto"])} % {ic(ma["H2"]["7"]["mediana_abs"])} y H1 en {f(ma["H1"]["7"]["mediana_abs"]["efecto"])} % {ic(ma["H1"]["7"]["mediana_abs"])}.')
+         cr = dg['cruce_k_comun']; kc = dg['k_comun_vs_independiente']
+         L.append('')

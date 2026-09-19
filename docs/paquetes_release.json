@@ -85,5 +85,12 @@
       "bytes": 1775953,
       "sha256": "4b8bf3fb675df27d2a3a341a8d354a5f00c2ed5c40fffacc9e6d7fa9359caea0"
     }
-  ]
+  ],
+  "correccion_v1.0.1": {
+    "release": "https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.1-cierre",
+    "archivo": "datos_y_analisis_portable_v1.0.1.zip",
+    "sha256": "421d2af84c439009abee798f897e0c9a3f8dfe8bbe200be603c49948dde38795",
+    "bytes": 114875018,
+    "entradas": 3050
+  }
 }

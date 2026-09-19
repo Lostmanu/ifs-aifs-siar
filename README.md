@@ -9,7 +9,7 @@ En 34 estaciones SiAR y 110 días entre el 14 de mayo y el 31 de agosto de 2026,
 | IFS 00 → IFS 06 UTC | 3.664 | 1,47 % | [0,69; 2,26] | 0,44 %; IC95 [−0,58; 1,39] |
 | IFS 00 → AIFS 00 UTC | 3.697 | 7,57 % | [4,60; 10,48] | −5,64 %; IC95 [−10,08; −1,33] |
 
-Los ciclos corresponden al día anterior al día objetivo. La referencia, la muestra estacional, el producto servido y la sensibilidad de escala condicionan la conclusión. No se identifican errores de sensores, habilidad libre de error observacional, disponibilidad operacional, ahorro o rentabilidad. La evaluación frente a MeteoGalicia quedó incompleta; se conserva como antecedente.
+Los ciclos corresponden al día anterior al día objetivo. La referencia, la muestra estacional, el producto servido y la sensibilidad de escala condicionan la conclusión. No se identifican errores de sensores, habilidad libre de error observacional, disponibilidad operacional, ahorro o rentabilidad. La evaluación de pronósticos frente a MeteoGalicia pertenece a otro encargo (`evaluacion_meteogalicia`), que quedó incompleto; nunca estuvo incluida en este estudio de 34 estaciones.
 
 ## Leer y comprobar
 
@@ -26,22 +26,28 @@ Los ciclos corresponden al día anterior al día objetivo. La referencia, la mue
 
 Python 3.12.14 y NumPy 2.3.5 fueron el entorno verificado. Instale NumPy antes de desconectar. Las figuras PNG ya están incluidas; matplotlib es opcional si quiere regenerarlas.
 
-Descargue `datos_y_analisis_portable.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.0-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
+Descargue `datos_y_analisis_portable_v1.0.1.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.1-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
 
 Con GitHub CLI autenticado en este repositorio privado:
 
 ```powershell
-gh release download v1.0.0-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable.zip --dir descarga
-Get-FileHash descarga/datos_y_analisis_portable.zip -Algorithm SHA256
-Expand-Archive descarga/datos_y_analisis_portable.zip -DestinationPath reproduccion_cierre
+gh release download v1.0.1-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable_v1.0.1.zip --dir descarga
+Get-FileHash descarga/datos_y_analisis_portable_v1.0.1.zip -Algorithm SHA256
+Expand-Archive descarga/datos_y_analisis_portable_v1.0.1.zip -DestinationPath reproduccion_cierre
 python -m pip install -r requirements.txt
 python reproduccion_cierre/reproducir_offline.py
 ```
 
-SHA-256 esperado del ZIP: `7c08d8ce4748beda42412b82719a2cfa7132f08b17c50cc331c56393fb15f930`.
+SHA-256 esperado del ZIP: `421d2af84c439009abee798f897e0c9a3f8dfe8bbe200be603c49948dde38795`.
 
-El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carpeta extraída. Bloquea conexiones del proceso, reconstruye las salidas y compara números, estructura y huecos; excluye tres marcas de generación. El registro verificado empleó aproximadamente un minuto de cálculo, aunque el tiempo depende del equipo. Consulte el [LEEME del paquete](estudio/LEEME.md).
+El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carpeta extraída. Bloquea conexiones del proceso, reconstruye las salidas y compara números, estructura y huecos; excluye cuatro marcas de generación al comparar los siete archivos de v1.0.1. El registro verificado empleó aproximadamente un minuto de cálculo, aunque el tiempo depende del equipo. Consulte el [LEEME del paquete](estudio/LEEME.md).
 
 ## Fuentes y conservación
 
 Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las URL, fechas de recuperación y hashes originales. La distribución de datos mantiene las condiciones de sus fuentes; esta publicación no les asigna una nueva licencia. El repositorio es privado y conserva un trabajo de investigación, sin servicio desplegado ni nueva fase experimental.
+
+## Corrección v1.0.1
+
+Se restituyen el contexto histórico de Urraca, el contraste con MeteoGalicia y la descomposición descriptiva del MSE. El escenario k=0,95 conserva puntos positivos en la ventana secundaria: H1 +2,36 % y H2 +5,33 %; el intervalo de H1 incluye cero. Esta extensión de escala es posterior al resultado y no cambia el veredicto primario. El cambio de vocabulario respecto al método congelado queda declarado. [Detalle y límites de la corrección](docs/CORRECCION_v1.0.1.md).
+
+Verificación v1.0.1: **61.383 valores numéricos**. diferencia máxima 0.0. [Registro](estudio/outputs/verificacion_v1.0.1.json). Los 60.602 valores de la entrega anterior se conservan; la diferencia de recuento es el archivo de diagnóstico añadido.

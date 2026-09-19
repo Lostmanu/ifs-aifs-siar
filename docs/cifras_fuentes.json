@@ -256,5 +256,63 @@
       "efecto": 7.570369778548527,
       "apoyada": true
     }
+  },
+  {
+    "cifra": "H1: secundaria posterior, k=0,95, efecto",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H1/por_k/0.95/7/efecto",
+    "valor": 2.356392210123161
+  },
+  {
+    "cifra": "H1: secundaria posterior, k=0,95, ic95",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H1/por_k/0.95/7/ic95",
+    "valor": [
+      -0.8683950124895065,
+      4.891640704829272
+    ]
+  },
+  {
+    "cifra": "H1: secundaria posterior, k=0,95, p",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H1/por_k/0.95/7/p",
+    "valor": 0.1376
+  },
+  {
+    "cifra": "H1: cruce secundario posterior",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H1/cruces",
+    "valor": [
+      0.8207094292032306
+    ]
+  },
+  {
+    "cifra": "H2: secundaria posterior, k=0,95, efecto",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H2/por_k/0.95/7/efecto",
+    "valor": 5.329600922084294
+  },
+  {
+    "cifra": "H2: secundaria posterior, k=0,95, ic95",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H2/por_k/0.95/7/ic95",
+    "valor": [
+      0.7282021556344377,
+      9.057017072904983
+    ]
+  },
+  {
+    "cifra": "H2: secundaria posterior, k=0,95, p",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H2/por_k/0.95/7/p",
+    "valor": 0.0256
+  },
+  {
+    "cifra": "H2: cruce secundario posterior",
+    "archivo": "estudio/datos/sensibilidad_secundaria_posterior.json",
+    "json_pointer": "/ventanas/secundaria/comparaciones/H2/cruces",
+    "valor": [
+      0.8966557677401086
+    ]
   }
 ]

@@ -65,7 +65,7 @@ def main():
     r = {'inicio_utc': datetime.now(timezone.utc).isoformat(), 'python': sys.version, 'numpy': np.__version__,
          'manifest_archivos': len(manifest['files']), 'carpeta': str(run), 'pasos': [], 'comparaciones': {},
          'control_red': 'audit hook del proceso; no cortafuegos del sistema'}
-    names = ['test_metodo.py', 'preparar_observaciones.py', 'analizar.py', 'diagnostico_posterior.py', 'verificar.py', 'informe.py']
+    names = ['test_metodo.py', 'preparar_observaciones.py', 'analizar.py', 'diagnostico_posterior.py', 'sensibilidad_secundaria_posterior.py', 'verificar.py', 'informe.py']
     if args.figuras: names.append('figuras.py')
     for name in names:
         start = time.monotonic(); print('Ejecutando', name, flush=True)
@@ -75,7 +75,7 @@ def main():
             if e.code not in (None, 0): raise
         r['pasos'].append({'script': name, 'segundos': time.monotonic()-start})
     for name in ['outputs/resultados.json', 'outputs/estaciones.json', 'outputs/panel_analisis.json',
-                 'datos/observaciones_diarias.json', 'datos/cobertura_observaciones.json', 'datos/diagnostico_posterior.json']:
+                 'datos/observaciones_diarias.json', 'datos/cobertura_observaciones.json', 'datos/diagnostico_posterior.json', 'datos/sensibilidad_secundaria_posterior.json']:
         r['comparaciones'][name] = comparison(load(BASE / name), load(run / name))
     r['intentos_red_o_subprocesos_bloqueados'] = blocked
     r['verificacion_decimal_y_recibos'] = load(run / 'outputs/verificacion.json')['estado']

@@ -90,7 +90,7 @@ def sensibilidad(res, dg, outdir):
     ax.set_title('Efecto frente al factor común k (diagnóstico posterior; no estima el k real)', loc='left', fontsize=10, fontweight='bold')
     ax.grid(alpha=0.2); ax.set_axisbelow(True)
     ax.legend(fontsize=8, frameon=False, loc='upper left')
-    fig.suptitle('Sensibilidad de escala: factores independientes y escenarios con un factor común', x=0.01, ha='left', fontsize=12, fontweight='bold')
+    fig.suptitle('Sensibilidad de escala en la ventana primaria (14 mayo–31 agosto 2026)', x=0.01, ha='left', fontsize=12, fontweight='bold')
     fig.text(0.01, 0.005, 'Arriba, el Monte Carlo preespecificado sortea un factor independiente en cada estación: sus efectos se muestran bajo esa hipótesis de independencia.\nLas líneas punteadas son el análisis determinista con un mismo factor en toda la red, que invierte H2. Abajo, el efecto en función de ese factor común. Dividir la observación por k\nes algebraicamente idéntico a multiplicar los pronósticos por k: el eje no distingue el sensor del pronóstico (§5).', fontsize=8, va='bottom')
     fig.tight_layout(rect=[0, 0.045, 1, 0.95])
     fig.savefig(Path(outdir) / 'figura_sensibilidad.png', dpi=160)
