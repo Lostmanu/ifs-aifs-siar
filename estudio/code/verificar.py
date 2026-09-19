@@ -23,6 +23,16 @@ def h0(lat_deg, d):
     return (24 * 60 / math.pi) * 0.0820 * dr * (ws * math.sin(phi) * math.sin(delta) + math.cos(phi) * math.cos(delta) * math.sin(ws))
 
 
+def exige_raw():
+    """Los cuerpos originales solo viajan en el paquete de la release, no en el arbol de Git."""
+    if not (RAW / 'siar').is_dir() or not any((RAW / 'siar').iterdir()):
+        raise SystemExit(
+            'ERROR: faltan los cuerpos originales de raw/siar.\n'
+            'Este programa no puede ejecutarse desde un clon de Git: el arbol publicado no\n'
+            'incluye las respuestas originales. Descargue el paquete portable de la release y\n'
+            'ejecute reproducir_offline.py desde su raiz.')
+
+
 def obs_decimal(sp):
     """Observaciones válidas desde los derived.json crudos: dict codigo -> {fecha: Decimal Wh/m²}."""
     out = {}
@@ -120,6 +130,7 @@ def main():
     ap.add_argument('--state', default=str(STATE / 'descarga_pronosticos.json'))
     ap.add_argument('--out', default=str(OUT / 'verificacion.json'))
     args = ap.parse_args()
+    exige_raw()
     sp = spec()
     res = load(args.resultados)
     state = load(args.state)
