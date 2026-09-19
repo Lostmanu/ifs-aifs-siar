@@ -1,6 +1,8 @@
-# Medición a escala: paquete portable revisado el 19-09-2026 — corrección v1.0.1
+# Medición a escala: paquete portable revisado el 19-09-2026 — corrección v1.0.2
 
 34 estaciones SiAR; 14 de mayo–31 de agosto de 2026. Las cifras científicas y la especificación congelada se conservan. Se corrigen interpretaciones y rutas. Leer `outputs/informe.md` y `revision/informe_revision.md`.
+
+**v1.0.2 corrige un fallo de reproducibilidad en Linux y macOS.** Hasta v1.0.1, el manifiesto de datos heredados guardaba las rutas con el separador de Windows. En un sistema POSIX la barra invertida no separa directorios, así que la sección 6.5 del informe, el enlace 06-18 UTC, no se podía reconstruir y quedaba como un error dentro de `outputs/resultados.json` mientras el programa terminaba con éxito. Ahora el manifiesto usa `/`, el lector acepta los dos formatos y `analizar.py` **aborta** si esa sección falla, en vez de publicar un resultado incompleto en silencio. Ninguna cifra cambia: en Windows el resultado era y sigue siendo el mismo.
 
 ## Reproducir
 
@@ -17,6 +19,8 @@ python reproducir_offline.py --figuras
 El lanzador comprueba todos los hashes de `manifest_portable_sha256.json`, crea una copia en `reproduccion/<fecha UTC>/`, bloquea conexiones de red y procesos externos mediante un audit hook de Python y comprueba las escrituras de archivos. Ejecuta pruebas, reconstrucción de observaciones, análisis principal (10.000 réplicas, 1.000 sorteos), diagnóstico posterior, verificación decimal y 708 recibos, e informe. Compara siete archivos JSON, incluidos intervalos, sorteos y huecos, con los entregados; excluye solamente cuatro marcas `generado_utc`. Los resultados de la reproducción se guardan en esa copia. No es una medida de aislamiento del sistema operativo.
 
 El lanzador no descarga datos y no necesita claves ni conexión. Python, NumPy y, si procede, matplotlib deben estar instalados antes de desconectar. La tolerancia de comparación es absoluta 1e-10 y relativa 1e-11; en el entorno verificado la diferencia fue exactamente cero. En otra versión de NumPy o plataforma puede haber redondeos diferentes; los cambios grandes o resultados diferentes se marcan como FAIL.
+
+`code/verificar.py` necesita los cuerpos originales de `raw/`, que viajan en este paquete pero **no** en el árbol de Git. Ejecutado desde un clon del repositorio termina con un mensaje explicándolo; para reproducir el estudio use siempre `reproducir_offline.py` desde la raíz de este paquete.
 
 `code/comun.py` resuelve las salidas en la carpeta local `outputs/`. Ejecutar scripts individuales directamente puede sobrescribir las salidas de ESTA copia: use el lanzador. Los descargadores se conservan por procedencia y no forman parte de la reproducción sin red.
 

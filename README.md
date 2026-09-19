@@ -19,6 +19,7 @@ Los ciclos corresponden al día anterior al día objetivo. La referencia, la mue
 - [Especificación congelada](estudio/metodo_fijado.json), [estaciones](estudio/outputs/estaciones.json) y [resultados completos](estudio/outputs/resultados.json).
 - [Verificación de entrega](estudio/outputs/verificacion_entrega.json): 60.602 valores reproducidos exactamente, 708 recibos comprobados y 16 pruebas del método superadas. La auditoría textual aportada por el usuario no hizo ese recálculo; [su alcance se conserva aquí](docs/AUDITORIA.md).
 - [Re-derivar la selección de estaciones](estudio/code/verificar_seleccion.py): `python estudio/code/verificar_seleccion.py` rehace las 34 estaciones desde el catálogo publicado (`estudio/datos/catalogo_siar_20260914T0741Z.csv`, SHA-256 comprobado contra la especificación congelada) y las compara con `estaciones.json`. No necesita el ZIP ni el árbol original.
+- [Integración continua](.github/workflows/ci.yml): en cada envío se compila el código, se ejecutan las pruebas, se re-deriva la selección de estaciones y se comprueban los enlaces internos, en Ubuntu y en Windows. La reproducción completa del paquete se lanza a mano o al publicar una versión.
 - [Archivo histórico y hashes](docs/ARCHIVO.md). Los informes anteriores son antecedentes y no sustituyen el cierre revisado.
 
 ![Sensibilidad de escala](estudio/outputs/figura_sensibilidad.png)
@@ -27,27 +28,35 @@ Los ciclos corresponden al día anterior al día objetivo. La referencia, la mue
 
 Python 3.12.14 y NumPy 2.3.5 fueron el entorno verificado. Instale NumPy antes de desconectar. Las figuras PNG ya están incluidas; matplotlib es opcional si quiere regenerarlas.
 
-Descargue `datos_y_analisis_portable_v1.0.1.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.1-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
+Descargue `datos_y_analisis_portable_v1.0.2.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
 
 Con GitHub CLI, o descargando el asset desde la página de la versión:
 
 ```powershell
-gh release download v1.0.1-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable_v1.0.1.zip --dir descarga
-Get-FileHash descarga/datos_y_analisis_portable_v1.0.1.zip -Algorithm SHA256
-Expand-Archive descarga/datos_y_analisis_portable_v1.0.1.zip -DestinationPath reproduccion_cierre
+gh release download v1.0.2-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable_v1.0.2.zip --dir descarga
+Get-FileHash descarga/datos_y_analisis_portable_v1.0.2.zip -Algorithm SHA256
+Expand-Archive descarga/datos_y_analisis_portable_v1.0.2.zip -DestinationPath reproduccion_cierre
 python -m pip install -r requirements.txt
 python reproduccion_cierre/reproducir_offline.py
 ```
 
-SHA-256 esperado del ZIP: `421d2af84c439009abee798f897e0c9a3f8dfe8bbe200be603c49948dde38795`.
+SHA-256 esperado del ZIP: `3a09f5b39f8e14595bf21c0f4e1fd6c60ddceadacd2d6e5393e4e00427996a91`.
 
-El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carpeta extraída. Bloquea conexiones del proceso, reconstruye las salidas y compara números, estructura y huecos; excluye cuatro marcas de generación al comparar los siete archivos de v1.0.1. El registro verificado empleó aproximadamente un minuto de cálculo, aunque el tiempo depende del equipo. Consulte el [LEEME del paquete](estudio/LEEME.md).
+El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carpeta extraída. Bloquea conexiones del proceso, reconstruye las salidas y compara números, estructura y huecos; excluye cuatro marcas de generación al comparar los siete archivos de v1.0.2. El registro verificado empleó aproximadamente un minuto de cálculo, aunque el tiempo depende del equipo. Consulte el [LEEME del paquete](estudio/LEEME.md).
 
 ## Fuentes y conservación
 
 Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las URL, fechas de recuperación y hashes originales. El repositorio conserva un trabajo de investigación, sin servicio desplegado ni nueva fase experimental.
 
 **Licencias.** El código está bajo [MIT](LICENSE); el texto de los informes, la documentación y las figuras, bajo CC BY 4.0. Los datos de terceros conservan las condiciones de sus proveedores y esta publicación no les asigna una licencia nueva ni concede derechos adicionales sobre ellos. El desglose por fuente, con lo que está verificado y lo que no, está en [DERECHOS.md](DERECHOS.md).
+
+## Corrección v1.0.2: reproducibilidad multiplataforma
+
+Hasta la v1.0.1 el manifiesto de datos heredados guardaba las rutas con el separador de Windows. En Linux y macOS la barra invertida no separa directorios, así que la sección 6.5 del informe, el enlace 06-18 UTC, no se podía reconstruir: quedaba como un error dentro de `resultados.json` mientras el programa terminaba con éxito y la reproducción daba FAIL. En Windows nunca se notó.
+
+Ahora el manifiesto usa `/`, el lector acepta los dos formatos y `analizar.py` **aborta** si esa sección falla, en lugar de publicar un resultado incompleto en silencio. Se añaden cuatro pruebas de rutas y una comprobación que resuelve las 1.461 entradas reales del manifiesto. **Ninguna cifra cambia**: en Windows el resultado era y sigue siendo el mismo, y la reproducción del paquete da PASS con 61.383 valores y diferencia máxima 0,0.
+
+Además: `verificar.py` termina con un mensaje explicativo si se ejecuta desde un clon de Git sin los cuerpos `raw/`; los informes archivados ya no enlazan rutas locales y sus figuras se publican junto a ellos; el paquete incluye `verificar_seleccion.py` y el catálogo, de modo que la reproducción re-deriva también las 34 estaciones. [Detalle en el registro de cambios](CHANGELOG.md).
 
 ## Corrección v1.0.1
 

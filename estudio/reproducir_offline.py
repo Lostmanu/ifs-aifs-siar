@@ -65,7 +65,7 @@ def main():
     r = {'inicio_utc': datetime.now(timezone.utc).isoformat(), 'python': sys.version, 'numpy': np.__version__,
          'manifest_archivos': len(manifest['files']), 'carpeta': str(run), 'pasos': [], 'comparaciones': {},
          'control_red': 'audit hook del proceso; no cortafuegos del sistema'}
-    names = ['test_metodo.py', 'preparar_observaciones.py', 'analizar.py', 'diagnostico_posterior.py', 'sensibilidad_secundaria_posterior.py', 'verificar.py', 'informe.py']
+    names = ['test_metodo.py', 'verificar_seleccion.py', 'preparar_observaciones.py', 'analizar.py', 'diagnostico_posterior.py', 'sensibilidad_secundaria_posterior.py', 'verificar.py', 'informe.py']
     if args.figuras: names.append('figuras.py')
     for name in names:
         start = time.monotonic(); print('Ejecutando', name, flush=True)
