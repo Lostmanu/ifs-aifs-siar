@@ -3,6 +3,8 @@
 Este repositorio mezcla código propio, texto propio y datos de terceros. Cada parte tiene condiciones
 distintas y conviene no tratarlas como un bloque.
 
+El fichero [LICENSE](LICENSE) es la MIT y **cubre solo el código**. El texto, las figuras y los datos tienen las condiciones que se detallan aquí abajo.
+
 ## Lo que es propio
 
 | Parte | Ficheros | Licencia |

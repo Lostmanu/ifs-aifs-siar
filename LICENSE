@@ -2,18 +2,6 @@ MIT License
 
 Copyright (c) 2026 Lostmanu (https://github.com/Lostmanu)
 
-Esta licencia cubre UNICAMENTE el codigo de este repositorio: los ficheros .py de
-estudio/code/ y estudio/reproducir_offline.py.
-
-El texto de los informes, la documentacion de docs/ y las figuras se publican bajo
-Creative Commons Atribucion 4.0 Internacional (CC BY 4.0).
-
-Los datos de terceros incluidos o citados (SiAR, Open-Meteo, ECMWF, Urraca et al. 2019)
-conservan los derechos y condiciones de sus proveedores. Este repositorio no concede
-derechos adicionales sobre ellos. Vease DERECHOS.md.
-
----
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

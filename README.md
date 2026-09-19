@@ -29,7 +29,7 @@ Python 3.12.14 y NumPy 2.3.5 fueron el entorno verificado. Instale NumPy antes d
 
 Descargue `datos_y_analisis_portable_v1.0.1.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.1-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
 
-Con GitHub CLI autenticado en este repositorio privado:
+Con GitHub CLI, o descargando el asset desde la página de la versión:
 
 ```powershell
 gh release download v1.0.1-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable_v1.0.1.zip --dir descarga
