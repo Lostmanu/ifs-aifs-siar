@@ -1,5 +1,7 @@
 """Pruebas automatizadas del método (ejemplos con resultado conocido)."""
-import unittest, math
+import json, sys, unittest, math
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from datetime import date
 import numpy as np
 from metodo import *
@@ -116,6 +118,63 @@ class TestH0(unittest.TestCase):
 
     def test_h0_verano_espana(self):
         self.assertAlmostEqual(h0_fao56(40.0, date(2026, 6, 21)), 41.7, delta=0.5)
+
+
+class TestRutasPortables(unittest.TestCase):
+    """El manifiesto heredado guardaba separadores de Windows. En POSIX eso no separa nada:
+    Path('raw\\heredado\\x.json') es un unico nombre de fichero y la seccion 6.5 desaparecia
+    en silencio. Estas pruebas fallan en cualquier sistema si el defecto vuelve."""
+
+    def test_ruta_acepta_los_dos_separadores(self):
+        from comun import ruta
+        esperado = ('raw', 'heredado', 'AL01_cal', 'obs_0.json')
+        self.assertEqual(ruta('raw' + chr(92) + 'heredado' + chr(92) + 'AL01_cal' + chr(92) + 'obs_0.json').parts, esperado)
+        self.assertEqual(ruta('raw/heredado/AL01_cal/obs_0.json').parts, esperado)
+        self.assertEqual(ruta(Path('raw/heredado/AL01_cal/obs_0.json')).parts, esperado)
+
+    def test_manifiesto_heredado_es_posix(self):
+        """Ninguna ruta guardada puede llevar separador de Windows."""
+        from comun import DATOS
+        f = DATOS / 'heredado_manifiesto.json'
+        if not f.exists():
+            self.skipTest('no hay manifiesto heredado en este arbol')
+        m = json.loads(f.read_text(encoding='utf-8'))
+        malas = [o['destino'] for fu in m['fuentes'].values() for k in ('obs', 'forecasts')
+                 for o in fu.get(k, []) if isinstance(o, dict) and chr(92) in o.get('destino', '')]
+        self.assertEqual(malas[:3], [], f'{len(malas)} rutas con separador de Windows')
+
+    def test_el_lector_resuelve_todas_las_entradas_del_manifiesto(self):
+        """Resolver cada entrada con ruta() debe dar mas de un componente. Pasa con el
+        manifiesto nuevo y tambien con el viejo: es la garantia de que el lector tolera
+        los dos formatos, no una deteccion del formato viejo."""
+        from comun import DATOS, ruta
+        f = DATOS / 'heredado_manifiesto.json'
+        if not f.exists():
+            self.skipTest('no hay manifiesto heredado en este arbol')
+        m = json.loads(f.read_text(encoding='utf-8'))
+        n = 0
+        for fu in m['fuentes'].values():
+            for k in ('obs', 'forecasts'):
+                for o in fu.get(k, []):
+                    if not isinstance(o, dict) or 'destino' not in o:
+                        continue
+                    n += 1
+                    partes = ruta(o['destino']).parts
+                    self.assertGreater(len(partes), 1, f'ruta sin separar: {o["destino"]!r}')
+                    self.assertEqual(partes[0], 'raw', f'ruta inesperada: {o["destino"]!r}')
+        self.assertGreater(n, 1000, 'el manifiesto deberia tener mas de mil entradas')
+
+
+    def test_el_consumo_antiguo_se_rompia_en_posix(self):
+        """Reproduce el defecto de v1.0.1 sin depender del sistema donde corre la prueba.
+        Antes se hacia BASE / valor con Path; en POSIX la barra invertida no separa, asi que
+        toda la ruta colapsaba en un unico nombre de fichero y la seccion 6.5 se perdia."""
+        from pathlib import PurePosixPath, PureWindowsPath
+        guardada = 'raw' + chr(92) + 'heredado' + chr(92) + 'AL01_cal' + chr(92) + 'obs_0.json'
+        self.assertEqual(len(PurePosixPath(guardada).parts), 1)          # asi se rompia
+        self.assertEqual(len(PureWindowsPath(guardada).parts), 4)        # asi se arregla
+        from comun import ruta
+        self.assertEqual(len(ruta(guardada).parts), 4)
 
 
 if __name__ == '__main__':
