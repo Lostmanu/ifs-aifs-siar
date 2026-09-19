@@ -1,0 +1,21 @@
+{
+  "fecha_utc": "2026-09-19T11:07:07.692408+00:00",
+  "cifras_y_punteros_comprobados": 35,
+  "enlaces_nuevos_rotos": [],
+  "motores_publicados_identicos_al_paquete": true,
+  "originales_comprobados": 4832,
+  "originales_modificados": [],
+  "coincidencias_credenciales_resueltas": [
+    {
+      "archivo": "historico__medicion_escala__datos_y_analisis.zip::raw/siar/LU02/ficha.html",
+      "patron": "AKIA...",
+      "resolucion": "falso positivo dentro de imagen base64 de ficha pública SiAR"
+    },
+    {
+      "archivo": "datos_y_analisis_portable.zip::raw/siar/LU02/ficha.html",
+      "patron": "AKIA...",
+      "resolucion": "falso positivo dentro de imagen base64 de ficha pública SiAR"
+    }
+  ],
+  "estado": "PASS"
+}

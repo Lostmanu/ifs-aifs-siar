@@ -1,0 +1,8 @@
+{
+  "fichero": "metodo_fijado.json",
+  "sha256": "4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3",
+  "bytes": 50070,
+  "congelado_en_utc": "2026-09-14T14:41:48.359646+00:00",
+  "descargas_iniciadas_en_utc": "2026-09-14T14:41:48.647112+00:00",
+  "nota": "Marca temporal local y hash; no es un prerregistro externo. descargas_iniciadas_en_utc se rellena al lanzar la primera descarga."
+}

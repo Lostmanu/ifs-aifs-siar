@@ -1,0 +1,260 @@
+[
+  {
+    "cifra": "Estaciones seleccionadas",
+    "archivo": "estudio/outputs/estaciones.json",
+    "json_pointer": "/n_seleccionadas",
+    "valor": 34
+  },
+  {
+    "cifra": "Días calendario primarios",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/n_dias_calendario",
+    "valor": 110
+  },
+  {
+    "cifra": "H1: pares",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H1/n_estacion_dias",
+    "valor": 3664
+  },
+  {
+    "cifra": "H1: efecto, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H1/por_bloque/7/efecto",
+    "valor": 1.4710096441072182
+  },
+  {
+    "cifra": "H1: ic95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H1/por_bloque/7/ic95",
+    "valor": [
+      0.6897371163822766,
+      2.2619991392315275
+    ]
+  },
+  {
+    "cifra": "H1: mae_a, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H1/por_bloque/7/mae_a",
+    "valor": 0.08133922801563157
+  },
+  {
+    "cifra": "H1: mae_b, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H1/por_bloque/7/mae_b",
+    "valor": 0.08014272012707926
+  },
+  {
+    "cifra": "H1: efecto, k=0,95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_determinista/por_k/0.95/comparaciones/H1/7/efecto",
+    "valor": 0.44444461628801063
+  },
+  {
+    "cifra": "H1: ic95, k=0,95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_determinista/por_k/0.95/comparaciones/H1/7/ic95",
+    "valor": [
+      -0.5833013437325135,
+      1.3925883896050673
+    ]
+  },
+  {
+    "cifra": "H1: signo en Monte Carlo",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_montecarlo/comparaciones/H1/supervivencia_nivel1_signo",
+    "valor": 1.0
+  },
+  {
+    "cifra": "H1: cruce de k (posterior)",
+    "archivo": "estudio/datos/diagnostico_posterior.json",
+    "json_pointer": "/cruce_k_comun/H1/k_cruce",
+    "valor": 0.9316659952065517
+  },
+  {
+    "cifra": "H1: cambio equivalente de observación (posterior)",
+    "archivo": "estudio/datos/diagnostico_posterior.json",
+    "json_pointer": "/cruce_k_comun/H1/discrepancia_equivalente_pct",
+    "valor": 7.334603296141395
+  },
+  {
+    "cifra": "H2: pares",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H2/n_estacion_dias",
+    "valor": 3697
+  },
+  {
+    "cifra": "H2: efecto, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H2/por_bloque/7/efecto",
+    "valor": 7.570369778548527
+  },
+  {
+    "cifra": "H2: ic95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H2/por_bloque/7/ic95",
+    "valor": [
+      4.599204348009697,
+      10.484376539259713
+    ]
+  },
+  {
+    "cifra": "H2: mae_a, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H2/por_bloque/7/mae_a",
+    "valor": 0.08152012562567407
+  },
+  {
+    "cifra": "H2: mae_b, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/comparaciones/H2/por_bloque/7/mae_b",
+    "valor": 0.07534875067187324
+  },
+  {
+    "cifra": "H2: efecto, k=0,95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_determinista/por_k/0.95/comparaciones/H2/7/efecto",
+    "valor": -5.643853232009067
+  },
+  {
+    "cifra": "H2: ic95, k=0,95, L7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_determinista/por_k/0.95/comparaciones/H2/7/ic95",
+    "valor": [
+      -10.084729375477416,
+      -1.3311552889146272
+    ]
+  },
+  {
+    "cifra": "H2: signo en Monte Carlo",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sensibilidad_montecarlo/comparaciones/H2/supervivencia_nivel1_signo",
+    "valor": 1.0
+  },
+  {
+    "cifra": "H2: cruce de k (posterior)",
+    "archivo": "estudio/datos/diagnostico_posterior.json",
+    "json_pointer": "/cruce_k_comun/H2/k_cruce",
+    "valor": 0.9747619834991298
+  },
+  {
+    "cifra": "H2: cambio equivalente de observación (posterior)",
+    "archivo": "estudio/datos/diagnostico_posterior.json",
+    "json_pointer": "/cruce_k_comun/H2/discrepancia_equivalente_pct",
+    "valor": 2.589146574045964
+  },
+  {
+    "cifra": "Réplicas",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/replicas",
+    "valor": 10000
+  },
+  {
+    "cifra": "Sorteos",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/sorteos",
+    "valor": 1000
+  },
+  {
+    "cifra": "Números reproducidos",
+    "archivo": "estudio/outputs/verificacion_entrega.json",
+    "json_pointer": "/reproduccion_independiente/valores_comparados",
+    "valor": 60602
+  },
+  {
+    "cifra": "Diferencia máxima",
+    "archivo": "estudio/outputs/verificacion_entrega.json",
+    "json_pointer": "/reproduccion_independiente/diferencia_maxima",
+    "valor": 0.0
+  },
+  {
+    "cifra": "Recibos comprobados",
+    "archivo": "docs/verificacion_metodo_original.json",
+    "json_pointer": "/recibos/comprobados",
+    "valor": 708
+  },
+  {
+    "cifra": "Pruebas del método",
+    "archivo": "docs/verificacion_metodo_original.json",
+    "json_pointer": "/pruebas/ejecutadas",
+    "valor": 16
+  },
+  {
+    "cifra": "Archivos anteriores intactos",
+    "archivo": "estudio/outputs/verificacion_entrega.json",
+    "json_pointer": "/originales/archivos_comprobados",
+    "valor": 4832
+  },
+  {
+    "cifra": "H1: Holm L=1",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/1/H1",
+    "valor": {
+      "p": 0.0042,
+      "p_ajustado": 0.0042,
+      "rechaza": true,
+      "efecto": 1.4710096441072182,
+      "apoyada": true
+    }
+  },
+  {
+    "cifra": "H2: Holm L=1",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/1/H2",
+    "valor": {
+      "p": 0.0,
+      "p_ajustado": 0.0,
+      "rechaza": true,
+      "efecto": 7.570369778548527,
+      "apoyada": true
+    }
+  },
+  {
+    "cifra": "H1: Holm L=7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/7/H1",
+    "valor": {
+      "p": 0.0006,
+      "p_ajustado": 0.0006,
+      "rechaza": true,
+      "efecto": 1.4710096441072182,
+      "apoyada": true
+    }
+  },
+  {
+    "cifra": "H2: Holm L=7",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/7/H2",
+    "valor": {
+      "p": 0.0,
+      "p_ajustado": 0.0,
+      "rechaza": true,
+      "efecto": 7.570369778548527,
+      "apoyada": true
+    }
+  },
+  {
+    "cifra": "H1: Holm L=14",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/14/H1",
+    "valor": {
+      "p": 0.0,
+      "p_ajustado": 0.0,
+      "rechaza": true,
+      "efecto": 1.4710096441072182,
+      "apoyada": true
+    }
+  },
+  {
+    "cifra": "H2: Holm L=14",
+    "archivo": "estudio/outputs/resultados.json",
+    "json_pointer": "/primaria/holm/14/H2",
+    "valor": {
+      "p": 0.0,
+      "p_ajustado": 0.0,
+      "rechaza": true,
+      "efecto": 7.570369778548527,
+      "apoyada": true
+    }
+  }
+]

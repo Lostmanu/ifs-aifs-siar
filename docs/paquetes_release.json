@@ -1,0 +1,89 @@
+{
+  "release": "https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.0-cierre",
+  "paquetes": [
+    {
+      "archivo_original": "outputs/latencia_pronosticos/auditoria_fisica/comprobaciones_reproducibles.zip",
+      "asset": "historico__auditoria_fisica__comprobaciones_reproducibles.zip",
+      "bytes": 5414469,
+      "sha256": "08437d68af8bb16873dea98e36638984ffcc2f3288dcd35d7ccc6f4671d7b143"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/auditoria_referencia/auditoria_referencia_reproducible.zip",
+      "asset": "historico__auditoria_referencia__auditoria_referencia_reproducible.zip",
+      "bytes": 19533654,
+      "sha256": "d965cf92a26b5d97a8f18d434d4b4d9a40f07a749ec8038459c8b38812b336ff"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/cruce_aod_nubes/cruce_aod_nubes_reproducible.zip",
+      "asset": "historico__cruce_aod_nubes__cruce_aod_nubes_reproducible.zip",
+      "bytes": 1578317,
+      "sha256": "4135cff04619f255090988a232b38dd4b153eb483fe5370fb30e484e2a83ed6d"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/datos_y_codigo.zip",
+      "asset": "historico__datos_y_codigo.zip",
+      "bytes": 8692823,
+      "sha256": "0014263100ddfb5a1f1b15ebd64ddb337ba44566f37a61d63b5a21549530d0cd"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/decision_economica/evidencia_y_prueba_economica.zip",
+      "asset": "historico__decision_economica__evidencia_y_prueba_economica.zip",
+      "bytes": 505506,
+      "sha256": "e7ce8aa4ad1939e483f7bcf22f7ded1fbb566e6eb329a33d745fa40a96aa5b50"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/evaluacion_meteogalicia/evaluacion_meteogalicia_reproducible.zip",
+      "asset": "historico__evaluacion_meteogalicia__evaluacion_meteogalicia_reproducible.zip",
+      "bytes": 1757759,
+      "sha256": "7bf7ab6302c7d2d4a539ea164c7623de022948e2097867ad2ddff4138caa3a69"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/medicion_escala/datos_y_analisis.zip",
+      "asset": "historico__medicion_escala__datos_y_analisis.zip",
+      "bytes": 113708177,
+      "sha256": "8237b05305d233a6dd29d5e424e6ae3c5fe98bdeacd36bf758c50185ff318c06"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/piloto_1/evidencia_inicio.zip",
+      "asset": "historico__piloto_1__evidencia_inicio.zip",
+      "bytes": 13397394,
+      "sha256": "1a87afa2040881541421916bfca73b2c8685a0abe2e0b03f9fc78ab85faa214c"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/piloto_1/resultados_mes/datos_y_analisis.zip",
+      "asset": "historico__piloto_1__resultados_mes__datos_y_analisis.zip",
+      "bytes": 13261340,
+      "sha256": "7ab669ce22b1c82cdd6f68a700935eeccc275627a5c948e8995bec76fe901893"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/replica_final/datos_y_analisis.zip",
+      "asset": "historico__replica_final__datos_y_analisis.zip",
+      "bytes": 13678433,
+      "sha256": "dccfbc635083366fe44c6987213b25df3ba0ea7dc121275577e0e1874101e228"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/revision_cierre_20260919/datos_y_analisis_portable.zip",
+      "asset": "datos_y_analisis_portable.zip",
+      "bytes": 114808831,
+      "sha256": "7c08d8ce4748beda42412b82719a2cfa7132f08b17c50cc331c56393fb15f930"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/revision_critica/auditoria_reproducible.zip",
+      "asset": "historico__revision_critica__auditoria_reproducible.zip",
+      "bytes": 54461,
+      "sha256": "48c0bf9f935a102c4279e592bd8f2a7700b87d92a5fd242128609670089a43b0"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/revision_diseno/comprobaciones.zip",
+      "asset": "historico__revision_diseno__comprobaciones.zip",
+      "bytes": 144903,
+      "sha256": "847888e18f852556c095382b27bc49fa0dc46440a6b52cb4ee5b5d47a2d7a7e8"
+    },
+    {
+      "archivo_original": "outputs/latencia_pronosticos/validacion_calibracion/datos_y_analisis.zip",
+      "asset": "historico__validacion_calibracion__datos_y_analisis.zip",
+      "bytes": 1775953,
+      "sha256": "4b8bf3fb675df27d2a3a341a8d354a5f00c2ed5c40fffacc9e6d7fa9359caea0"
+    }
+  ]
+}

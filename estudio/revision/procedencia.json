@@ -1,0 +1,15 @@
+{
+  "original_zip": "C:\\Users\\manue\\Documents\\Codex\\2026-09-11\\qu\\outputs\\latencia_pronosticos\\medicion_escala\\datos_y_analisis.zip",
+  "original_zip_sha256": "8237b05305d233a6dd29d5e424e6ae3c5fe98bdeacd36bf758c50185ff318c06",
+  "metodo_fijado_sha256": "4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3",
+  "cambio_rutas": {
+    "antes": "OUT = ROOT / 'outputs' / 'latencia_pronosticos' / 'medicion_escala'",
+    "despues": "OUT = BASE / 'outputs'  # Paquete autónomo: todas las salidas quedan dentro de su raíz."
+  },
+  "numerico_inalterado": {
+    "metodo.py": "b5dc9fdfec06b58e2f1c8229909294a9161e74dc2cdbbd833b4619e3103667da",
+    "analizar.py": "891e08a51ba2235e9d3fc8188dbfa025de5387484ccff3fdd86aad2e570be792",
+    "diagnostico_posterior.py": "27b40a0e8bcfeb7a4fa2d9d1e4544a00208e136fafd7ea3ac6012f79a0b8d411",
+    "preparar_observaciones.py": "1159a66d56b5982b9e4a83ed8ce554fbd7070d4b1440d54ad2e562618bac582f"
+  }
+}

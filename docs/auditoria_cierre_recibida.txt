@@ -1,0 +1,98 @@
+Auditoría de cierre: medición IFS y AIFS frente a SiAR
+Veredicto ejecutivo
+El cierre es defendible con reservas explícitas y la recomendación de clausurar el trabajo es metodológicamente proporcionada. El texto distingue correctamente entre: (a) una comparación empírica reproducible respecto de la observación publicada; (b) significación estadística condicionada al diseño; y (c) robustez física frente a un posible error común de escala. La conclusión adecuada no es “AIFS/IFS tienen habilidad verdadera demostrada” ni “SiAR está mal calibrada”, sino: en esta muestra, con este producto horario servido, estas observaciones y esta métrica, las dos sustituciones reducen el MAE; esa ordenación no sobrevive a todos los escenarios comunes de escala preespecificados.
+
+El veredicto no puede elevarse a auditoría independiente integral del paquete porque los enlaces aportados son relativos y los archivos informe_completo.md, datos_y_analisis_portable.zip y figura_sensibilidad.png no estuvieron disponibles para inspección directa. Por tanto, las cifras, hashes, 60.602 valores, 708 recibos, 16 pruebas, 10.000 réplicas y 1.000 sorteos quedan coherentes según el cierre, pero no han sido recalculados de forma independiente en esta revisión.
+
+Coherencia numérica
+Comprobación	Resultado	Dictamen
+Máximo teórico de pares por contraste	34 × 110 = 3.740	Coherente con 3.664 y 3.697 tras excluir pasadas ausentes
+Ausencias implícitas en H1	76 pares	Compatible con el N declarado
+Ausencias implícitas en H2	43 pares	Compatible con el N declarado
+Transformación con k = 0,95	O/0,95 = 1,0526316 O	Correcto: aumenta la observación publicada un 5,263%
+H1 bajo k = 0,95	+0,44%, IC que cruza cero	Correcto describir “conserva el signo, pero pierde intervalo enteramente positivo”
+H2 bajo k = 0,95	−5,64%, IC enteramente negativo	Correcto describir inversión del signo y del intervalo
+Residuo centrado	(F − media(F)) − (O − media(O))/k	Identidad algebraica correcta
+La terminología “reducción relativa del MAE normalizado” es adecuada siempre que el informe defina sin ambigüedad el orden de agregación: cálculo por estación, normalización por su media observada y agregación posterior. El MAE mide el tamaño medio del error absoluto; no es una medida económica ni una magnitud en puntos porcentuales de irradiación.
+
+Los cruces de escala están expresados en el denominador correcto: si el escenario es O/k, el porcentaje de aumento respecto de la observación publicada es 1/k − 1, no 1 − k. La formulación revisada —“aumentar la observación un 2,59%” o “un 7,33%”— evita convertir esos cruces descriptivos en estimaciones de una submedición física desconocida.
+
+Interpretación causal
+Las cinco correcciones interpretativas son sólidas. Un residuo compartido por dos modelos no identifica su fuente: puede proceder del instrumento, de errores comunes de los modelos, del operador de interpolación o de la falta de representatividad entre una observación puntual y una celda de modelo. La literatura de verificación meteorológica reconoce que el desajuste de escala entre estaciones y campos de NWP puede alterar sustancialmente las estimaciones de habilidad y que el error observacional combina medición y representatividad.
+
+El contraejemplo del cierre es suficiente: con observación perfecta O = T y dos pronósticos F1 = F2 = T + c, ambos comparten el residuo c sin error instrumental. La dispersión entre estaciones tampoco identifica por sí sola una distribución de error de sensores, porque mezcla clima local, topografía, representatividad, interpolación, mantenimiento y error del modelo.
+
+Restar la media tampoco elimina una escala multiplicativa. Al centrar F − O/k, permanece el término (O − media(O))/k; por ello, que el diagnóstico centrado cambie con k es matemáticamente esperable. Además, estimar la media con todos los días evaluados convierte ese centrado en un diagnóstico retrospectivo dentro de muestra, no en una corrección operacional validada fuera de muestra.
+
+Producto realmente evaluado
+La delimitación a “producto horario servido por Open-Meteo” es esencial. Open-Meteo documenta que sus series ECMWF se interpolan dinámicamente a una resolución horaria consistente, mientras que IFS y AIFS tienen resoluciones temporales nativas distintas; AIFS 0,25° dispone de pasos de 6 horas y el IFS abierto de pasos de 3 horas en parte del horizonte. También define shortwave_radiation como la media de la hora precedente.
+
+Por tanto, H2 no aísla exclusivamente la arquitectura física frente a la arquitectura de IA: compara cadenas de producto, que incluyen modelo, resolución nativa y transformación del proveedor. Compartir proveedor o interpolación no garantiza cancelación en MAE, porque el valor absoluto es no lineal y las entradas pueden atravesar la transformación con estructuras temporales distintas. El cierre acierta al no atribuir a Open-Meteo la diferencia ni afirmar conservación de energía frente al campo nativo sin una prueba específica.
+
+Escala y sensibilidad
+El escenario de k común y el Monte Carlo con factores independientes responden a preguntas diferentes. Un k común representa un sesgo coherente de red o calibración; factores independientes permiten compensaciones transversales y exploran heterogeneidad entre estaciones. Que el signo permanezca positivo en 1.000 sorteos independientes no contradice que H2 cambie de signo con k = 0,95 común, ni sustituye esa prueba adversa.
+
+La banda fija de ±5% debe permanecer rotulada como supuesto de sensibilidad, no como intervalo estimado para las 34 estaciones. Urraca et al. informan que las cifras de ±15% diaria y ±5% anual proceden de una comparación anterior entre fotodiodos SiAR y estándares secundarios AEMET situados a menos de 20 km; además, indican que el cálculo excluyó defectos operativos y fotodiodos dudosos. Ese estudio utilizó datos históricos y una metodología distinta, por lo que no certifica el k común de la muestra de 2026 ni identifica el error de cada estación.
+
+La retirada del sombreado bibliográfico es, por ello, una mejora material. Conserva la literatura como contexto de riesgo de medición sin transformarla en una distribución empírica trasladable a esta muestra.
+
+Inferencia estadística
+El uso de bloques temporales es razonable porque el remuestreo por bloques intenta conservar la dependencia interna de una serie temporal. Sin embargo, el dictamen estadístico definitivo depende de detalles que solo pueden comprobarse en código y salidas:
+
+La unidad remuestreada debe preservar simultáneamente el emparejamiento entre los dos pronósticos y la observación.
+
+Si todas las estaciones de un día comparten meteorología sinóptica, el remuestreo debe conservar la dependencia contemporánea entre estaciones; tratar 3.664 o 3.697 pares como observaciones independientes estrecharía artificialmente los intervalos.
+
+Los tres largos de bloque deben presentarse como análisis de robustez preespecificado. Debe quedar claro si Holm corrige solo H1 y H2 dentro de cada largo o una familia mayor que incluye los tres largos.
+
+Los p-valores ajustados, hipótesis nulas, lateralidad y familia de pruebas deben figurar explícitamente; “supera Holm” es demasiado comprimido si se lee fuera del informe.
+
+Holm controla el error familiar mediante un procedimiento secuencial y es válido bajo dependencia arbitraria entre los contrastes, pero no corrige un bootstrap cuya unidad de remuestreo esté mal especificada. Probar varios largos de bloque es una buena sensibilidad, aunque no demuestra cobertura correcta para cualquier estructura de dependencia o no estacionariedad.
+
+Los 10.000 remuestreos son suficientes para que el error Monte Carlo ordinario sea pequeño en percentiles centrales, pero la calidad del intervalo depende mucho más del esquema de remuestreo, la longitud del bloque, la estratificación y el estadístico que del número bruto de réplicas. La afirmación debe seguir siendo “significativo bajo los tres esquemas preespecificados”, no “significativo sin supuestos”.
+
+Reproducibilidad
+La corrección de OUT, el trabajo en copia, el manifiesto previo, los hashes de motores, los recibos y la comparación de valores, estructura, texto y huecos forman una cadena de conservación bien diseñada. Si el registro confirma diferencia máxima cero en 60.602 números y solo excluye tres marcas de generación documentadas, eso demuestra equivalencia computacional de las salidas bajo el entorno probado.
+
+No obstante, hay tres niveles que deben permanecer separados:
+
+Nivel	Qué demuestra	Qué no demuestra
+Integridad	Los archivos no cambiaron respecto de sus hashes	Que los datos originales sean físicamente correctos
+Reproducción	El código reconstruye las salidas conservadas	Que el método estime el objetivo causal deseado
+Validación científica	Supuestos, observaciones y comparación representan la pregunta	No se obtiene solo por ejecutar el código
+El audit hook documenta el comportamiento observado del intérprete durante esa ejecución, no un aislamiento del sistema operativo. La redacción revisada lo reconoce correctamente.
+
+Riesgos pendientes
+Antes de publicar en portfolio, el paquete debe permitir verificar en menos de una hora los siguientes puntos:
+
+Listado exacto de las 34 estaciones y regla congelada de inclusión.
+
+Fechas, horas válidas, horizonte y variable horaria integrados en cada día.
+
+Identidad de pares dentro de H1 y H2, y tabla de pasadas ausentes.
+
+Fórmula exacta del MAE relativo y pesos de estaciones frente a días.
+
+Esquema de bootstrap, unidad de bloque y tratamiento de dependencia espacial.
+
+Familia Holm, p-valores brutos y ajustados para cada largo.
+
+Distribución usada para los k_i independientes y semilla de los 1.000 sorteos.
+
+Definición computacional del cruce de k y precisión del algoritmo.
+
+Versiones y hashes del código, dependencias y datos de entrada.
+
+Una tabla única que conecte cada cifra del cierre con su archivo de salida y campo de origen.
+
+Las guías de verificación recomiendan acompañar las puntuaciones con incertidumbre o significación, evaluar representatividad y controlar la calidad de las observaciones. El cierre ya adopta esa cautela en el lenguaje, pero la trazabilidad anterior debe estar visible para que un tercero pueda comprobarla.
+
+Formulación defendible
+La siguiente redacción es apta para abstract, README o portfolio:
+
+En 34 estaciones SiAR y 110 días entre el 14 de mayo y el 31 de agosto de 2026, el producto horario evaluado mostró menor MAE relativo al actualizar IFS de 00 a 06 UTC y al sustituir IFS 00 por AIFS 00, usando las observaciones SiAR publicadas y pares completos dentro de cada contraste. Los resultados fueron significativos bajo los tres largos de bloque preespecificados y el ajuste de Holm. Sin embargo, la ordenación no fue robusta a todos los escenarios comunes de escala fijados: con O/0,95, H1 perdió un IC95 completamente positivo y H2 invirtió su signo. El estudio demuestra una comparación reproducible condicionada a la referencia y al producto servido; no identifica errores de sensores, habilidad libre de error observacional, disponibilidad operacional, ahorro ni rentabilidad.
+
+Decisión final
+Cerrar y conservar; no ampliar el experimento. La medición alcanza el estándar de un resultado de investigación reproducible y publicable en portfolio si el titular mantiene visibles cuatro condicionantes: SiAR publicada, muestra estacional de 34 estaciones, producto horario de Open-Meteo y sensibilidad común de escala no resuelta.
+
+La etiqueta recomendada es “evidencia comparativa condicionada y reproducible”. No debe etiquetarse como validación física de AIFS/IFS, diagnóstico de sensores, benchmark nacional anual ni prueba de valor económico. La falta de robustez completa limita la fuerza de la inferencia; no la convierte en evidencia de ausencia de capacidad predictiva.

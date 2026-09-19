@@ -1,0 +1,348 @@
+{
+  "CA06": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "MA07": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "AL10": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "H07": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "SE19": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "CO101": {
+    "dias_validos_primaria": 101,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {
+      "valor vacío o no numérico": 9
+    },
+    "excluida_por_cobertura": false
+  },
+  "J02": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "MU01": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "A101": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "BA06": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "BA106": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "CR03": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "CR07": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "AB09": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "A04": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "IB01": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "IB05": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "CC12": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "M102": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "GU03": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "TE06": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "CS03": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "IB06": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "LU02": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "ZA01": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "P02": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "SO03": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "NA04": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "HU07": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "LU01": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "P104": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "BU101": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 39,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {
+      "kt < 0,03": 1
+    },
+    "excluida_por_cobertura": false
+  },
+  "NA106": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 40,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {},
+    "excluida_por_cobertura": false
+  },
+  "TF153": {
+    "dias_validos_primaria": 110,
+    "de": 110,
+    "umbral": 88,
+    "dias_validos_secundaria": 5,
+    "de_secundaria": 40,
+    "tieneDatos_false": 154,
+    "motivos_no_valido": {
+      "valor vacío o no numérico": 37
+    },
+    "excluida_por_cobertura": false
+  }
+}

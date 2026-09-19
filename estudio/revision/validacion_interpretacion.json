@@ -1,0 +1,105 @@
+{
+  "tipo": "verificación posterior de identidades y afirmaciones; no nuevo análisis inferencial",
+  "centrado": "(F-media(F))-(O-media(O))/k; medias sobre los pares de cada comparación",
+  "normalizacion": "media de observaciones válidas por estación y ventana, como en la especificación",
+  "comparaciones": {
+    "H1": {
+      "pares": 3664,
+      "por_k": {
+        "0.95": {
+          "efecto_centrado_recalculado": 0.8544844940115648,
+          "guardado": 0.854484494011562,
+          "diferencia": 2.7755575615628914e-15,
+          "identidad_error_rel_max_abs": 4.440892098500626e-16
+        },
+        "1.00": {
+          "efecto_centrado_recalculado": 0.7911861700900191,
+          "guardado": 0.7911861700899908,
+          "diferencia": 2.8310687127941492e-14,
+          "identidad_error_rel_max_abs": 0.0
+        },
+        "1.05": {
+          "efecto_centrado_recalculado": 0.7581774744025882,
+          "guardado": 0.7581774744025911,
+          "diferencia": 2.886579864025407e-15,
+          "identidad_error_rel_max_abs": 5.551115123125783e-16
+        }
+      },
+      "centrado_invariante_a_k": false
+    },
+    "H2": {
+      "pares": 3697,
+      "por_k": {
+        "0.95": {
+          "efecto_centrado_recalculado": 0.698814609981746,
+          "guardado": 0.6988146099817455,
+          "diferencia": 5.551115123125783e-16,
+          "identidad_error_rel_max_abs": 4.440892098500626e-16
+        },
+        "1.00": {
+          "efecto_centrado_recalculado": 0.6307557606029413,
+          "guardado": 0.6307557606029597,
+          "diferencia": 1.84297022087776e-14,
+          "identidad_error_rel_max_abs": 0.0
+        },
+        "1.05": {
+          "efecto_centrado_recalculado": 0.45695763245248155,
+          "guardado": 0.45695763245245785,
+          "diferencia": 2.3703261575747092e-14,
+          "identidad_error_rel_max_abs": 5.551115123125783e-16
+        }
+      },
+      "centrado_invariante_a_k": false
+    },
+    "S1": {
+      "pares": 3664,
+      "por_k": {
+        "0.95": {
+          "efecto_centrado_recalculado": 0.8072075557492675,
+          "guardado": 0.8072075557492687,
+          "diferencia": 1.2212453270876722e-15,
+          "identidad_error_rel_max_abs": 4.996003610813204e-16
+        },
+        "1.00": {
+          "efecto_centrado_recalculado": 0.8521453607161611,
+          "guardado": 0.8521453607161413,
+          "diferencia": 1.9761969838327786e-14,
+          "identidad_error_rel_max_abs": 0.0
+        },
+        "1.05": {
+          "efecto_centrado_recalculado": 0.9399722043190395,
+          "guardado": 0.9399722043190673,
+          "diferencia": 2.7755575615628914e-14,
+          "identidad_error_rel_max_abs": 4.440892098500626e-16
+        }
+      },
+      "centrado_invariante_a_k": false
+    },
+    "S2": {
+      "pares": 3698,
+      "por_k": {
+        "0.95": {
+          "efecto_centrado_recalculado": 0.48843253218729954,
+          "guardado": 0.48843253218730925,
+          "diferencia": 9.71445146547012e-15,
+          "identidad_error_rel_max_abs": 4.440892098500626e-16
+        },
+        "1.00": {
+          "efecto_centrado_recalculado": 0.4754831200011189,
+          "guardado": 0.47548312000112597,
+          "diferencia": 7.049916206369744e-15,
+          "identidad_error_rel_max_abs": 0.0
+        },
+        "1.05": {
+          "efecto_centrado_recalculado": 0.39226611514477927,
+          "guardado": 0.3922661151447794,
+          "diferencia": 1.1102230246251565e-16,
+          "identidad_error_rel_max_abs": 4.440892098500626e-16
+        }
+      },
+      "centrado_invariante_a_k": false
+    }
+  },
+  "diferencia_maxima_vs_guardado": 2.8310687127941492e-14,
+  "estado": "PASS"
+}

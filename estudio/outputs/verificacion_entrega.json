@@ -1,0 +1,108 @@
+{
+  "fecha_utc": "2026-09-19T09:52:37.453585+00:00",
+  "paquete": {
+    "archivo": "datos_y_analisis_portable.zip",
+    "bytes": 114808831,
+    "sha256": "7c08d8ce4748beda42412b82719a2cfa7132f08b17c50cc331c56393fb15f930",
+    "entradas": 3036,
+    "fallos_hash": []
+  },
+  "originales": {
+    "archivos_comprobados": 4832,
+    "modificados_o_ausentes": []
+  },
+  "motor_numerico_igual": {
+    "metodo.py": true,
+    "analizar.py": true,
+    "diagnostico_posterior.py": true,
+    "preparar_observaciones.py": true
+  },
+  "reproduccion_independiente": {
+    "estado": "PASS",
+    "valores_comparados": 60602,
+    "diferencia_maxima": 0.0
+  },
+  "lanzador_portable": {
+    "inicio_utc": "2026-09-19T08:32:25.869207+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "manifest_archivos": 3035,
+    "carpeta": "C:\\Users\\manue\\Documents\\Codex\\2026-09-11\\qu\\work\\revision_cierre_20260919\\paquete_portable\\reproduccion\\20260919T083224348504Z",
+    "pasos": [
+      {
+        "script": "test_metodo.py",
+        "segundos": 0.09299999999348074
+      },
+      {
+        "script": "preparar_observaciones.py",
+        "segundos": 0.0940000000409782
+      },
+      {
+        "script": "analizar.py",
+        "segundos": 16.48499999998603
+      },
+      {
+        "script": "diagnostico_posterior.py",
+        "segundos": 3.7959999999729916
+      },
+      {
+        "script": "verificar.py",
+        "segundos": 12.14100000000326
+      },
+      {
+        "script": "informe.py",
+        "segundos": 0.031000000017229468
+      }
+    ],
+    "comparaciones": {
+      "outputs/resultados.json": {
+        "numeros": 12330,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": [
+          "/generado_utc"
+        ]
+      },
+      "outputs/estaciones.json": {
+        "numeros": 729,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": [
+          "/generado_utc"
+        ]
+      },
+      "outputs/panel_analisis.json": {
+        "numeros": 25455,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": []
+      },
+      "datos/observaciones_diarias.json": {
+        "numeros": 20806,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": []
+      },
+      "datos/cobertura_observaciones.json": {
+        "numeros": 207,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": []
+      },
+      "datos/diagnostico_posterior.json": {
+        "numeros": 1075,
+        "diferencia_maxima": 0.0,
+        "diferencias": [],
+        "excluidos": [
+          "/generado_utc"
+        ]
+      }
+    },
+    "control_red": "audit hook del proceso; no cortafuegos del sistema",
+    "intentos_red_o_subprocesos_bloqueados": [],
+    "verificacion_decimal_y_recibos": "PASS",
+    "estado": "PASS",
+    "fin_utc": "2026-09-19T08:32:58.608290+00:00"
+  },
+  "estado": "PASS"
+}

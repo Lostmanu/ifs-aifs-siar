@@ -1,0 +1,9 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6603785/fullTextXML",
+  "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6603785/fullTextXML",
+  "status": 200,
+  "requested_utc": "2026-09-19T08:27:33.746927+00:00",
+  "received_utc": "2026-09-19T08:27:34.998933+00:00",
+  "sha256": "3cd5b8b6ab66af9369ba7119c9c8c7e16d87ff6a6552d4634ca7d8f58e9e0a92",
+  "bytes": 142744
+}

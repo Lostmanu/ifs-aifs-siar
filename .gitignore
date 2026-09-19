@@ -1,0 +1,15 @@
+# Solo se versiona la publicación cerrada. Los originales locales se conservan.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CIERRE.md
+!/requirements.txt
+!/docs/
+!/estudio/
+**/__pycache__/
+**/*.pyc
+**/reproduccion/
+**/.env
+**/.env.*
+*.zip

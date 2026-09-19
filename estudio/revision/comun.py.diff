@@ -1,0 +1,11 @@
+--- original/comun.py
++++ portable/comun.py
+@@ -10,7 +10,7 @@
+ CODE = Path(__file__).resolve().parent
+ BASE = CODE.parent                     # work/medicion_escala
+ ROOT = BASE.parent.parent              # qu
+-OUT = ROOT / 'outputs' / 'latencia_pronosticos' / 'medicion_escala'
++OUT = BASE / 'outputs'  # Paquete autónomo: todas las salidas quedan dentro de su raíz.
+ RAW = BASE / 'raw'
+ STATE = BASE / 'state'
+ DATOS = BASE / 'datos'

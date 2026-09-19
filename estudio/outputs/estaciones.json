@@ -1,0 +1,1931 @@
+{
+  "generado_utc": "2026-09-14T14:52:43.539405+00:00",
+  "metodo_sha256": "4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3",
+  "catalogo": {
+    "url": "https://servicio.mapa.gob.es/siarweb/fichaEstacion/masInfo/coordenadasEstacion",
+    "descargado_utc": "2026-09-14T07:41:46Z (por Codex; copia raw/catalogo_siar_20260914T0741Z.csv)",
+    "sha256": "c1af4cc4e60fa83bdb9214c243abecd214e21233fc37039f632915c231d99ff6",
+    "filas": 635,
+    "activas": 520,
+    "codificacion": "cp1252, separador ;"
+  },
+  "regla": {
+    "catalogo": {
+      "url": "https://servicio.mapa.gob.es/siarweb/fichaEstacion/masInfo/coordenadasEstacion",
+      "descargado_utc": "2026-09-14T07:41:46Z (por Codex; copia raw/catalogo_siar_20260914T0741Z.csv)",
+      "sha256": "c1af4cc4e60fa83bdb9214c243abecd214e21233fc37039f632915c231d99ff6",
+      "filas": 635,
+      "activas": 520,
+      "codificacion": "cp1252, separador ;"
+    },
+    "elegibilidad": [
+      "Estado = Activa en el catálogo",
+      "Nombre sin «Invernadero» ni «(malla)» (C5)",
+      "Todas las estaciones SiAR llevan piranómetro (radiación global); se registra el modelo desde la ficha oficial, sin validarlo (D1)"
+    ],
+    "coordenadas": "UTM ETRS89 del catálogo (huso 30 península/Baleares, 28 Canarias) → geográficas por inversa de Mercator transversa (series de Karney hasta n⁶, GRS80). Verificado frente a pyproj (EPSG:25830→4326) en 7 estaciones del trabajo previo: diferencia máxima 2,5·10⁻⁶ mm.",
+    "rejilla": {
+      "celdas_lat": [
+        36.0,
+        37.5,
+        39.0,
+        40.5,
+        42.0,
+        43.5
+      ],
+      "celdas_lon": [
+        -9.0,
+        -7.5,
+        -6.0,
+        -4.5,
+        -3.0,
+        -1.5,
+        0.0,
+        1.5,
+        3.0
+      ],
+      "semiancho_grados": 0.75,
+      "pertenencia": "|lat − centro_lat| ≤ 0,75 y |lon − centro_lon| ≤ 0,75 (huso 30 solamente)",
+      "distancia": "haversine, R = 6371,0088 km, al centro de celda; empate por código (no ocurre)",
+      "celdas_con_estacion": 33,
+      "celdas_sin_estacion": 21
+    },
+    "canarias": "Una estación: la primera activa de Centro Zonal = Canarias por orden alfabético de nombre (casefold). Fuera de rejilla; se reporta como una estación más y en el estrato de latitud que le corresponda.",
+    "regla_de_exclusion_posterior": "Se excluye (sin sustituir) toda estación con menos del 80 % de días con observación válida en la ventana primaria (< 88 de 110). Los pronósticos ausentes NO cuentan contra la estación; se contabilizan aparte.",
+    "orden_fijo_para_peticiones": "El campo «orden» fija la posición en las listas latitude/longitude de cada petición; el análisis verifica la correspondencia por location_id de la respuesta."
+  },
+  "n_seleccionadas": 34,
+  "n_excluidas_por_cobertura": 0,
+  "estaciones": [
+    {
+      "orden": 0,
+      "codigo": "CA06",
+      "nombre": "Vejer de la Frontera",
+      "id_formulario": "11-6",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Cádiz",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "14/09/2000",
+      "utm": {
+        "huso": 30,
+        "x": 244927.0,
+        "y": 4019310.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 36.285064289,
+      "longitud": -5.840037324,
+      "celda": {
+        "centro_lat": 36.0,
+        "centro_lon": -6.0,
+        "estaciones_en_celda": 6,
+        "distancia_km": 34.8,
+        "segunda_mas_proxima": "CA05",
+        "distancia_segunda_km": 38.887
+      },
+      "ficha": {
+        "altitud": 13,
+        "municipio": "Vejer de la Frontera",
+        "paraje": "Churriana",
+        "estado": "Activa",
+        "fechaInstalacion": "14/09/2000",
+        "fechaCalibracion": "03/11/2025",
+        "fechaUltMod": "29/01/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 36.28506428979055,
+          "lng": -5.840037323937673
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 1,
+      "codigo": "MA07",
+      "nombre": "IFAPA Churriana",
+      "id_formulario": "29-7",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Málaga",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "24/01/2001",
+      "utm": {
+        "huso": 30,
+        "x": 365680.0,
+        "y": 4059740.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 36.673805171,
+      "longitud": -4.503172625,
+      "celda": {
+        "centro_lat": 36.0,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 4,
+        "distancia_km": 74.924,
+        "segunda_mas_proxima": "MA04",
+        "distancia_segunda_km": 80.622
+      },
+      "ficha": {
+        "altitud": 17,
+        "municipio": "Málaga",
+        "paraje": "Cortijo de la Cruz (Churriana)",
+        "estado": "Activa",
+        "fechaInstalacion": "24/01/2001",
+        "fechaCalibracion": "19/09/2025",
+        "fechaUltMod": "09/04/2010",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 36.6738051726296,
+          "lng": -4.503172624799654
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 2,
+      "codigo": "AL10",
+      "nombre": "Adra",
+      "id_formulario": "4-10",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Almería",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "06/09/2000",
+      "utm": {
+        "huso": 30,
+        "x": 500683.0,
+        "y": 4066780.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 36.746757644,
+      "longitud": -2.992349077,
+      "celda": {
+        "centro_lat": 36.0,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 1,
+        "distancia_km": 83.039,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 2,
+        "municipio": "Adra",
+        "paraje": "Depuradora",
+        "estado": "Activa",
+        "fechaInstalacion": "06/09/2000",
+        "fechaCalibracion": "10/09/2025",
+        "fechaUltMod": "29/01/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 36.74675764580606,
+          "lng": -2.9923490768852377
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 3,
+      "codigo": "H07",
+      "nombre": "La Puebla de Guzmán",
+      "id_formulario": "21-7",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Huelva",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "14/11/2000",
+      "utm": {
+        "huso": 30,
+        "x": 124659.0,
+        "y": 4164620.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 37.552176327,
+      "longitud": -7.248365482,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": -7.5,
+        "estaciones_en_celda": 9,
+        "distancia_km": 22.937,
+        "segunda_mas_proxima": "H02",
+        "distancia_segunda_km": 37.136
+      },
+      "ficha": {
+        "altitud": 248,
+        "municipio": "Puebla de Guzmán",
+        "paraje": "La Sierra",
+        "estado": "Activa",
+        "fechaInstalacion": "14/11/2000",
+        "fechaCalibracion": "26/11/2024",
+        "fechaUltMod": "30/01/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 37.552176328428594,
+          "lng": -7.248365481729759
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 4,
+      "codigo": "SE19",
+      "nombre": "IFAPA  Centro Las Torres-Tomejil",
+      "id_formulario": "41-19",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Sevilla",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "22/12/2005",
+      "utm": {
+        "huso": 30,
+        "x": 238016.0,
+        "y": 4155860.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 37.512529152,
+      "longitud": -5.964103315,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": -6.0,
+        "estaciones_en_celda": 25,
+        "distancia_km": 3.459,
+        "segunda_mas_proxima": "SE17",
+        "distancia_segunda_km": 5.889
+      },
+      "ficha": {
+        "altitud": 12,
+        "municipio": "Alcalá del Río",
+        "paraje": null,
+        "estado": "Activa",
+        "fechaInstalacion": "22/12/2005",
+        "fechaCalibracion": "22/09/2025",
+        "fechaUltMod": "13/09/2007",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 37.51252915362704,
+          "lng": -5.964103314541141
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 5,
+      "codigo": "CO101",
+      "nombre": "IFAPA Centro de Cabra",
+      "id_formulario": "14-101",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Córdoba",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "11/12/2003",
+      "utm": {
+        "huso": 30,
+        "x": 373516.0,
+        "y": 4151100.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 37.498171177,
+      "longitud": -4.430901365,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 25,
+        "distancia_km": 6.099,
+        "segunda_mas_proxima": "CO08",
+        "distancia_segunda_km": 27.31
+      },
+      "ficha": {
+        "altitud": 543,
+        "municipio": "Cabra",
+        "paraje": "IFAPA Centro Cabra",
+        "estado": "Activa",
+        "fechaInstalacion": "11/12/2003",
+        "fechaCalibracion": null,
+        "fechaUltMod": "03/10/2019",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 37.49817117786915,
+          "lng": -4.430901365384736
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 101,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {
+          "valor vacío o no numérico": 9
+        },
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 6,
+      "codigo": "J02",
+      "nombre": "Pozo Alcón",
+      "id_formulario": "23-2",
+      "region_formulario": "AND",
+      "centro_zonal": "Andalucía",
+      "provincia": "Jaén",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "09/08/2000",
+      "utm": {
+        "huso": 30,
+        "x": 506163.0,
+        "y": 4169420.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 37.671945453,
+      "longitud": -2.930114415,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 26,
+        "distancia_km": 20.087,
+        "segunda_mas_proxima": "GR01",
+        "distancia_segunda_km": 21.701
+      },
+      "ficha": {
+        "altitud": 881,
+        "municipio": "Pozo Alcón",
+        "paraje": "Hoya La Carrasca",
+        "estado": "Activa",
+        "fechaInstalacion": "09/08/2000",
+        "fechaCalibracion": "03/11/2025",
+        "fechaUltMod": "30/01/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 37.671945454253105,
+          "lng": -2.9301144153586685
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 7,
+      "codigo": "MU01",
+      "nombre": "Finca experimental de Aguilas (CIDA)",
+      "id_formulario": "30-1",
+      "region_formulario": "MUR",
+      "centro_zonal": "Región de Murcia",
+      "provincia": "Murcia",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "24/05/1999",
+      "utm": {
+        "huso": 30,
+        "x": 624578.0,
+        "y": 4142250.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 37.418683023,
+      "longitud": -1.592151104,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": -1.5,
+        "estaciones_en_celda": 41,
+        "distancia_km": 12.162,
+        "segunda_mas_proxima": "MU105",
+        "distancia_segunda_km": 14.41
+      },
+      "ficha": {
+        "altitud": 30,
+        "municipio": "Águilas",
+        "paraje": "Carretera de Calabardina",
+        "estado": "Activa",
+        "fechaInstalacion": "24/05/1999",
+        "fechaCalibracion": "23/01/2025",
+        "fechaUltMod": "01/12/2023",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "PYRA 04",
+        "fabricantePiranometro": "Delta Ohm",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 37.418683024422464,
+          "lng": -1.5921511038375535
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 8,
+      "codigo": "A101",
+      "nombre": "Elx EEA",
+      "id_formulario": "3-101",
+      "region_formulario": "VAL",
+      "centro_zonal": "Comunidad Valenciana",
+      "provincia": "Alicante/Alacant",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "11/03/1999",
+      "utm": {
+        "huso": 30,
+        "x": 701609.0,
+        "y": 4235864.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 38.248199474,
+      "longitud": -0.696059274,
+      "celda": {
+        "centro_lat": 37.5,
+        "centro_lon": 0.0,
+        "estaciones_en_celda": 1,
+        "distancia_km": 103.219,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 62,
+        "municipio": "Elche/Elx",
+        "paraje": "La Alcudia",
+        "estado": "Activa",
+        "fechaInstalacion": "11/03/1999",
+        "fechaCalibracion": null,
+        "fechaUltMod": "09/10/2023",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 38.24819947564165,
+          "lng": -0.6960592744477723
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 9,
+      "codigo": "BA06",
+      "nombre": "Olivenza",
+      "id_formulario": "6-6",
+      "region_formulario": "EXT",
+      "centro_zonal": "Extremadura",
+      "provincia": "Badajoz",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "26/08/1999",
+      "utm": {
+        "huso": 30,
+        "x": 147185.0,
+        "y": 4293630.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 38.720920724,
+      "longitud": -7.057825063,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": -7.5,
+        "estaciones_en_celda": 3,
+        "distancia_km": 49.283,
+        "segunda_mas_proxima": "BA203",
+        "distancia_segunda_km": 59.721
+      },
+      "ficha": {
+        "altitud": 202,
+        "municipio": "Olivenza",
+        "paraje": "Charca nº3",
+        "estado": "Activa",
+        "fechaInstalacion": "26/08/1999",
+        "fechaCalibracion": "03/04/2025",
+        "fechaUltMod": "19/05/2005",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "PYRA 04",
+        "fabricantePiranometro": "Delta Ohm",
+        "modeloDatalogger": "CR1000",
+        "coordenadas": {
+          "lat": 38.72092072553951,
+          "lng": -7.057825063327449
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 10,
+      "codigo": "BA106",
+      "nombre": "Santa Amalia",
+      "id_formulario": "6-106",
+      "region_formulario": "EXT",
+      "centro_zonal": "Extremadura",
+      "provincia": "Badajoz",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "25/11/2011",
+      "utm": {
+        "huso": 30,
+        "x": 241514.0,
+        "y": 4322470.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.013085737,
+      "longitud": -5.985377943,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": -6.0,
+        "estaciones_en_celda": 20,
+        "distancia_km": 1.927,
+        "segunda_mas_proxima": "BA107",
+        "distancia_segunda_km": 9.805
+      },
+      "ficha": {
+        "altitud": 252,
+        "municipio": "Santa Amalia",
+        "paraje": null,
+        "estado": "Activa",
+        "fechaInstalacion": "25/11/2011",
+        "fechaCalibracion": null,
+        "fechaUltMod": "11/07/2017",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 39.01308573845949,
+          "lng": -5.98537794337169
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 11,
+      "codigo": "CR03",
+      "nombre": "Porzuna",
+      "id_formulario": "13-3",
+      "region_formulario": "CAM",
+      "centro_zonal": "Castilla-La Mancha",
+      "provincia": "Ciudad Real",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "15/09/1999",
+      "utm": {
+        "huso": 30,
+        "x": 393782.0,
+        "y": 4343510.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.234397103,
+      "longitud": -4.230704439,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 7,
+        "distancia_km": 34.915,
+        "segunda_mas_proxima": "CR04",
+        "distancia_segunda_km": 44.346
+      },
+      "ficha": {
+        "altitud": 610,
+        "municipio": "Porzuna",
+        "paraje": "Sede Comunidad Regantes",
+        "estado": "Activa",
+        "fechaInstalacion": "15/09/1999",
+        "fechaCalibracion": "18/09/2025",
+        "fechaUltMod": "28/04/2015",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR1000",
+        "coordenadas": {
+          "lat": 39.234397104563286,
+          "lng": -4.2307044389820785
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 12,
+      "codigo": "CR07",
+      "nombre": "Argamasilla de Alba",
+      "id_formulario": "13-7",
+      "region_formulario": "CAM",
+      "centro_zonal": "Castilla-La Mancha",
+      "provincia": "Ciudad Real",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "23/10/2000",
+      "utm": {
+        "huso": 30,
+        "x": 495018.0,
+        "y": 4325230.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.076162037,
+      "longitud": -3.057596143,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 12,
+        "distancia_km": 9.822,
+        "segunda_mas_proxima": "CR01",
+        "distancia_segunda_km": 29.054
+      },
+      "ficha": {
+        "altitud": 702,
+        "municipio": "Argamasilla de Alba",
+        "paraje": " Casa Don Pedro / Depósito de agua",
+        "estado": "Activa",
+        "fechaInstalacion": "23/10/2000",
+        "fechaCalibracion": "16/09/2025",
+        "fechaUltMod": "19/02/2001",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 39.0761620385096,
+          "lng": -3.0575961430200236
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 13,
+      "codigo": "AB09",
+      "nombre": "Motilleja",
+      "id_formulario": "2-9",
+      "region_formulario": "CAM",
+      "centro_zonal": "Castilla-La Mancha",
+      "provincia": "Albacete",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "28/09/2000",
+      "utm": {
+        "huso": 30,
+        "x": 606281.0,
+        "y": 4335780.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.164750099,
+      "longitud": -1.769781114,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": -1.5,
+        "estaciones_en_celda": 24,
+        "distancia_km": 29.628,
+        "segunda_mas_proxima": "AB07",
+        "distancia_segunda_km": 31.333
+      },
+      "ficha": {
+        "altitud": 680,
+        "municipio": "Motilleja",
+        "paraje": "Camino la Carrapa",
+        "estado": "Activa",
+        "fechaInstalacion": "28/09/2000",
+        "fechaCalibracion": "14/10/2025",
+        "fechaUltMod": "23/02/2018",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 39.164750100518376,
+          "lng": -1.7697811142731636
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 14,
+      "codigo": "A04",
+      "nombre": "Ondara",
+      "id_formulario": "3-4",
+      "region_formulario": "VAL",
+      "centro_zonal": "Comunidad Valenciana",
+      "provincia": "Alicante/Alacant",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "11/11/1999",
+      "utm": {
+        "huso": 30,
+        "x": 761033.0,
+        "y": 4300940.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 38.818580673,
+      "longitud": 0.00656313,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": 0.0,
+        "estaciones_en_celda": 33,
+        "distancia_km": 20.181,
+        "segunda_mas_proxima": "V22",
+        "distancia_segunda_km": 21.353
+      },
+      "ficha": {
+        "altitud": 38,
+        "municipio": "Ondara",
+        "paraje": "Pozo Virgen del Pîlar (Pamis)",
+        "estado": "Activa",
+        "fechaInstalacion": "11/11/1999",
+        "fechaCalibracion": "10/09/2025",
+        "fechaUltMod": "26/02/2001",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 38.818580674022776,
+          "lng": 0.0065631301463934715
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 15,
+      "codigo": "IB01",
+      "nombre": "Santa Eulalia",
+      "id_formulario": "7-1",
+      "region_formulario": "BAL",
+      "centro_zonal": "Islas Baleares",
+      "provincia": "Balears, Illes",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "30/03/2004",
+      "utm": {
+        "huso": 30,
+        "x": 884487.0,
+        "y": 4327280.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.010055052,
+      "longitud": 1.439925034,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": 1.5,
+        "estaciones_en_celda": 2,
+        "distancia_km": 5.31,
+        "segunda_mas_proxima": "IB11",
+        "distancia_segunda_km": 31.611
+      },
+      "ficha": {
+        "altitud": 120,
+        "municipio": "Santa Eulalia del Río",
+        "paraje": "Pedanía de Santa Gertrudis",
+        "estado": "Activa",
+        "fechaInstalacion": "30/03/2004",
+        "fechaCalibracion": "27/10/2025",
+        "fechaUltMod": "14/04/2004",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 39.010055052955224,
+          "lng": 1.4399250339501575
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 16,
+      "codigo": "IB05",
+      "nombre": "Felanitx",
+      "id_formulario": "7-5",
+      "region_formulario": "BAL",
+      "centro_zonal": "Islas Baleares",
+      "provincia": "Balears, Illes",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "05/04/2004",
+      "utm": {
+        "huso": 30,
+        "x": 1023670.0,
+        "y": 4387260.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.475456328,
+      "longitud": 3.0863262,
+      "celda": {
+        "centro_lat": 39.0,
+        "centro_lon": 3.0,
+        "estaciones_en_celda": 5,
+        "distancia_km": 53.389,
+        "segunda_mas_proxima": "IB03",
+        "distancia_segunda_km": 62.484
+      },
+      "ficha": {
+        "altitud": 82,
+        "municipio": "Felanitx",
+        "paraje": "Son Mesquida",
+        "estado": "Activa",
+        "fechaInstalacion": "05/04/2004",
+        "fechaCalibracion": "29/10/2025",
+        "fechaUltMod": "30/11/2021",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 39.47545632765664,
+          "lng": 3.086326197713324
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 17,
+      "codigo": "CC12",
+      "nombre": "Gargantilla",
+      "id_formulario": "10-12",
+      "region_formulario": "EXT",
+      "centro_zonal": "Extremadura",
+      "provincia": "Cáceres",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "01/09/1999",
+      "utm": {
+        "huso": 30,
+        "x": 249780.0,
+        "y": 4458440.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 40.239041127,
+      "longitud": -5.941426772,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": -6.0,
+        "estaciones_en_celda": 21,
+        "distancia_km": 29.439,
+        "segunda_mas_proxima": "CC19",
+        "distancia_segunda_km": 32.567
+      },
+      "ficha": {
+        "altitud": 591,
+        "municipio": "Gargantilla",
+        "paraje": "Dehesa Boyal",
+        "estado": "Activa",
+        "fechaInstalacion": "01/09/1999",
+        "fechaCalibracion": "30/07/2025",
+        "fechaUltMod": "19/05/2005",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 40.23904112873637,
+          "lng": -5.941426771536622
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 18,
+      "codigo": "M102",
+      "nombre": "Villa del Prado",
+      "id_formulario": "28-102",
+      "region_formulario": "MAD",
+      "centro_zonal": "Comunidad de Madrid",
+      "provincia": "Madrid",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "14/06/2005",
+      "utm": {
+        "huso": 30,
+        "x": 391738.0,
+        "y": 4456390.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 40.250968356,
+      "longitud": -4.272958493,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 11,
+        "distancia_km": 33.715,
+        "segunda_mas_proxima": "AV101",
+        "distancia_segunda_km": 37.739
+      },
+      "ficha": {
+        "altitud": 466,
+        "municipio": "Villa del Prado",
+        "paraje": "Aula taller agrícola",
+        "estado": "Activa",
+        "fechaInstalacion": "14/06/2005",
+        "fechaCalibracion": "06/02/2025",
+        "fechaUltMod": "09/02/2024",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 40.250968357222,
+          "lng": -4.272958493362003
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 19,
+      "codigo": "GU03",
+      "nombre": "Armuña de Tajuña",
+      "id_formulario": "19-3",
+      "region_formulario": "CAM",
+      "centro_zonal": "Castilla-La Mancha",
+      "provincia": "Guadalajara",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "08/11/2000",
+      "utm": {
+        "huso": 30,
+        "x": 498822.0,
+        "y": 4486630.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 40.530406949,
+      "longitud": -3.013908635,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 13,
+        "distancia_km": 3.58,
+        "segunda_mas_proxima": "GU09",
+        "distancia_segunda_km": 26.792
+      },
+      "ficha": {
+        "altitud": 738,
+        "municipio": "Armuña de Tajuña",
+        "paraje": "Moharna",
+        "estado": "Activa",
+        "fechaInstalacion": "08/11/2000",
+        "fechaCalibracion": "09/05/2024",
+        "fechaUltMod": "03/05/2017",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 40.530406950787345,
+          "lng": -3.0139086349294564
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 20,
+      "codigo": "TE06",
+      "nombre": "Villarquemado",
+      "id_formulario": "44-6",
+      "region_formulario": "ARA",
+      "centro_zonal": "Aragón",
+      "provincia": "Teruel",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "08/06/2005",
+      "utm": {
+        "huso": 30,
+        "x": 644881.0,
+        "y": 4487500.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 40.525584099,
+      "longitud": -1.289554072,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": -1.5,
+        "estaciones_en_celda": 7,
+        "distancia_km": 18.017,
+        "segunda_mas_proxima": "TE05",
+        "distancia_segunda_km": 32.982
+      },
+      "ficha": {
+        "altitud": 989,
+        "municipio": "Villarquemado",
+        "paraje": null,
+        "estado": "Activa",
+        "fechaInstalacion": "08/06/2005",
+        "fechaCalibracion": "13/05/2025",
+        "fechaUltMod": "09/06/2005",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 40.52558410052851,
+          "lng": -1.2895540722664804
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 21,
+      "codigo": "CS03",
+      "nombre": "San Rafael del Río",
+      "id_formulario": "12-3",
+      "region_formulario": "VAL",
+      "centro_zonal": "Comunidad Valenciana",
+      "provincia": "Castellón/Castelló",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "02/11/1999",
+      "utm": {
+        "huso": 30,
+        "x": 784970.0,
+        "y": 4499150.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 40.594077101,
+      "longitud": 0.367527155,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": 0.0,
+        "estaciones_en_celda": 14,
+        "distancia_km": 32.768,
+        "segunda_mas_proxima": "CS07",
+        "distancia_segunda_km": 42.556
+      },
+      "ficha": {
+        "altitud": 217,
+        "municipio": "San Rafael del Río",
+        "paraje": "Los Talet",
+        "estado": "Activa",
+        "fechaInstalacion": "02/11/1999",
+        "fechaCalibracion": "14/01/2025",
+        "fechaUltMod": "26/02/2001",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 40.594077102242,
+          "lng": 0.3675271552426441
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 22,
+      "codigo": "IB06",
+      "nombre": "Sa Pobla",
+      "id_formulario": "7-6",
+      "region_formulario": "BAL",
+      "centro_zonal": "Islas Baleares",
+      "provincia": "Balears, Illes",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "05/04/2004",
+      "utm": {
+        "huso": 30,
+        "x": 1017420.0,
+        "y": 4423370.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 39.802790957,
+      "longitud": 3.04225929,
+      "celda": {
+        "centro_lat": 40.5,
+        "centro_lon": 3.0,
+        "estaciones_en_celda": 1,
+        "distancia_km": 77.609,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 4,
+        "municipio": "Pobla, Sa",
+        "paraje": "Son Blanc",
+        "estado": "Activa",
+        "fechaInstalacion": "05/04/2004",
+        "fechaCalibracion": "30/10/2025",
+        "fechaUltMod": "14/04/2004",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 39.80279095719857,
+          "lng": 3.0422592881178283
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 23,
+      "codigo": "LU02",
+      "nombre": "Monforte de Lemos",
+      "id_formulario": "27-2",
+      "region_formulario": "GAL",
+      "centro_zonal": "Galicia",
+      "provincia": "Lugo",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "06/07/2005",
+      "utm": {
+        "huso": 30,
+        "x": 130127.0,
+        "y": 4715890.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.506922063,
+      "longitud": -7.501615129,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": -7.5,
+        "estaciones_en_celda": 1,
+        "distancia_km": 56.367,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 331,
+        "municipio": "Monforte de Lemos",
+        "paraje": "Catro Ventos",
+        "estado": "Activa",
+        "fechaInstalacion": "06/07/2005",
+        "fechaCalibracion": "03/10/2024",
+        "fechaUltMod": "20/09/2005",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 42.506922063791464,
+          "lng": -7.501615129251556
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 24,
+      "codigo": "ZA01",
+      "nombre": "Colinas de Trasmonte",
+      "id_formulario": "49-1",
+      "region_formulario": "CAL",
+      "centro_zonal": "Castilla y León",
+      "provincia": "Zamora",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "13/12/1999",
+      "utm": {
+        "huso": 30,
+        "x": 267219.0,
+        "y": 4653680.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.000735163,
+      "longitud": -5.81067916,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": -6.0,
+        "estaciones_en_celda": 15,
+        "distancia_km": 15.644,
+        "segunda_mas_proxima": "ZA05",
+        "distancia_segunda_km": 25.756
+      },
+      "ficha": {
+        "altitud": 707,
+        "municipio": "Quiruelas de Vidriales",
+        "paraje": "Fosa séptica de Colinas",
+        "estado": "Activa",
+        "fechaInstalacion": "13/12/1999",
+        "fechaCalibracion": "19/12/2024",
+        "fechaUltMod": "27/03/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 42.00073516407114,
+          "lng": -5.810679159949195
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 25,
+      "codigo": "P02",
+      "nombre": "Villamuriel de Cerrato",
+      "id_formulario": "34-2",
+      "region_formulario": "CAL",
+      "centro_zonal": "Castilla y León",
+      "provincia": "Palencia",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "27/06/2000",
+      "utm": {
+        "huso": 30,
+        "x": 376702.0,
+        "y": 4644880.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 41.946264112,
+      "longitud": -4.48752048,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 24,
+        "distancia_km": 6.064,
+        "segunda_mas_proxima": "P01",
+        "distancia_segunda_km": 17.39
+      },
+      "ficha": {
+        "altitud": 736,
+        "municipio": "Villamuriel de Cerrato",
+        "paraje": "Los Ángeles",
+        "estado": "Activa",
+        "fechaInstalacion": "27/06/2000",
+        "fechaCalibracion": "21/05/2025",
+        "fechaUltMod": "27/03/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "PYRA 04",
+        "fabricantePiranometro": "Delta Ohm",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 41.946264113581556,
+          "lng": -4.487520480409256
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 26,
+      "codigo": "SO03",
+      "nombre": "Fuentecantos",
+      "id_formulario": "42-3",
+      "region_formulario": "CAL",
+      "centro_zonal": "Castilla y León",
+      "provincia": "Soria",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "25/11/1999",
+      "utm": {
+        "huso": 30,
+        "x": 547013.0,
+        "y": 4631260.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 41.831832697,
+      "longitud": -2.433820264,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 7,
+        "distancia_km": 50.441,
+        "segunda_mas_proxima": "SO02",
+        "distancia_segunda_km": 51.622
+      },
+      "ficha": {
+        "altitud": 1019,
+        "municipio": "Fuentecantos",
+        "paraje": "Campillo de Buitrago",
+        "estado": "Activa",
+        "fechaInstalacion": "25/11/1999",
+        "fechaCalibracion": "27/05/2025",
+        "fechaUltMod": "27/03/2002",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "PYRA 04",
+        "fabricantePiranometro": "Delta Ohm",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 41.83183269888894,
+          "lng": -2.43382026379779
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 27,
+      "codigo": "NA04",
+      "nombre": "25 Ablitas",
+      "id_formulario": "31-4",
+      "region_formulario": "NAV",
+      "centro_zonal": "Comunidad Foral de Navarra",
+      "provincia": "Navarra",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "07/10/2003",
+      "utm": {
+        "huso": 30,
+        "x": 612357.0,
+        "y": 4650474.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 41.998267624,
+      "longitud": -1.643370431,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": -1.5,
+        "estaciones_en_celda": 40,
+        "distancia_km": 11.849,
+        "segunda_mas_proxima": "NA18",
+        "distancia_segunda_km": 12.189
+      },
+      "ficha": {
+        "altitud": 341,
+        "municipio": "Ablitas",
+        "paraje": "Saso Perdiz",
+        "estado": "Activa",
+        "fechaInstalacion": "07/10/2003",
+        "fechaCalibracion": "27/11/2024",
+        "fechaUltMod": "21/10/2021",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 41.998267624912174,
+          "lng": -1.6433704307292147
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 28,
+      "codigo": "HU07",
+      "nombre": "Barbastro",
+      "id_formulario": "22-7",
+      "region_formulario": "ARA",
+      "centro_zonal": "Aragón",
+      "provincia": "Huesca",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "26/08/2003",
+      "utm": {
+        "huso": 30,
+        "x": 757738.0,
+        "y": 4655960.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.013470617,
+      "longitud": 0.112610217,
+      "celda": {
+        "centro_lat": 42.0,
+        "centro_lon": 0.0,
+        "estaciones_en_celda": 25,
+        "distancia_km": 9.424,
+        "segunda_mas_proxima": "HU06",
+        "distancia_segunda_km": 12.421
+      },
+      "ficha": {
+        "altitud": 410,
+        "municipio": "Barbastro",
+        "paraje": "CAMINO",
+        "estado": "Activa",
+        "fechaInstalacion": "26/08/2003",
+        "fechaCalibracion": "03/07/2025",
+        "fechaUltMod": "22/09/2003",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 42.01347061787421,
+          "lng": 0.11261021686492712
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 29,
+      "codigo": "LU01",
+      "nombre": "Castro de Rei",
+      "id_formulario": "27-1",
+      "region_formulario": "GAL",
+      "centro_zonal": "Galicia",
+      "provincia": "Lugo",
+      "propiedad": "Red de estaciones del Ministerio",
+      "fecha_instalacion": "05/07/2005",
+      "utm": {
+        "huso": 30,
+        "x": 135107.0,
+        "y": 4787804.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 43.154927086,
+      "longitud": -7.48774846,
+      "celda": {
+        "centro_lat": 43.5,
+        "centro_lon": -7.5,
+        "estaciones_en_celda": 3,
+        "distancia_km": 38.383,
+        "segunda_mas_proxima": "C01",
+        "distancia_segunda_km": 45.139
+      },
+      "ficha": {
+        "altitud": 400,
+        "municipio": "Castro de Rei",
+        "paraje": "As gándaras de Castro",
+        "estado": "Activa",
+        "fechaInstalacion": "05/07/2005",
+        "fechaCalibracion": "02/10/2024",
+        "fechaUltMod": "22/02/2019",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": "SP1110",
+        "fabricantePiranometro": "SKYE Instruments",
+        "modeloDatalogger": "CR10X",
+        "coordenadas": {
+          "lat": 43.15492708746815,
+          "lng": -7.48774846030326
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 30,
+      "codigo": "P104",
+      "nombre": "Lomilla de Aguilar",
+      "id_formulario": "34-104",
+      "region_formulario": "CAL",
+      "centro_zonal": "Castilla y León",
+      "provincia": "Palencia",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "15/12/2022",
+      "utm": {
+        "huso": 30,
+        "x": 394061.0,
+        "y": 4734853.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.758888365,
+      "longitud": -4.294672231,
+      "celda": {
+        "centro_lat": 43.5,
+        "centro_lon": -4.5,
+        "estaciones_en_celda": 1,
+        "distancia_km": 84.076,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 905,
+        "municipio": "Aguilar de Campoo",
+        "paraje": "El Parador",
+        "estado": "Activa",
+        "fechaInstalacion": "15/12/2022",
+        "fechaCalibracion": null,
+        "fechaUltMod": "02/02/2023",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 42.75889260588271,
+          "lng": -4.294663642110121
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.85,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 31,
+      "codigo": "BU101",
+      "nombre": "Valle de Losa",
+      "id_formulario": "9-101",
+      "region_formulario": "CAL",
+      "centro_zonal": "Castilla y León",
+      "provincia": "Burgos",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "29/12/2006",
+      "utm": {
+        "huso": 30,
+        "x": 480749.0,
+        "y": 4757130.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.966574582,
+      "longitud": -3.236056422,
+      "celda": {
+        "centro_lat": 43.5,
+        "centro_lon": -3.0,
+        "estaciones_en_celda": 1,
+        "distancia_km": 62.321,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 635,
+        "municipio": "Valle de Losa",
+        "paraje": "La Zarza",
+        "estado": "Activa",
+        "fechaInstalacion": "29/12/2006",
+        "fechaCalibracion": null,
+        "fechaUltMod": "12/12/2006",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 42.96657458352996,
+          "lng": -3.236056421947167
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 39,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {
+          "kt < 0,03": 1
+        },
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 32,
+      "codigo": "NA106",
+      "nombre": "01 Arazuri",
+      "id_formulario": "31-106",
+      "region_formulario": "NAV",
+      "centro_zonal": "Comunidad Foral de Navarra",
+      "provincia": "Navarra",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "10/03/2000",
+      "utm": {
+        "huso": 30,
+        "x": 604373.0,
+        "y": 4740490.0,
+        "crs": "ETRS89 / UTM huso 30 (EPSG:25830)"
+      },
+      "latitud": 42.809854096,
+      "longitud": -1.723418584,
+      "celda": {
+        "centro_lat": 43.5,
+        "centro_lon": -1.5,
+        "estaciones_en_celda": 1,
+        "distancia_km": 78.852,
+        "segunda_mas_proxima": null,
+        "distancia_segunda_km": null
+      },
+      "ficha": {
+        "altitud": 396,
+        "municipio": "Cendea de Olza/Oltza Zendea",
+        "paraje": "Ds diseminado 109 BJ",
+        "estado": "Activa",
+        "fechaInstalacion": "10/03/2000",
+        "fechaCalibracion": null,
+        "fechaUltMod": "15/06/2017",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 42.80985409734119,
+          "lng": -1.7234185841502565
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 40,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {},
+        "excluida_por_cobertura": false
+      }
+    },
+    {
+      "orden": 33,
+      "codigo": "TF153",
+      "nombre": "Adeje - Hoya Grande Aire Libre",
+      "id_formulario": "38-153",
+      "region_formulario": "CAN",
+      "centro_zonal": "Canarias",
+      "provincia": "Santa Cruz de Tenerife",
+      "propiedad": "CCAA",
+      "fecha_instalacion": "24/02/2021",
+      "utm": {
+        "huso": 28,
+        "x": 325244.0,
+        "y": 3114296.0,
+        "crs": "ETRS89 / UTM huso 28 (EPSG:25828)"
+      },
+      "latitud": 28.142749874,
+      "longitud": -16.779565928,
+      "celda": null,
+      "motivo": "Canarias: primera estación activa del catálogo por orden alfabético de nombre (casefold), regla 6.1.3 del encargo",
+      "ficha": {
+        "altitud": 132,
+        "municipio": "Adeje",
+        "paraje": "HOYA-GRANDE",
+        "estado": "Activa",
+        "fechaInstalacion": "24/02/2021",
+        "fechaCalibracion": null,
+        "fechaUltMod": "17/03/2021",
+        "ultimoDato": "13/09/2026",
+        "modeloPiranometro": null,
+        "fabricantePiranometro": null,
+        "modeloDatalogger": null,
+        "coordenadas": {
+          "lat": 28.142749875583338,
+          "lng": -16.779565928335888
+        }
+      },
+      "coordenadas_ficha_vs_catalogo_m": 0.0,
+      "cobertura": {
+        "dias_validos_primaria": 110,
+        "de": 110,
+        "umbral": 88,
+        "dias_validos_secundaria": 5,
+        "de_secundaria": 40,
+        "tieneDatos_false": 154,
+        "motivos_no_valido": {
+          "valor vacío o no numérico": 37
+        },
+        "excluida_por_cobertura": false
+      }
+    }
+  ]
+}

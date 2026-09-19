@@ -1,0 +1,77 @@
+{
+  "inicio_utc": "2026-09-19T08:24:01.530473+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "plataforma": "Windows-11-10.0.26200-SP0",
+  "red": "audit hook del proceso bloquea socket.connect/getaddrinfo; no equivale a un cortafuegos del sistema",
+  "salidas": "C:\\Users\\manue\\Documents\\Codex\\2026-09-11\\qu\\work\\revision_cierre_20260919\\paquete_portable\\outputs",
+  "pasos": [
+    {
+      "script": "test_metodo.py",
+      "segundos": 0.23399999999674037,
+      "estado": "PASS"
+    },
+    {
+      "script": "preparar_observaciones.py",
+      "segundos": 0.09399999998277053,
+      "estado": "PASS"
+    },
+    {
+      "script": "analizar.py",
+      "segundos": 16.82800000003772,
+      "estado": "PASS"
+    },
+    {
+      "script": "diagnostico_posterior.py",
+      "segundos": 3.827999999979511,
+      "estado": "PASS"
+    }
+  ],
+  "comparaciones": {
+    "datos\\cobertura_observaciones.json": {
+      "hojas_numericas": 207,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": []
+    },
+    "datos\\diagnostico_posterior.json": {
+      "hojas_numericas": 1075,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "datos\\observaciones_diarias.json": {
+      "hojas_numericas": 20806,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": []
+    },
+    "outputs\\estaciones.json": {
+      "hojas_numericas": 729,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "outputs\\panel_analisis.json": {
+      "hojas_numericas": 25455,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": []
+    },
+    "outputs\\resultados.json": {
+      "hojas_numericas": 12330,
+      "max_abs": 0.0,
+      "diferencias": [],
+      "metadatos_excluidos": [
+        "/generado_utc"
+      ]
+    }
+  },
+  "intentos_red_o_subprocesos_bloqueados": [],
+  "fin_utc": "2026-09-19T08:24:22.693651+00:00",
+  "estado": "PASS"
+}

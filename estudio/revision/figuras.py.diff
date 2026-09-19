@@ -1,0 +1,48 @@
+--- original/figuras.py
++++ portable/figuras.py
+@@ -40,7 +40,7 @@
+         ax.set_ylim(-1.5, len(order) - 0.5)
+         ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05), fontsize=8, frameon=False)
+     fig.suptitle('Efecto por estación, ventana primaria (14 mayo–31 agosto 2026), estaciones ordenadas por latitud', x=0.01, ha='left', fontsize=12, fontweight='bold')
+-    fig.text(0.01, 0.004, 'Comparaciones relativas contra la misma observación SiAR. Un error de escala común a la red NO se cancela cuando las dos series tienen sesgos distintos:\nla línea punteada es el mismo agregado si la red midiera un 5 % de menos (secciones 5 y 7). Intervalos bootstrap por días completos.', fontsize=8, va='bottom')
++    fig.text(0.01, 0.004, 'Comparaciones relativas contra la misma observación SiAR. La comparación no es invariante a cambios de escala de la observación:\nla línea punteada es el mismo agregado si la red midiera un 5 % de menos (secciones 5 y 7). Intervalos bootstrap por días completos.', fontsize=8, va='bottom')
+     fig.tight_layout(rect=[0, 0.042, 1, 0.96])
+     fig.savefig(Path(outdir) / 'figura_principal.png', dpi=160)
+     plt.close(fig)
+@@ -66,7 +66,7 @@
+         ax.set_xlim(lo, hi)
+         ax.set_title(title, loc='left', fontsize=10, fontweight='bold')
+         ax.set_xlabel('Reducción relativa de MAE (%)'); ax.set_ylabel('sorteos')
+-        ax.legend(fontsize=7.5, frameon=False, loc='upper left')
++        ax.legend(fontsize=7.5, frameon=True, facecolor='white', framealpha=0.95, edgecolor='none', loc='upper left')
+     ax = fig.add_subplot(gs[1, :])
+     for h, col, lab in (('H1', VERDE, 'H1: IFS 00 → 06 UTC'), ('H2', ROJO, 'H2: IFS 00 → AIFS 00 UTC')):
+         cu = dg['cruce_k_comun'][h]['curva']
+@@ -77,21 +77,21 @@
+         if kc:
+             ax.plot([kc], [0], 'o', color=col, ms=7, mfc='white', mew=2)
+             xt, yt = (kc + 0.004, 4.0) if h == 'H1' else (kc + 0.004, -6.5)
+-            ax.annotate(f'cruza cero en k = {kc:.3f}: discrepancia equivalente del {100*(1/kc-1):.2f} %'.replace('.', ','),
++            ax.annotate(f'cruza cero en k = {kc:.3f}: cambio de observación del {100*(1/kc-1):.2f} %'.replace('.', ','),
+                         xy=(kc, 0), xytext=(xt, yt), fontsize=8, color=col, ha='left',
+                         arrowprops=dict(arrowstyle='-', color=col, lw=0.8, shrinkA=0, shrinkB=4))
+     ax.axhline(0, color='#444', lw=1)
+     # la auditoria mide d = (satelite - medida)/medida, luego k = 1/(1+d), no 1-d
+     k_lo, k_hi = 1 / (1 + 0.1575), 1 / (1 + 0.0263)
+-    ax.axvspan(k_lo, k_hi, color='#8a6d3b', alpha=0.13, label=f'rango medido de SiAR frente a SARAH-3: 2,63 % a 15,75 % por debajo, es decir k de {k_hi:.3f} a {k_lo:.3f} (auditoría del 14-sep)'.replace('.', ','))
++    ax.axvspan(0.95, 1.05, color='#8a6d3b', alpha=0.13, label='banda de sensibilidad fijada: k de 0,95 a 1,05 (no intervalo estimado)')
+     ax.axvline(1.0, color='#888', lw=1, ls='--')
+-    ax.set_xlim(0.855, 1.10); ax.set_xlabel('k: factor de escala común (observación real = observación medida / k; k < 1 = el sensor mide de menos, o el pronóstico viene alto)')
++    ax.set_xlim(0.855, 1.10); ax.set_xlabel('k: factor del escenario (observación usada = observación publicada / k; no estima el error del sensor)')
+     ax.set_ylabel('Reducción relativa de MAE (%)')
+-    ax.set_title('El efecto en función de un error de escala común de la red (anexo A)', loc='left', fontsize=10, fontweight='bold')
++    ax.set_title('Efecto frente al factor común k (diagnóstico posterior; no estima el k real)', loc='left', fontsize=10, fontweight='bold')
+     ax.grid(alpha=0.2); ax.set_axisbelow(True)
+     ax.legend(fontsize=8, frameon=False, loc='upper left')
+-    fig.suptitle('Sensibilidad al error del instrumento: el sorteo por estación sobrevive, el error común de red no', x=0.01, ha='left', fontsize=12, fontweight='bold')
+-    fig.text(0.01, 0.005, 'Arriba, el Monte Carlo preespecificado sortea un factor independiente en cada estación: su media se concentra en 1 y apenas mueve el efecto.\nLas líneas punteadas son el análisis determinista con un mismo factor en toda la red, que invierte H2. Abajo, el efecto en función de ese factor común. Dividir la observación por k\nes algebraicamente idéntico a multiplicar los pronósticos por k: el eje no distingue el sensor del pronóstico (§5).', fontsize=8, va='bottom')
++    fig.suptitle('Sensibilidad de escala: factores independientes y escenarios con un factor común', x=0.01, ha='left', fontsize=12, fontweight='bold')
++    fig.text(0.01, 0.005, 'Arriba, el Monte Carlo preespecificado sortea un factor independiente en cada estación: sus efectos se muestran bajo esa hipótesis de independencia.\nLas líneas punteadas son el análisis determinista con un mismo factor en toda la red, que invierte H2. Abajo, el efecto en función de ese factor común. Dividir la observación por k\nes algebraicamente idéntico a multiplicar los pronósticos por k: el eje no distingue el sensor del pronóstico (§5).', fontsize=8, va='bottom')
+     fig.tight_layout(rect=[0, 0.045, 1, 0.95])
+     fig.savefig(Path(outdir) / 'figura_sensibilidad.png', dpi=160)
+     plt.close(fig)

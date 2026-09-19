@@ -1,0 +1,82 @@
+{
+  "generado_utc": "2026-09-19T08:07:33.265782+00:00",
+  "metodo_sha256": "4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3",
+  "recalculo_decimal": {
+    "ventana": "primaria",
+    "comparaciones": {
+      "H1": {
+        "n_decimal": 3664,
+        "n_numpy": 3664,
+        "efecto_decimal": 1.4710096441072031,
+        "efecto_numpy": 1.4710096441072182,
+        "diferencia_abs": 1.509903313490213e-14,
+        "mae_a_diff": 2.7755575615628914e-17,
+        "mae_b_diff": 1.3877787807814457e-17,
+        "max_diff_por_estacion": 4.085620730620576e-14
+      },
+      "H2": {
+        "n_decimal": 3697,
+        "n_numpy": 3697,
+        "efecto_decimal": 7.570369778548478,
+        "efecto_numpy": 7.570369778548527,
+        "diferencia_abs": 4.973799150320701e-14,
+        "mae_a_diff": 2.7755575615628914e-17,
+        "mae_b_diff": 1.3877787807814457e-17,
+        "max_diff_por_estacion": 4.884981308350689e-14
+      },
+      "S1": {
+        "n_decimal": 3664,
+        "n_numpy": 3664,
+        "efecto_decimal": 0.3902987417810772,
+        "efecto_numpy": 0.39029874178105894,
+        "diferencia_abs": 1.8263168755083825e-14,
+        "mae_a_diff": 1.3877787807814457e-17,
+        "mae_b_diff": 0.0,
+        "max_diff_por_estacion": 5.284661597215745e-14
+      },
+      "S2": {
+        "n_decimal": 3698,
+        "n_numpy": 3698,
+        "efecto_decimal": 6.337117195746573,
+        "efecto_numpy": 6.337117195746576,
+        "diferencia_abs": 3.552713678800501e-15,
+        "mae_a_diff": 0.0,
+        "mae_b_diff": 0.0,
+        "max_diff_por_estacion": 4.263256414560601e-14
+      }
+    },
+    "diferencia_maxima_abs": 5.284661597215745e-14,
+    "tolerancia": 1e-09,
+    "coincide": true
+  },
+  "pruebas": {
+    "ejecutadas": 16,
+    "fallos": 0,
+    "errores": 0,
+    "salida": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.066s\n\nOK\n"
+  },
+  "recibos": {
+    "comprobados": 708,
+    "fallidos": []
+  },
+  "paquete": {
+    "zip": "C:\\Users\\manue\\Documents\\Codex\\2026-09-11\\qu\\outputs\\latencia_pronosticos\\medicion_escala\\datos_y_analisis.zip",
+    "bytes": 113708177,
+    "sha256_zip": "8237b05305d233a6dd29d5e424e6ae3c5fe98bdeacd36bf758c50185ff318c06",
+    "entradas_en_manifiesto": 3018,
+    "entradas_en_zip": 3019,
+    "faltan_en_zip": [],
+    "hash_no_coincide": [],
+    "en_zip_sin_manifiesto": [],
+    "manifiesto_embebido_igual_al_de_disco": true,
+    "especificacion_en_el_zip": [
+      "outputs/metodo_fijado.json",
+      "metodo_fijado.json"
+    ],
+    "sha256_declarado_en_integridad": "8237b05305d233a6dd29d5e424e6ae3c5fe98bdeacd36bf758c50185ff318c06",
+    "desincronizados_con_el_disco": [],
+    "fallos": [],
+    "estado": "PASS"
+  },
+  "estado": "PASS"
+}
