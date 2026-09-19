@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  pruebas:
+    name: Pruebas (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Compilar todo el codigo
+        run: python -m compileall -q estudio/code estudio/reproducir_offline.py herramientas
+
+      - name: Pruebas del metodo y de rutas portables
+        run: python estudio/code/test_metodo.py
+
+      - name: Re-derivar la seleccion de las 34 estaciones desde el catalogo
+        run: python estudio/code/verificar_seleccion.py
+
+      - name: Enlaces internos y rutas absolutas
+        run: python herramientas/comprobar_enlaces.py
+
+      - name: verificar.py debe fallar con mensaje claro sin los cuerpos raw
+        shell: bash
+        run: |
+          set +e
+          salida=$(python estudio/code/verificar.py 2>&1)
+          codigo=$?
+          set -e
+          echo "$salida"
+          if [ $codigo -eq 0 ]; then
+            echo "ERROR: deberia haber fallado al no existir raw/"; exit 1
+          fi
+          case "$salida" in
+            *"faltan los cuerpos originales"*) echo "OK: mensaje controlado" ;;
+            *) echo "ERROR: fallo sin el mensaje esperado"; exit 1 ;;
+          esac
+
+  reproduccion:
+    name: Reproduccion completa del paquete (${{ matrix.os }})
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'release'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Descargar el paquete de la ultima version
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download --repo "$GITHUB_REPOSITORY" --pattern 'datos_y_analisis_portable_*.zip' --dir paquete
+
+      - name: Extraer
+        shell: bash
+        run: |
+          mkdir -p extraido
+          python -c "import zipfile,glob,sys; z=glob.glob('paquete/*.zip')[0]; print('paquete:',z); zipfile.ZipFile(z).extractall('extraido')"
+
+      - name: Reproducir sin red
+        shell: bash
+        run: cd extraido && python reproducir_offline.py
+
+      - name: Guardar el informe de la reproduccion
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: comprobacion-offline-${{ matrix.os }}
+          path: extraido/reproduccion/*/comprobacion_offline.json
+          if-no-files-found: warn
