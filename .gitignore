@@ -3,6 +3,8 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/LICENSE
+!/DERECHOS.md
 !/CIERRE.md
 !/requirements.txt
 !/docs/

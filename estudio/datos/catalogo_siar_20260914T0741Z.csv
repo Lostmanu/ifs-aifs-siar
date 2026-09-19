@@ -1,0 +1,636 @@
+Centro Zonal;Provincia;Id Estación;Denominación;Estado;Fecha instalación;Fecha desinstalación;UTMX;UTMY;Huso;Propiedad
+Andalucía;Almería;AL01;La Mojonera;Activa;30/11/1999;;526376;4071320;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL02;Almería;Activa;30/11/1999;;553282;4076780;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL03;Níjar;Baja;30/11/1999;09/07/2000;577785;4089250;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL04;Tabernas;Activa;01/12/1999;;561998;4105230;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL05;Fiñana;Activa;01/12/1999;;514311;4112270;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL06;Virgen de Fátima-Cuevas de Almanzora;Activa;21/12/1999;;608847;4138750;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL07;Huércal-Overa;Activa;21/12/1999;;598735;4141210;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL08;Cuevas de Almanzora;Activa;22/12/1999;;606367;4124030;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL09;Tíjola;Baja;22/12/1999;18/12/2000;548076;4136270;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL10;Adra;Activa;06/09/2000;;500683;4066780;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL11;Níjar;Activa;18/09/2001;;574960;4089720;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL12;Tíjola;Activa;18/09/2001;;547839;4137000;30;Red de estaciones del Ministerio
+Andalucía;Almería;AL201;Cajamar - PITA;Activa;14/04/2025;;559187;4081257;30;CCAA
+Andalucía;Cádiz;CA01;Basurta-Jerez de la Frontera;Activa;11/09/2000;;230650;4072170;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA02;Jerez de la Frontera;Activa;12/09/2000;;230594;4059470;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA03;Sanlúcar de Barrameda;Baja;12/09/2000;16/12/2002;206106;4081540;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA04;Villamartín;Activa;13/09/2000;;266049;4080680;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA05;Conil de la Frontera;Activa;14/09/2000;;218803;4025430;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA06;Vejer de la Frontera;Activa;14/09/2000;;244927;4019310;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA07;Jimena de la Frontera;Activa;22/11/2000;;286263;4032470;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA08;Puerto de Santa María;Baja;05/04/2001;09/12/2010;218061;4056940;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA09;Sanlúcar de Barrameda;Baja;24/03/2003;18/12/2011;204285;4075660;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA10;Puerto de Santa María;Activa;11/04/2011;;216316;4055676;30;Red de estaciones del Ministerio
+Andalucía;Cádiz;CA101;IFAPA Centro de Chipiona;Activa;05/08/2004;;196448;4072630;30;CCAA
+Andalucía;Cádiz;CA11;Sanlúcar de Barrameda;Activa;31/07/2012;;202554;4068870;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO01;Belmez;Activa;02/12/1999;;306667;4236350;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO02;Adamuz;Activa;02/12/1999;;373099;4206530;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO03;Palma del Río;Baja;02/10/2000;14/03/2007;303720;4177720;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO04;Hornachuelos;Activa;03/10/2000;;309617;4176930;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO05;El Carpio;Activa;03/10/2000;;367791;4197330;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO06;Córdoba;Activa;16/10/2000;;341399;4191480;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO07;Santaella;Activa;17/10/2000;;333382;4154500;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO08;Baena;Activa;17/10/2000;;384851;4172400;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO09;Palma del Rio;Activa;15/03/2007;;303720;4177720;30;Red de estaciones del Ministerio
+Andalucía;Córdoba;CO101;IFAPA Centro de Cabra;Activa;11/12/2003;;373516;4151100;30;CCAA
+Andalucía;Córdoba;CO102;IFAPA Centro de Hinojosa del Duque;Activa;04/08/2006;;315518;4263000;30;CCAA
+Andalucía;Granada;GR01;Baza;Activa;07/08/2000;;520514;4157520;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR02;Puebla de Don Fadrique;Activa;08/08/2000;;554375;4192250;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR03;Loja;Activa;21/08/2000;;398957;4114260;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR04;Pinos Puente;Baja;22/08/2000;18/03/2015;431438;4124200;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR05;Iznalloz;Activa;22/08/2000;;451202;4141210;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR06;Jerez del Marquesado;Activa;05/09/2000;;486699;4116020;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR07;Cádiar;Activa;05/09/2000;;483613;4086360;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR08;Zafarraya;Activa;07/09/2000;;397321;4094420;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR09;Almuñecar;Baja;25/01/2001;30/07/2007;439500;4066160;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR10;Padul;Activa;25/01/2001;;446599;4097120;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR101;IFAPA Centro Camino del Purchil;Activa;26/05/2005;;443311;4114150;30;CCAA
+Andalucía;Granada;GR102;Huéneja;Activa;11/09/2014;;503240;4118727;30;CCAA
+Andalucía;Granada;GR11;Almuñecar;Activa;30/07/2007;;439384;4067570;30;Red de estaciones del Ministerio
+Andalucía;Granada;GR12;Pinos Puente Casanueva;Activa;12/12/2018;;430324;4121993;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H01;El Tojalillo-Gibraleón;Baja;21/12/1999;14/03/2016;143043;4137800;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H02;Lepe;Activa;21/12/1999;;123596;4129503;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H03;Gibraleón;Activa;22/12/1999;;140652;4148360;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H04;Moguer;Baja;25/10/2000;20/07/2021;163137;4117860;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H05;Niebla;Activa;25/10/2000;;169098;4139930;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H06;Aroche;Activa;14/11/2000;;153376;4208510;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H07;La Puebla de Guzmán;Activa;14/11/2000;;124659;4164620;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H08;El Campillo;Activa;15/11/2000;;182491;4174300;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H09;La Palma del Condado;Activa;15/11/2000;;186354;4141470;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H10;Almonte;Activa;16/11/2000;;191221;4116990;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H101;IFAPA Centro Huelva. Finca El Cebollar;Activa;18/07/2001;;162674;4128310;30;CCAA
+Andalucía;Huelva;H102;IFAPA Centro Huelva. El Cebollar Bajo Plástico;Activa;20/11/2008;;162775;4128400;30;CCAA
+Andalucía;Huelva;H103;Almonte bajo plástico;Activa;28/11/2011;;183346;4109139;30;CCAA
+Andalucía;Huelva;H104;Almonte bajo plástico frb;Baja;28/11/2011;24/03/2014;185851;4110940;30;CCAA
+Andalucía;Huelva;H105;Almonte bajo plástico;Baja;13/12/2013;15/05/2014;189541;4118550;30;CCAA
+Andalucía;Huelva;H106;Lepe bajo plástico;Baja;13/11/2015;12/06/2018;123271;4129727;30;CCAA
+Andalucía;Huelva;H107;Palos de la Frontera bajo plástico;Activa;02/06/2021;;157141;4124863;30;CCAA
+Andalucía;Huelva;H11;Gibraleón - Manzorrales;Activa;04/11/2016;;144096;4136702;30;Red de estaciones del Ministerio
+Andalucía;Huelva;H12;Moguer El Fresno;Activa;03/10/2024;;159271;4123027;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J01;Huesa;Activa;08/08/2000;;494567;4177790;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J02;Pozo Alcón;Activa;09/08/2000;;506163;4169420;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J03;San José de los Propios;Activa;09/08/2000;;479742;4190080;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J04;Sabiote;Activa;10/08/2000;;479346;4214660;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J05;Torreblascopedro;Activa;10/08/2000;;439469;4204790;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J06;Alcaudete;Activa;23/08/2000;;404780;4159460;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J07;Mancha Real;Activa;23/08/2000;;447571;4196710;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J08;Ubeda;Activa;24/08/2000;;473599;4199520;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J09;Linares;Baja;24/08/2000;13/06/2018;443002;4212540;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J10;Marmolejo;Baja;04/09/2000;15/12/2009;400806;4212640;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J101;Torreperogil;Activa;03/04/2006;;478573;4203000;30;CCAA
+Andalucía;Jaén;J102;Villacarrillo;Activa;05/04/2006;;482408;4212870;30;CCAA
+Andalucía;Jaén;J103;Jódar;Activa;05/04/2006;;470605;4192400;30;CCAA
+Andalucía;Jaén;J104;IFAPA Centro Mengibar;Activa;10/04/2008;;430790;4199560;30;CCAA
+Andalucía;Jaén;J11;Chiclana de Segura;Activa;18/09/2000;;500305;4239420;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J12;La Higuera de Arjona;Activa;16/01/2001;;411463;4200610;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J13;Mengíbar;Baja;16/01/2001;19/04/2001;427594;4202140;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J14;Santo Tomé;Activa;03/04/2001;;492726;4209060;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J15;Jaén;Activa;18/04/2001;;432183;4193960;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J16;Marmolejo;Activa;08/04/2011;;396245;4211910;30;Red de estaciones del Ministerio
+Andalucía;Jaén;J17;Linares;Baja;13/06/2018;12/11/2025;449613;4215286;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA01;Málaga;Activa;23/10/2000;;362741;4068970;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA02;Vélez-Málaga;Activa;18/10/2000;;399039;4072850;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA03;Antequera;Baja;21/11/2000;10/03/2011;361277;4102170;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA04;Estepona;Activa;22/11/2000;;301937;4035540;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA05;Archidona;Baja;19/12/2000;26/09/2012;372855;4104350;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA06;Sierra Yeguas;Activa;19/12/2000;;336928;4111800;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA07;IFAPA Churriana;Activa;24/01/2001;;365680;4059740;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA08;Pizarra;Activa;24/01/2001;;346918;4070360;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA09;Cártama;Activa;19/06/2001;;350119;4064780;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA10;Antequera;Activa;11/03/2011;;361021;4099810;30;Red de estaciones del Ministerio
+Andalucía;Málaga;MA101;IFAPA Centro de Campanillas;Activa;20/09/2007;;360629;4065960;30;CCAA
+Andalucía;Málaga;MA11;Archidona;Activa;23/05/2014;;373857;4107195;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE01;Los Palacios y Villafranca;Baja;04/10/2000;24/07/2007;239078;4118790;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE02;Las Cabezas de San Juan;Activa;04/10/2000;;243351;4100490;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE03;Lebrija I;Activa;05/10/2000;;221723;4096850;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE04;Lebrija 2;Baja;05/10/2000;11/12/2005;231713;4087880;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE05;Aznalcázar;Activa;24/10/2000;;209287;4116730;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE06;Villafranco del Guadalquivir;Baja;24/10/2000;07/11/2001;219935;4110450;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE07;La Puebla del Río;Activa;26/10/2000;;221954;4124550;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE08;La Puebla del Río II;Activa;26/10/2000;;229178;4108110;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE09;Ecija;Activa;13/11/2000;;316625;4162680;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE10;La Luisiana;Activa;14/11/2000;;303108;4155460;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE101;IFAPA Centro Las Torres-Tomejil. Finca Tomejil;Activa;12/07/2001;;270958;4142490;30;CCAA
+Andalucía;Sevilla;SE11;Osuna;Activa;14/11/2000;;310675;4125300;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE12;La Rinconada;Activa;15/11/2000;;241295;4149570;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE13;Sanlúcar La Mayor;Activa;15/11/2000;;211943;4146640;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE14;Villanueva del Río y Minas;Baja;16/11/2000;23/02/2010;263096;4166270;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE15;Lora del Río;Activa;16/11/2000;;275891;4171230;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE16;Los Molares;Activa;07/02/2001;;262696;4117760;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE17;Guillena;Activa;04/04/2001;;229175;4156370;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE18;Puebla Cazalla;Activa;04/04/2001;;291408;4121660;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE19;IFAPA  Centro Las Torres-Tomejil;Activa;22/12/2005;;238016;4155860;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE20;Isla Mayor;Activa;09/08/2004;;222653;4112040;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE21;IFAPA Centro de Los Palacios;Activa;31/07/2007;;238484;4119600;30;Red de estaciones del Ministerio
+Andalucía;Sevilla;SE22;Villanueva del Río y Minas;Activa;12/04/2011;;262609;4164000;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU01;Valfarta;Activa;07/08/2003;;737942;4601690;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU02;Zaidín;Activa;18/08/2003;;773947;4614720;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU03;Alcolea de Cinca;Activa;20/08/2003;;755554;4625580;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU04;Tamarite de Litera;Activa;20/08/2003;;780662;4630970;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU05;Lanaja;Activa;25/08/2003;;721218;4629490;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU06;Selgua;Activa;26/08/2003;;759185;4647810;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU07;Barbastro;Activa;26/08/2003;;757738;4655960;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU08;Sariñena;Activa;27/08/2003;;734668;4628250;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU09;Huesca;Activa;24/09/2003;;716821;4664810;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU10;Candasnos;Activa;30/09/2003;;758445;4594440;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU11;Grañén;Baja;29/10/2003;04/07/2025;719175;4646770;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU12;Huerto;Activa;18/11/2003;;737282;4647970;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU13;Gurrea de Gállego;Activa;18/11/2003;;687923;4651470;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU14;Banastón;Activa;14/01/2004;;760884;4697990;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU15;Alfántega;Activa;14/01/2004;;761432;4634800;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU16;Santa Cilia de Jaca;Baja;12/02/2004;16/12/2008;687109;4714980;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU17;Fraga;Activa;25/02/2004;;779969;4599160;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU18;Tardienta;Activa;13/06/2005;;706522;4649380;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU19;San Esteban de Litera;Activa;14/06/2005;;774164;4642060;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU20;Monte Julia;Activa;14/06/2005;;768745;4626240;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU21;Sodeto;Activa;15/06/2005;;727565;4640530;30;Red de estaciones del Ministerio
+Aragón;Huesca;HU22;Santa Cilia de Jaca;Activa;10/03/2010;;688103;4716400;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE01;Calanda;Activa;15/09/2003;;734842;4538190;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE02;Puig Moreno;Activa;16/09/2003;;731894;4553190;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE03;Híjar;Activa;10/02/2004;;707114;4565610;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE04;Monreal del Campo;Activa;08/06/2005;;638782;4515730;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE05;Teruel;Activa;08/06/2005;;655755;4467910;30;Red de estaciones del Ministerio
+Aragón;Teruel;TE06;Villarquemado;Activa;08/06/2005;;644881;4487500;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z01;Almonacid de la Sierra;Activa;05/08/2003;;639491;4590290;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z02;Belchite;Activa;06/08/2003;;690604;4580150;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z03;Quinto;Activa;06/08/2003;;707465;4584840;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z04;Fabara;Activa;16/09/2003;;764603;4562190;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z05;Épila;Activa;18/09/2003;;643204;4604930;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z06;Ejea de los Caballeros;Activa;23/09/2003;;649166;4662200;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z07;Sádaba;Activa;23/09/2003;;639427;4680840;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z08;Luna;Activa;24/09/2003;;670687;4662470;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z09;Santa Engracia;Baja;25/09/2003;01/12/2006;638436;4642380;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z10;Pastriz;Baja;30/09/2003;06/10/2009;687842;4607280;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z11;Montañana;Activa;01/10/2003;;681037;4620270;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z12;Torres de Berrellén;Baja;02/10/2003;21/10/2004;660516;4626320;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z13;Calatayud;Baja;17/11/2003;23/10/2008;612267;4576500;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z14;Borja;Activa;20/11/2003;;623871;4634770;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z15;Tarazona;Activa;25/11/2003;;604000;4641230;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z16;Caspe;Activa;15/01/2004;;745204;4576640;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z17;Osera de Ebro;Activa;08/06/2005;;705486;4602200;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z18;Daroca;Activa;09/06/2005;;632270;4551950;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z19;Zuera;Baja;09/06/2005;29/11/2006;686631;4637720;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z20;El Bayo;Activa;09/06/2005;;644635;4670770;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z21;Tauste;Activa;09/06/2005;;653808;4651470;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z22;Boquiñeni;Activa;27/09/2005;;645315;4633850;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z23;Pastriz;Activa;09/03/2010;;689157;4607210;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z24;Calatayud;Activa;28/04/2010;;615873;4579970;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z25;Santa Engracia (Tauste);Activa;25/08/2010;;640172;4640690;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z26;Zuera;Activa;26/08/2010;;685330;4639810;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z27;Torres de Berrellén;Baja;25/08/2010;12/02/2015;660909;4625030;30;Red de estaciones del Ministerio
+Aragón;Zaragoza;Z28;Cariñena;Baja;25/09/2019;18/12/2020;647892;4585037;30;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC01;Gáldar;Activa;28/12/1999;;434693;3114660;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC02;San Nicolás de Tolentino;Activa;27/12/1999;;422731;3096070;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC03;Santa Lucía - Vecindario;Activa;29/12/1999;;457628;3079800;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC04;Vega de San Mateo;Activa;28/11/2000;;447605;3099470;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC05;Arucas;Activa;28/11/2000;;449522;3111650;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC06;Haría;Baja;28/11/2000;13/11/2023;648276;3220070;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC07;Tinajo;Activa;29/11/2000;;630499;3214270;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC08;Antigua - Molino de Agua;Baja;29/11/2000;17/07/2014;596606;3145370;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC09;Antigua - Pozo Negro;Activa;30/11/2000;;603629;3134500;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC10;Antigua - Molino de Agua;Baja;21/07/2014;01/10/2018;596609;3145498;28;Red de estaciones del Ministerio
+Canarias;Palmas, Las;GC101;La Torrecilla;Activa;18/12/2014;;648627;3228916;28;CCAA
+Canarias;Palmas, Las;GC102;Masdache;Baja;18/12/2014;24/12/2019;631908;3209156;28;CCAA
+Canarias;Palmas, Las;GC103;La Degollada;Activa;03/03/2018;;619724;3201640;28;CCAA
+Canarias;Palmas, Las;GC104;Barranquillo Frío;Activa;17/12/2018;;440010;3107905;28;CCAA
+Canarias;Palmas, Las;GC105;La Tornera;Activa;21/12/2022;;454573;3103303;28;CCAA
+Canarias;Palmas, Las;GC106;El Galeón;Activa;21/12/2022;;451276;3100943;28;CCAA
+Canarias;Palmas, Las;GC107;La Culata;Activa;11/01/2023;;441218;3095915;28;CCAA
+Canarias;Palmas, Las;GC108;Tunte;Activa;11/01/2023;;445277;3086511;28;CCAA
+Canarias;Palmas, Las;GC109;La Geria;Activa;21/12/2022;;624677;3206012;28;CCAA
+Canarias;Palmas, Las;GC110;La Granja;Activa;07/03/2024;;640444;3208963;28;CCAA
+Canarias;Palmas, Las;GC111;La Montaña;Activa;05/12/2025;;643337;3222439;28;CCAA
+Canarias;Palmas, Las;GC112;Osorio;Activa;03/12/2024;;446638;3105473;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF01;Adeje - Arona;Baja;27/12/1999;10/09/2012;336443;3100000;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF02;Guía de Isora;Activa;28/12/1999;;320063;3123890;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF03;Güímar;Activa;28/12/1999;;364407;3133180;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF04;La Fuente - Buenavista del Norte;Activa;28/12/1999;;317644;3139630;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF05;San Sebastián de La Gomera;Activa;20/11/2000;;291329;3110410;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF06;Hermigua;Activa;21/11/2000;;284264;3117650;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF07;Puerto de la Cruz;Activa;22/11/2000;;349676;3143660;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF08;Frontera;Activa;23/11/2000;;203031;3076280;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF09;Tazacorte;Baja;24/11/2000;03/10/2012;214780;3166760;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF10;Los Llanos de Aridane;Activa;24/11/2000;;213926;3173078;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF101;Los Llanos de Aridane II;Activa;04/07/2002;;214703;3174330;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF102;Fuencaliente;Activa;05/07/2002;;219402;3154550;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF103;Barlovento II;Baja;04/07/2002;25/07/2017;228732;3193250;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF104;Fuencaliente II;Baja;21/11/2002;25/01/2007;219134;3154280;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF105;Valle Guerra-Isamar;Activa;21/12/2005;;364204;3154750;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF106;Valle Guerra-Pajalillos;Activa;11/04/2008;;364205;3156480;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF107;El Socorro;Activa;12/01/2009;;228946;3173100;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF108;El Pico;Activa;30/07/2009;;365950;3156100;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF109;Garimba;Activa;29/07/2009;;364051;3154030;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF11;Barlovento;Activa;24/11/2000;;228745;3192170;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF110;Puntallana - Vivero;Activa;26/07/2017;;232775;3182582;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF111;Arico;Activa;01/01/2021;;355421;3112590;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF112;Las Galletas Aire Libre;Activa;01/01/2021;;337550;3102719;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF113;Las Galletas Invernadero;Activa;24/02/2021;;337553;3102769;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF114;Guía de Isora Aire Libre;Activa;24/02/2021;;324373;3122251;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF115;Guía de Isora Invernadero;Baja;24/02/2021;17/10/2025;324354;3122240;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF116;La Orotava - El Rincón;Activa;24/02/2021;;351661;3143174;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF117;Arico - El Helecho;Activa;16/04/2021;;353719;3122139;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF118;Ravelo;Activa;16/04/2021;;362091;3148289;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF119;Tejina Aire Libre;Activa;24/02/2021;;363460;3156971;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF12;Tazacorte;Baja;04/10/2012;08/05/2020;214954;3166610;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF120;Tejina Invernadero;Activa;24/02/2021;;363439;3156987;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF121;La Guancha;Activa;24/02/2021;;330020;3140415;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF122;Vilaflor;Activa;16/04/2021;;340126;3114250;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF123;Güímar - Toponegro;Activa;16/04/2021;;362199;3134169;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF124;Arico_2;Activa;16/04/2021;;353880;3117174;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF125;Tegueste;Activa;16/04/2021;;367096;3154122;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF126;Icod - Llanito Perera;Activa;16/04/2021;;333928;3138776;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF127;La Orotava - Ratiño;Activa;16/04/2021;;348691;3140580;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF128;Gúímar - Morra del Tanque;Activa;16/04/2021;;359516;3135916;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF129;Los Silos - Tierra del Trigo;Activa;16/04/2021;;323232;3137469;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF13;Las Galletas;Activa;30/09/2014;;334810;3102617;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF130;Santa Úrsula - Los Castaños;Activa;16/04/2021;;353587;3143582;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF131;Santiago del Teide - El Hoyo;Activa;16/04/2021;;323114;3132243;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF132;Buenavista - El Palmar;Activa;16/04/2021;;318390;3136052;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF133;Tacoronte;Activa;16/04/2021;;363512;3150752;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF134;La Matanza;Activa;16/04/2021;;359196;3147834;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF135;La Victoria;Activa;16/04/2021;;357976;3144713;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF136;La Orotava - La Suerte;Activa;16/04/2021;;348932;3139592;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF137;Benijos;Activa;16/04/2021;;348451;3138184;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF138;Palo Blanco;Activa;16/04/2021;;345440;3139033;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF139;Icod - Redondo;Activa;16/04/2021;;333547;3137267;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF14;Tijarafe;Activa;01/10/2020;;211510;3176191;28;Red de estaciones del Ministerio
+Canarias;Santa Cruz de Tenerife;TF140;Guía de Isora - Chio;Activa;16/04/2021;;324442;3124370;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF141;Guía de Isora - Los Llanitos;Baja;16/04/2021;17/10/2025;328011;3123159;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF142;Guía de Isora - El Pozo;Activa;16/04/2021;;326954;3120637;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF143;Granadilla - Pinalete;Activa;16/04/2021;;342279;3112312;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF144;Granadilla - Charco del pino;Activa;16/04/2021;;344328;3109185;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF145;Güímar - Badajoz;Activa;16/04/2021;;360114;3131425;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF146;Güímar - Lomo de Mena;Activa;16/04/2021;;360744;3127897;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF147;Santa Úrsula - Media;Activa;16/04/2021;;355274;3144349;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF148;Santa Úrsula - Baja;Activa;16/04/2021;;354029;3146053;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF149;Arico - Icor;Activa;16/04/2021;;357088;3120961;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF150;El Rosario;Activa;16/04/2021;;368961;3148591;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF151;La Orotava - Aguamansa;Activa;16/04/2021;;353295;3138163;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF152;Ruígomez - Galería del Cubo;Activa;16/04/2021;;324089;3136068;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF153;Adeje - Hoya Grande Aire Libre;Activa;24/02/2021;;325244;3114296;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF154;Adeje - Hoya Grande Invernadero;Activa;24/02/2021;;325268;3114311;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF155;Guía de Isora - Alcalá;Activa;24/02/2021;;320448;3121932;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF156;Candelaria - Araya;Activa;16/04/2021;;363060;3139039;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF157;Taganana;Activa;16/04/2021;;379886;3159844;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF158;Igueste;Activa;16/04/2021;;386774;3156713;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF159;Buenavista;Activa;24/02/2021;;319134;3140813;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF160;Los Silos Aire Libre;Activa;24/02/2021;;321439;3140205;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF161;Los Silos Invernadero;Activa;24/02/2021;;321489;3140208;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF162;Realejos - Icod el Alto;Activa;16/04/2021;;341820;3139577;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF163;Fasnia - Eres;Activa;16/04/2021;;360931;3123460;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF164;La Laguna;Activa;16/04/2021;;370823;3150858;28;CCAA
+Canarias;Santa Cruz de Tenerife;TF165;Puerto Naos;Activa;30/09/2020;;215639;3165273;28;CCAA
+Castilla y León;Ávila;AV01;Nava de Arévalo;Activa;05/07/2000;;350145;4538230;30;Red de estaciones del Ministerio
+Castilla y León;Ávila;AV101;Muñogalindo;Activa;27/06/2008;;336237;4493640;30;CCAA
+Castilla y León;Ávila;AV102;Losar del Barco;Activa;27/06/2008;;285381;4472220;30;CCAA
+Castilla y León;Burgos;BU01;Miranda de Ebro;Baja;24/07/2000;13/02/2006;502088;4726360;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU02;Valle de Valdelucio;Activa;25/07/2000;;407277;4733270;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU03;Lerma;Activa;25/07/2000;;436441;4654470;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU04;Tardajos;Activa;10/10/2000;;433887;4688520;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU05;Vadocondes;Activa;21/10/2000;;451952;4609650;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU06;Miranda de Ebro;Baja;11/07/2006;21/09/2006;501767;4723930;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU07;Santa Gadea del Cid;Activa;14/06/2007;;493844;4727710;30;Red de estaciones del Ministerio
+Castilla y León;Burgos;BU101;Valle de Losa;Activa;29/12/2006;;480749;4757130;30;CCAA
+Castilla y León;Burgos;BU102;Condado de Treviño;Activa;27/06/2008;;517719;4732000;30;CCAA
+Castilla y León;León;LE01;Carracedelo;Activa;26/10/1999;;195585;4719674;30;Red de estaciones del Ministerio
+Castilla y León;León;LE02;Mansilla mayor;Activa;27/10/1999;;300123;4708890;30;Red de estaciones del Ministerio
+Castilla y León;León;LE03;Cubillas de los Oteros;Activa;27/10/1999;;293278;4696998;30;Red de estaciones del Ministerio
+Castilla y León;León;LE04;Zotes del Páramo;Activa;02/12/1999;;274230;4682010;30;Red de estaciones del Ministerio
+Castilla y León;León;LE05;Quintana del Marco;Activa;02/12/1999;;265661;4677910;30;Red de estaciones del Ministerio
+Castilla y León;León;LE06;Hospital de Orbigo;Activa;03/07/2000;;261828;4704910;30;Red de estaciones del Ministerio
+Castilla y León;León;LE07;Bustillo del Páramo;Activa;04/07/2000;;272071;4705080;30;Red de estaciones del Ministerio
+Castilla y León;León;LE08;Sahagún;Activa;04/07/2000;;333434;4693310;30;Red de estaciones del Ministerio
+Castilla y León;León;LE09;Santas Martas;Activa;06/07/2000;;314117;4701220;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P01;Torquemada;Activa;27/06/2000;;392330;4656290;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P02;Villamuriel de Cerrato;Activa;27/06/2000;;376702;4644880;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P03;Fuentes de Nava;Activa;28/06/2000;;357805;4660220;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P04;Villoldo;Activa;28/06/2000;;368709;4681140;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P05;Lantadilla;Baja;29/06/2000;19/03/2007;394788;4688910;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P06;Herrera de Pisuerga;Activa;30/06/2000;;397065;4704900;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P07;Villaluenga de la Vega;Activa;27/07/2000;;354225;4709940;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P08;Lantadilla;Activa;20/03/2007;;394739;4688970;30;Red de estaciones del Ministerio
+Castilla y León;Palencia;P101;Villaeles de Valdavia;Activa;27/06/2008;;369885;4713480;30;CCAA
+Castilla y León;Palencia;P102;Bárcena de Campos;Activa;24/06/2022;;377607;4704808;30;CCAA
+Castilla y León;Palencia;P103;Abia de las Torres;Activa;30/05/2024;;383466;4699645;30;CCAA
+Castilla y León;Palencia;P104;Lomilla de Aguilar;Activa;15/12/2022;;394061;4734853;30;CCAA
+Castilla y León;Salamanca;SA01;Ciudad Rodrigo;Activa;17/07/2000;;200526;4499280;30;Red de estaciones del Ministerio
+Castilla y León;Salamanca;SA02;Aldearrubia;Baja;18/07/2000;30/01/2008;290959;4540210;30;Red de estaciones del Ministerio
+Castilla y León;Salamanca;SA03;Aldearrubia;Activa;31/01/2008;;291144;4540570;30;Red de estaciones del Ministerio
+Castilla y León;Salamanca;SA101;Arabayona;Activa;27/06/2008;;301287;4545470;30;CCAA
+Castilla y León;Salamanca;SA102;Ejeme;Activa;27/06/2008;;286463;4517880;30;CCAA
+Castilla y León;Segovia;SG01;Gomezserracín;Activa;20/07/2000;;391315;4573030;30;Red de estaciones del Ministerio
+Castilla y León;Segovia;SG02;Nava de la Asunción;Activa;20/07/2000;;376146;4558880;30;Red de estaciones del Ministerio
+Castilla y León;Soria;SO01;Almazán;Activa;28/10/1999;;541685;4590000;30;Red de estaciones del Ministerio
+Castilla y León;Soria;SO02;San Esteban de Gormaz;Activa;28/10/1999;;481714;4601560;30;Red de estaciones del Ministerio
+Castilla y León;Soria;SO03;Fuentecantos;Activa;25/11/1999;;547013;4631260;30;Red de estaciones del Ministerio
+Castilla y León;Soria;SO101;Hinojosa del Campo;Activa;12/05/2004;;575261;4620820;30;CCAA
+Castilla y León;Valladolid;VA01;Mayorga;Activa;05/07/2000;;310946;4669050;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA02;Torrecilla de la Orden;Activa;18/07/2000;;314411;4566400;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA03;Olmedo;Activa;19/07/2000;;358841;4574600;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA04;Valladolid;Baja;19/07/2000;26/07/2004;358739;4619050;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA05;Encinas de Esgueva;Activa;26/07/2000;;408359;4624500;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA06;Tordesillas;Activa;03/10/2000;;333146;4594720;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA07;Valbuena de Duero;Activa;09/10/2000;;394425;4610960;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA08;Medina de Rioseco;Activa;27/07/2004;;328134;4636390;30;Red de estaciones del Ministerio
+Castilla y León;Valladolid;VA101;Finca Zamadueñas;Activa;15/02/2006;;358739;4619050;30;CCAA
+Castilla y León;Valladolid;VA102;Medina del Campo;Activa;27/06/2008;;341205;4575270;30;CCAA
+Castilla y León;Valladolid;VA103;Rueda;Activa;05/05/2009;;334262;4585520;30;CCAA
+Castilla y León;Valladolid;VA104;Villalón de Campos;Activa;25/09/2018;;336578;4665760;30;CCAA
+Castilla y León;Zamora;ZA01;Colinas de Trasmonte;Activa;13/12/1999;;267219;4653680;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA02;Villaralbo;Activa;14/12/1999;;279160;4595660;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA03;Toro;Baja;14/12/1999;06/03/2001;289965;4597590;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA04;Villalpando;Activa;06/07/2000;;301731;4639190;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA05;Pozuelo de Tábara;Activa;05/07/2000;;259386;4629610;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA06;Barcial del Barco;Activa;21/02/2001;;278887;4645820;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA07;Toro;Baja;27/12/2001;27/06/2007;289986;4597610;30;Red de estaciones del Ministerio
+Castilla y León;Zamora;ZA08;Toro;Activa;28/06/2007;;302537;4597880;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB01;Tarazona;Baja;13/10/1999;17/06/2025;593160;4345720;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB02;Juanaco;Activa;13/10/1999;;529582;4346370;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB03;Almansa;Activa;14/10/1999;;664097;4307740;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB04;Hellín_Inactiva;Baja;14/10/1999;19/01/2013;612321;4260580;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB05;Albacete;Activa;26/10/1999;;595166;4311730;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB06;Ontur;Activa;27/09/2000;;630946;4276000;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB07;Pozo Cañada;Activa;27/09/2000;;608178;4295250;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB08;La Gineta;Activa;28/09/2000;;585237;4328310;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB09;Motilleja;Activa;28/09/2000;;606281;4335780;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB10;Caudete;Activa;11/12/2000;;675585;4289270;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB11;Hellín;Activa;04/06/2025;;616816;4258221;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Albacete;AB12;Tarazona de la Mancha;Activa;17/06/2025;;592702;4343553;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR01;Alcázar de San Juan;Activa;14/09/1999;;482729;4340120;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR02;Manzanares;Baja;15/09/1999;12/11/2008;468984;4327790;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR03;Porzuna;Activa;15/09/1999;;393782;4343510;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR04;Ciudad Real;Activa;15/09/1999;;414362;4321940;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR05;Bolaños;Activa;19/09/2000;;446145;4311320;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR06;Villahermosa-Tajoneras;Baja;19/09/2000;28/10/2008;517384;4298800;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR07;Argamasilla de Alba;Activa;23/10/2000;;495018;4325230;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR08;Herencia;Activa;24/10/2000;;471540;4358890;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR09;Daimiel;Activa;20/11/2000;;440016;4317940;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR10;Manzanares;Activa;14/11/2008;;469428;4330470;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Ciudad Real;CR101;Entresierra;Baja;11/05/2004;07/01/2022;417916;4320630;30;CCAA
+Castilla-La Mancha;Ciudad Real;CR11;Montiel;Activa;30/10/2008;;510308;4283170;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU01;El Sanchón;Activa;16/09/1999;;560667;4357420;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU02;Pedernoso;Activa;16/09/1999;;520738;4369320;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU03;El Picazo;Activa;29/09/2000;;578157;4367640;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU04;Barajas de Melo;Activa;09/10/2000;;505438;4440421;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU05;Cañete;Activa;10/10/2000;;615188;4431790;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU06;Mariana_Invactiva;Baja;10/10/2000;03/11/2003;573219;4446800;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU07;Villaconejos de Trabaque;Activa;11/10/2000;;557292;4473880;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU08;Villanueva de la Jara;Activa;30/10/2000;;599274;4362320;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Cuenca;CU09;Mariana;Activa;15/01/2004;;573120;4445040;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU01;Finca el serranillo: Vivero forestal;Baja;16/09/1999;19/12/2006;485290;4500830;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU02;Jadraque;Activa;16/09/1999;;504494;4530680;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU03;Armuña de Tajuña;Activa;08/11/2000;;498822;4486630;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU04;Alovera;Baja;08/11/2000;08/05/2006;479079;4493360;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU05;Prados Redondos;Activa;20/12/2000;;601354;4516820;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU06;Illana;Activa;03/05/2001;;501171;4450960;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU07;Finca El Serranillo;Baja;15/02/2007;24/05/2010;485268;4500730;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU08;Alovera (2);Baja;16/03/2007;24/10/2010;479157;4493340;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Guadalajara;GU09;Marchamalo;Activa;30/07/2010;;482270;4503340;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO01;Vegas de San Antonio;Activa;15/10/1999;;354803;4424260;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO02;Magán_Inactiva;Baja;15/10/1999;29/10/2003;419783;4421300;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO03;Calera y chozas;Activa;24/11/1999;;331630;4415200;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO04;Los Navalmorales;Activa;20/09/2000;;357973;4398280;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO05;Alcolea de Tajo;Activa;21/09/2000;;316736;4409360;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO06;Mora_Inactiva;Baja;21/09/2000;19/02/2007;433977;4392190;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO07;Recas;Activa;22/09/2000;;416575;4434450;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO08;Villarrubia de Santiago;Activa;09/10/2000;;471476;4431690;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO09;La Rinconada;Activa;30/10/2000;;379873;4410060;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO10;La Puebla de Almoradiel;Activa;31/10/2000;;488335;4384360;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO11;Magán;Activa;20/05/2004;;419484;4420980;30;Red de estaciones del Ministerio
+Castilla-La Mancha;Toledo;TO12;Mora;Activa;20/02/2007;;433719;4390830;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M01;Center: Finca experimental;Activa;02/11/2003;;457867;4473610;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M02;Arganda;Activa;09/12/2003;;457693;4462410;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M03;Aranjuez;Activa;10/12/2003;;446220;4432570;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M04;Fuentidueña de Tajo;Activa;14/01/2004;;485162;4439660;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M05;San Martín de la Vega;Activa;07/06/2005;;452366;4453800;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M06;Chinchón;Activa;07/06/2005;;460101;4449200;30;Red de estaciones del Ministerio
+Comunidad de Madrid;Madrid;M102;Villa del Prado;Activa;14/06/2005;;391738;4456390;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA01;22 Tudela;Baja;06/10/2003;21/07/2011;618366;4658260;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA02;23 Fitero;Activa;07/10/2003;;595889;4655746;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA03;24 Cascante;Activa;07/10/2003;;605731;4654588;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA04;25 Ablitas;Activa;07/10/2003;;612357;4650474;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA05;06 Aibar;Activa;08/10/2003;;638209;4713140;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA06;07 San Martín de Unx;Activa;09/10/2003;;614036;4707660;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA07;13 Murillo el Fruto;Activa;09/10/2003;;624531;4693630;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA08;02 Adiós;Activa;21/10/2003;;602626;4726760;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA09;05 Artajona;Activa;21/10/2003;;599223;4715280;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA10;08 Miranda de Arga;Activa;22/10/2003;;597865;4707230;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA101;20 Cadreita;Activa;01/10/1997;;605802;4673640;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA102;19 Bardenas Reales (Barranco);Activa;01/09/1997;;610873;4680000;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA103;15 Sartaguda;Activa;01/09/1997;;578128;4690400;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA104;11 Olite;Activa;01/06/1998;;610025;4697696;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA105;14 Traibuenas;Activa;15/04/1999;;614023;4690840;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA106;01 Arazuri;Activa;10/03/2000;;604373;4740490;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA107;03 Lumbier;Activa;03/05/2000;;641305;4725090;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA108;04 Ancin;Activa;15/05/2001;;567870;4722910;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA109;21 Corella;Activa;07/05/2002;;595908;4663260;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA11;12 Falces;Activa;22/10/2003;;599354;4695868;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA110;18 Funes;Activa;01/09/2002;;598382;4682430;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA111;09 Lerin;Activa;01/01/2004;;584109;4706200;30;CCAA
+Comunidad Foral de Navarra;Navarra;NA12;16 San Adrián;Baja;23/10/2003;08/06/2007;591404;4688130;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA13;10 Bargota;Activa;23/10/2003;;557708;4703256;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA14;17 Bardenas Reales (El Plano);Activa;30/10/2003;;622213;4683823;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA15;26 Los Arcos;Activa;08/06/2005;;567070;4710193;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA16;27 Sesma;Activa;08/06/2005;;571899;4702920;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA17;San Adrián;Activa;27/09/2011;;590570;4690180;30;Red de estaciones del Ministerio
+Comunidad Foral de Navarra;Navarra;NA18;Tudela;Activa;14/11/2013;;617647;4661120;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A01;Villena_Inactiva;Baja;10/11/1999;20/03/2000;684017;4283000;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A02;Camp de Mirra;Activa;10/11/1999;;693720;4283550;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A03;Vila Joiosa;Activa;11/11/1999;;739183;4267960;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A04;Ondara;Activa;11/11/1999;;761033;4300940;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A05;Dénia Gata;Activa;16/11/1999;;767731;4298290;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A06;Pinoso;Activa;15/11/1999;;669278;4255020;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A07;Novelda;Baja;16/11/1999;21/10/2006;696702;4250060;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A08;Monforte del Cid;Activa;16/11/1999;;698193;4252510;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A09;Crevillente;Activa;22/11/1999;;694006;4234860;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A10;Almoradí;Activa;23/11/1999;;695318;4211640;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A101;Elx EEA;Activa;11/03/1999;;701609;4235864;30;CCAA
+Comunidad Valenciana;Alicante/Alacant;A102;Callosa d'en Sarrià;Activa;11/02/2010;;751980;4281944;30;CCAA
+Comunidad Valenciana;Alicante/Alacant;A1020;Callosa d'en Sarrià (malla);Activa;04/03/2010;;751970;4281914;30;CCAA
+Comunidad Valenciana;Alicante/Alacant;A11;Orihuela la Murada;Baja;23/11/1999;18/03/2014;679135;4227960;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A12;Pilar de la Horadada;Baja;24/11/1999;04/02/2026;692408;4193490;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A13;Catral;Activa;24/11/1999;;692275;4225080;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A14;Orihuela;Baja;30/11/1999;06/02/2000;689801;4219040;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A15;Altea;Activa;30/11/1999;;754320;4276840;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A16;Castalla;Baja;01/12/1999;24/09/2012;702608;4275460;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A17;Agost_Inactiva;Baja;15/12/1999;27/07/2002;705598;4255780;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A18;Planes;Activa;16/12/1999;;729927;4296220;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A19;Villena;Activa;20/03/2001;;685028;4274030;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A20;Agost;Activa;03/12/2002;;705166;4255200;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Alicante/Alacant;A21;Orihuela - La Murada;Activa;09/04/2015;;678796;4227878;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS01;Vall d'Uixó;Activa;14/10/1999;;737127;4408770;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS02;Onda;Baja;19/10/1999;29/10/2001;735390;4426290;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS03;San Rafael del Río;Activa;02/11/1999;;784970;4499150;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS04;Benicarló;Baja;03/11/1999;19/04/2017;788624;4478990;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS05;Castelló Benadresa;Activa;16/01/2001;;745965;4430550;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS06;Burriana;Baja;17/01/2001;09/02/2026;747478;4419320;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS07;Ribera de Cabanes;Activa;20/02/2001;;768076;4447370;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS08;Nules;Activa;20/02/2001;;742734;4416262;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS09;Segorbe;Activa;21/02/2001;;715427;4410510;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS10;Onda;Baja;31/10/2001;09/07/2008;738280;4428030;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS101;Vila-real EEA;Activa;20/01/1999;;744577;4425569;30;CCAA
+Comunidad Valenciana;Castellón/Castelló;CS11;Onda;Activa;11/07/2008;;739849;4427960;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS12;Benicarló;Baja;31/05/2018;11/03/2026;787808;4481725;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Castellón/Castelló;CS13;VILA-REAL;Activa;21/07/2026;;749163;4423438;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V01;Pedralba;Activa;20/10/1999;;696061;4382190;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V02;Llíria;Activa;20/10/1999;;703474;4396160;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V03;Turís;Baja;21/10/1999;31/03/2012;699288;4363650;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V04;Benifaió;Activa;21/10/1999;;718925;4350990;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V05;Cheste;Activa;03/11/1999;;693888;4376790;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V06;Tavernes de Valldigna;Activa;03/11/1999;;738862;4330980;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V07;Castelló;Activa;04/11/1999;;714192;4326970;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V08;Xàtiva;Baja;04/11/1999;16/08/2000;715566;4321280;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V09;Sagunto;Baja;17/11/1999;10/03/2000;734558;4392210;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V10;Benavites;Activa;18/11/1999;;738572;4401540;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V101;Moncada IVIA;Activa;19/01/1999;;723368;4385233;30;CCAA
+Comunidad Valenciana;Valencia/València;V1010;Moncada malla;Baja;01/04/1999;22/04/2012;723762;4385501;30;CCAA
+Comunidad Valenciana;Valencia/València;V102;Carcaixent EEA;Activa;24/02/1999;;720802;4332489;30;CCAA
+Comunidad Valenciana;Valencia/València;V1020;Carcaixent EEA Invernadero;Baja;09/06/2008;26/09/2009;720362;4333016;30;CCAA
+Comunidad Valenciana;Valencia/València;V103;Carlet CE Coop;Activa;02/03/1999;;711835;4344773;30;CCAA
+Comunidad Valenciana;Valencia/València;V1030;Carlet malla;Baja;01/06/1999;30/11/2010;713321;4345554;30;CCAA
+Comunidad Valenciana;Valencia/València;V104;Llutxent EEA;Activa;03/03/1999;;728810;4313267;30;CCAA
+Comunidad Valenciana;Valencia/València;V105;Requena Roma;Baja;27/07/1999;18/12/2001;660164;4372436;30;CCAA
+Comunidad Valenciana;Valencia/València;V106;Requena Cerrito;Activa;27/07/1999;;651972;4374274;30;CCAA
+Comunidad Valenciana;Valencia/València;V107;Manises;Baja;01/03/2010;22/12/2014;715439;4373565;30;CCAA
+Comunidad Valenciana;Valencia/València;V108;Moncada2;Baja;01/12/2015;30/01/2026;723368;4385233;30;CCAA
+Comunidad Valenciana;Valencia/València;V109;Algimia de Alfara;Activa;07/02/2017;;726167;4403529;30;CCAA
+Comunidad Valenciana;Valencia/València;V11;Puig;Baja;18/11/1999;03/04/2000;727420;4388860;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V110;Valencia UPV;Activa;07/11/2025;;729078;4373833;30;CCAA
+Comunidad Valenciana;Valencia/València;V12;Pobla del Duc;Baja;25/11/1999;07/02/2002;725548;4309110;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V13;Navarrés;Baja;25/11/1999;13/05/2003;700765;4328200;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V14;Algemesí;Activa;26/11/1999;;721413;4343930;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V15;Campo Arcís;Baja;26/11/1999;;658167;4366480;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V16;Bétera;Baja;23/01/2001;28/02/2007;717362;4386170;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V17;Picassent;Activa;24/01/2001;;715588;4359990;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V18;Montesa;Activa;25/01/2001;;704640;4314380;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V19;Xàtiva;Activa;24/01/2001;;712192;4319500;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V20;Sagunt;Activa;23/01/2001;;732200;4392210;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V21;Campo Arcís;Activa;22/01/2001;;657938;4366610;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V22;Villalonga;Activa;07/03/2001;;742476;4308520;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V23;Gandia Marxuquera;Activa;21/03/2001;;738207;4316410;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V24;Polinyá de Xúquer;Baja;29/07/2004;09/04/2015;727749;4341700;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V25;Bolbaite;Activa;07/07/2006;;699829;4326990;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V26;Bétera;Activa;13/02/2008;;717423;4386260;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V27;Chulilla;Activa;22/04/2008;;685917;4394130;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V28;Godelleta;Activa;25/11/2013;;699949;4366120;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V29;Bélgida;Activa;26/11/2013;;720841;4306490;30;Red de estaciones del Ministerio
+Comunidad Valenciana;Valencia/València;V30;Polinyà de Xúquer;Activa;09/04/2015;;725018;4341715;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA01;Zalamea de la Serena;Activa;24/08/1999;;265910;4284560;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA02;Monterrubio de la Serena;Activa;24/08/1999;;292404;4274150;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA03;Don Benito;Baja;25/08/1999;24/01/2010;248074;4313080;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA04;Villagonzalo;Activa;25/08/1999;;223468;4303540;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA05;Jerez de los Caballeros;Activa;26/08/1999;;173113;4243640;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA06;Olivenza;Activa;26/08/1999;;147185;4293630;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA07;Villafranca de los Barros;Baja;08/05/2001;25/01/2010;208360;4275100;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA08;Don Benito;Activa;25/01/2010;;248957;4312730;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA09;Villafranca de los Barros;Activa;26/01/2010;;208280;4275000;30;Red de estaciones del Ministerio
+Extremadura;Badajoz;BA101;Mérida;Activa;04/12/2002;;211917;4304830;30;CCAA
+Extremadura;Badajoz;BA102;Azuaga;Activa;07/09/2006;;263512;4252720;30;CCAA
+Extremadura;Badajoz;BA103;Puebla de Alcocer;Activa;21/12/2006;;318722;4327150;30;CCAA
+Extremadura;Badajoz;BA104;Fuente de Cantos;Activa;02/04/2008;;210378;4234130;30;CCAA
+Extremadura;Badajoz;BA105;Don Benito-EFA;Activa;17/12/2009;;252360;4318970;30;CCAA
+Extremadura;Badajoz;BA106;Santa Amalia;Activa;25/11/2011;;241514;4322470;30;CCAA
+Extremadura;Badajoz;BA107;Torrefresneda;Activa;04/04/2023;;230390;4321747;30;CCAA
+Extremadura;Badajoz;BA108;Navalvillar de Pela;Activa;20/04/2023;;292986;4333223;30;CCAA
+Extremadura;Badajoz;BA109;Aceuchal;Activa;01/11/2024;;195348;4285555;30;CCAA
+Extremadura;Badajoz;BA201;Acevedos;Baja;24/05/2004;29/05/2006;145482;4299340;30;CCAA
+Extremadura;Badajoz;BA202;Sagrajas;Baja;07/10/1997;15/10/2006;161247;4313640;30;CCAA
+Extremadura;Badajoz;BA203;Bercial;Activa;09/06/1998;;167915;4310100;30;CCAA
+Extremadura;Badajoz;BA204;Rueda Chica;Activa;16/06/1998;;176326;4313750;30;CCAA
+Extremadura;Badajoz;BA205;La Orden;Activa;16/01/1997;;181923;4307650;30;CCAA
+Extremadura;Badajoz;BA206;Arroyo;Activa;01/12/1997;;198644;4306780;30;CCAA
+Extremadura;Badajoz;BA207;Don Rodrigo;Baja;24/05/2004;07/03/2012;208873;4284330;30;CCAA
+Extremadura;Badajoz;BA208;Guareña;Baja;17/07/1997;18/11/2004;230335;4311280;30;CCAA
+Extremadura;Badajoz;BA209;Don Benito-EFA;Baja;21/11/1996;15/10/2006;252627;4319390;30;CCAA
+Extremadura;Badajoz;BA210;Palazuelo;Activa;26/05/1999;;262837;4331710;30;CCAA
+Extremadura;Cáceres;CC01;Casatejada;Activa;12/07/1999;;270943;4416520;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC02;Cabezuela del Valle;Baja;13/07/1999;12/05/2002;262510;4453950;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC03;Zarza de Granadilla;Baja;13/07/1999;15/06/2011;240676;4455160;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC04;Aldehuela del Jerte;Activa;14/07/1999;;224276;4433680;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC05;Moraleja;Baja;15/07/1999;03/01/2006;186396;4439380;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC06;Coria;Baja;15/07/1999;21/05/2001;197200;4431350;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC07;Madrigalejo;Activa;23/08/1999;;275671;4335060;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC08;Valdesalor;Baja;29/08/1999;26/01/2010;200353;4364410;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC09;Peraleda de la Mata;Activa;30/08/1999;;289240;4415250;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC10;Valdeiñigos-Tejeda de Tíetar;Activa;31/08/1999;;255708;4427240;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC101;Hurdes-Azabal;Activa;18/03/2004;;219034;4466140;30;CCAA
+Extremadura;Cáceres;CC102;Madroñera;Baja;13/02/2006;15/02/2022;262362;4372010;30;CCAA
+Extremadura;Cáceres;CC103;Guadalupe;Activa;01/03/2007;;297766;4362370;30;CCAA
+Extremadura;Cáceres;CC104;Alcantara;Activa;28/11/2007;;165984;4406900;30;CCAA
+Extremadura;Cáceres;CC105;Mirabel;Activa;13/07/2010;;225349;4416430;30;CCAA
+Extremadura;Cáceres;CC106;Aliseda;Baja;01/04/2011;23/01/2025;186520;4353590;30;CCAA
+Extremadura;Cáceres;CC107;Rebollar;Activa;12/04/2021;;253176;4448287;30;CCAA
+Extremadura;Cáceres;CC108;Tiétar;Activa;07/06/2023;;282477;4435352;30;CCAA
+Extremadura;Cáceres;CC109;Valdeíñigos II;Activa;21/06/2023;;255434;4428775;30;CCAA
+Extremadura;Cáceres;CC11;Jarandilla de la Vera;Activa;01/09/1999;;274430;4442370;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC12;Gargantilla;Activa;01/09/1999;;249780;4458440;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC13;Talayuela;Activa;06/10/1999;;281141;4432150;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC14;Coria-Puebla de Argeme;Activa;11/06/2001;;204857;4429511;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC15;Valdastillas;Baja;14/05/2002;15/10/2006;255051;4447650;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC16;Moraleja;Activa;19/10/2006;;185457;4441660;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC17;Valdastillas;Activa;19/10/2006;;255607;4447376;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC18;Valdesalor;Activa;27/01/2010;;213209;4362880;30;Red de estaciones del Ministerio
+Extremadura;Cáceres;CC19;Zarza de Granadilla;Activa;02/06/2011;;241859;4455280;30;Red de estaciones del Ministerio
+Galicia;Coruña, A;C01;A Capela;Activa;05/07/2005;;90970;4822990;30;Red de estaciones del Ministerio
+Galicia;Coruña, A;C02;Boimorto;Activa;06/07/2005;;81094;4777420;30;Red de estaciones del Ministerio
+Galicia;Lugo;LU01;Castro de Rei;Activa;05/07/2005;;135107;4787804;30;Red de estaciones del Ministerio
+Galicia;Lugo;LU02;Monforte de Lemos;Activa;06/07/2005;;130127;4715890;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB01;Santa Eulalia;Activa;30/03/2004;;884487;4327280;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB02;Inca;Activa;31/03/2004;;1009420;4409550;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB03;Manacor;Activa;01/04/2004;;1030470;4395600;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB04;Son Ferriol;Activa;01/04/2004;;992040;4394870;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB05;Felanitx;Activa;05/04/2004;;1023670;4387260;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB06;Sa Pobla;Activa;05/04/2004;;1017420;4423370;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB07;Sóller;Baja;11/08/2004;13/11/2012;989206;4419030;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB08;Es Mercadal;Activa;05/10/2005;;1106140;4452380;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB09;Artá;Baja;24/10/2005;10/10/2018;1045510;4413540;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB10;Calviá;Activa;08/10/2005;;969620;4392240;30;Red de estaciones del Ministerio
+Islas Baleares;Balears, Illes;IB101;Ciutadella;Baja;02/12/2008;10/08/2009;1085510;4446460;30;CCAA
+Islas Baleares;Balears, Illes;IB11;S' Estany des Peix;Activa;10/10/2005;;882360;4295680;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU01;Finca experimental de Aguilas (CIDA);Activa;24/05/1999;;624578;4142250;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU02;Finca experimental de Totana (CIDA);Activa;24/05/1999;;631022;4177170;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU03;Forja, S.A.-Fuente Alamo;Activa;05/07/1999;;664814;4179530;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU04;Los Martínez del Puerto;Baja;06/07/1999;19/09/2009;672089;4185940;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU05;Corvera;Baja;06/07/1999;03/06/2002;664905;4189730;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU06;La Aljorra;Activa;07/07/1999;;670824;4171705;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU07;Roche. Finca La torreta;Baja;07/07/1999;22/07/2013;683622;4166590;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU08;Turilla: La Paca;Activa;08/07/1999;;604002;4190450;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU09;Purias-Lorca;Activa;08/07/1999;;620981;4162510;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU10;Charco de Taray;Activa;20/07/1999;;661845;4225290;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU101;Alhama (La Calavera);Activa;15/01/1997;;639382;4183910;30;CCAA
+Región de Murcia;Murcia;MU102;Calasparra (Rotas);Activa;15/01/1997;;614200;4234750;30;CCAA
+Región de Murcia;Murcia;MU103;Molina de Segura (Campotejar);Activa;15/01/1997;;655952;4221450;30;CCAA
+Región de Murcia;Murcia;MU104;Murcia (Cabezo Plata);Activa;15/01/1997;;677088;4205240;30;CCAA
+Región de Murcia;Murcia;MU105;Mazarrón (Cañada Gallego);Activa;15/01/1997;;644683;4159260;30;CCAA
+Región de Murcia;Murcia;MU106;Cehegín (La Torrecita);Activa;15/01/1997;;606971;4218100;30;CCAA
+Región de Murcia;Murcia;MU107;Fuente Alamo (Campillo bajo);Activa;15/01/1997;;655351;4173880;30;CCAA
+Región de Murcia;Murcia;MU108;Cehegín (El Chaparral);Activa;15/01/1997;;615442;4219040;30;CCAA
+Región de Murcia;Murcia;MU109;Puerto Lumbreras (El Esparragal);Activa;15/01/1997;;612404;4160930;30;CCAA
+Región de Murcia;Murcia;MU11;Finca Taray (Torres de cotillas);Activa;20/07/1999;;649023;4207950;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU110;Blanca (Estación de Blanca);Activa;15/01/1997;;647927;4233290;30;CCAA
+Región de Murcia;Murcia;MU111;Cieza (La Carrichosa);Activa;15/01/1997;;631283;4239070;30;CCAA
+Región de Murcia;Murcia;MU112;Jumilla (las Encebras);Activa;15/01/1997;;653748;4251050;30;CCAA
+Región de Murcia;Murcia;MU114;Yecla (Pinillos);Activa;15/01/1997;;664448;4269940;30;CCAA
+Región de Murcia;Murcia;MU115;Jumilla (Cº del Judio);Activa;02/10/1997;;637693;4250800;30;CCAA
+Región de Murcia;Murcia;MU117;Torre Pacheco (Torre Blanca);Activa;02/10/1997;;685067;4182780;30;CCAA
+Región de Murcia;Murcia;MU119;Torre Pacheco (Los Infiernos);Activa;04/11/1997;;682044;4188290;30;CCAA
+Región de Murcia;Murcia;MU12;Villanueva de Segura;Baja;21/07/1999;11/12/2011;646200;4221150;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU120;San Javier (Santiago de la Ribera);Activa;01/10/1997;;691865;4184730;30;CCAA
+Región de Murcia;Murcia;MU121;Murcia (La Alberca);Activa;16/03/1998;;663918;4200810;30;CCAA
+Región de Murcia;Murcia;MU123;Mula (Mula);Activa;07/09/1998;;634434;4211270;30;CCAA
+Región de Murcia;Murcia;MU124;Caravaca (Barranda);Activa;29/10/1998;;588685;4211200;30;CCAA
+Región de Murcia;Murcia;MU125;Jumilla (Roman);Activa;13/11/1998;;646370;4242420;30;CCAA
+Región de Murcia;Murcia;MU126;Abanilla (La Jaira);Activa;01/02/1999;;670466;4226410;30;CCAA
+Región de Murcia;Murcia;MU128;Torre Pacheco (Torre Pacheco);Activa;01/06/2005;;677368;4179730;30;CCAA
+Región de Murcia;Murcia;MU13;Casa Rosa de Ulea;Baja;21/07/1999;12/05/2005;652797;4228310;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU130;San Javier (El Mirador);Activa;16/03/2009;;686091;4190860;30;CCAA
+Región de Murcia;Murcia;MU14;Finca Venta de Ulea-Moratalla;Activa;22/07/1999;;603922;4228300;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU15;Librilla;Baja;22/07/1999;20/02/2018;646098;4195950;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU16;Puerto Lumbreras;Activa;25/09/2000;;615445;4151560;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU17;Beniel;Activa;26/09/2000;;675543;4211530;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU18;Yecla;Activa;26/09/2000;;657845;4280490;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU19;Corvera;Activa;04/06/2002;;665199;4188760;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU20;Casa Rosa de Ulea;Activa;30/04/2005;;652563;4228480;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU21;Librilla La Egesa;Activa;28/03/2018;;648642;4195008;30;Red de estaciones del Ministerio
+Región de Murcia;Murcia;MU22;Jimenado;Activa;20/09/2022;;672099;4183572;30;Red de estaciones del Ministerio

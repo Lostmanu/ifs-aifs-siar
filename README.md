@@ -18,6 +18,7 @@ Los ciclos corresponden al día anterior al día objetivo. La referencia, la mue
 - [Trazabilidad: cifras, fórmulas, pares, bootstrap y Holm](docs/TRAZABILIDAD.md).
 - [Especificación congelada](estudio/metodo_fijado.json), [estaciones](estudio/outputs/estaciones.json) y [resultados completos](estudio/outputs/resultados.json).
 - [Verificación de entrega](estudio/outputs/verificacion_entrega.json): 60.602 valores reproducidos exactamente, 708 recibos comprobados y 16 pruebas del método superadas. La auditoría textual aportada por el usuario no hizo ese recálculo; [su alcance se conserva aquí](docs/AUDITORIA.md).
+- [Re-derivar la selección de estaciones](estudio/code/verificar_seleccion.py): `python estudio/code/verificar_seleccion.py` rehace las 34 estaciones desde el catálogo publicado (`estudio/datos/catalogo_siar_20260914T0741Z.csv`, SHA-256 comprobado contra la especificación congelada) y las compara con `estaciones.json`. No necesita el ZIP ni el árbol original.
 - [Archivo histórico y hashes](docs/ARCHIVO.md). Los informes anteriores son antecedentes y no sustituyen el cierre revisado.
 
 ![Sensibilidad de escala](estudio/outputs/figura_sensibilidad.png)
@@ -44,7 +45,9 @@ El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carp
 
 ## Fuentes y conservación
 
-Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las URL, fechas de recuperación y hashes originales. La distribución de datos mantiene las condiciones de sus fuentes; esta publicación no les asigna una nueva licencia. El repositorio es privado y conserva un trabajo de investigación, sin servicio desplegado ni nueva fase experimental.
+Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las URL, fechas de recuperación y hashes originales. El repositorio conserva un trabajo de investigación, sin servicio desplegado ni nueva fase experimental.
+
+**Licencias.** El código está bajo [MIT](LICENSE); el texto de los informes, la documentación y las figuras, bajo CC BY 4.0. Los datos de terceros conservan las condiciones de sus proveedores y esta publicación no les asigna una licencia nueva ni concede derechos adicionales sobre ellos. El desglose por fuente, con lo que está verificado y lo que no, está en [DERECHOS.md](DERECHOS.md).
 
 ## Corrección v1.0.1
 
