@@ -4,6 +4,17 @@ Las cifras del estudio no han cambiado en ninguna versión. La especificación c
 (`estudio/metodo_fijado.json`, SHA-256 `4f84de4a19ad94283261ac370313cca153177f9b46c77288c0745f18633892e3`)
 es la misma desde el 14 de septiembre de 2026 y ninguna corrección la toca.
 
+## 23 de septiembre de 2026 — Documentación y presentación
+
+Mejora de presentación y documentación sobre v1.0.2, sin sustituir sus paquetes ni cambiar la ciencia.
+
+- Portada con navegación por intención, resumen en inglés y figura accesible en escritorio y móvil, generada directamente desde los resultados.
+- Guías de lectura y reproducción, cita CFF y criterios para comunicar correcciones.
+- Aclaración de la identidad de los motores: `analizar.py` sí cambió en v1.0.2; los recuentos originales de 16 pruebas y 60.602 valores son históricos.
+- Entrada `herramientas/reproducir_paquete.py`: inicializa `numpy.testing` antes de activar los controles del lanzador conservado. Resuelve un fallo reproducido en el Windows restringido de esta revisión; el paquete original sigue intacto.
+- CI usa una versión explícita, verifica SHA-256 antes de extraer y comprueba que la figura coincide con sus datos. El comprobador de enlaces incluye archivos nuevos no ignorados y recursos HTML.
+- [Revisión y alcance de las comprobaciones](docs/revision_20260923/informe.md), incluida la distinción entre validación local y publicación remota.
+
 ## v1.0.2 — 19 de septiembre de 2026
 
 Corrige la reproducibilidad fuera de Windows. **Ningún resultado cambia.**

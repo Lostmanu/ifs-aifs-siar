@@ -1,0 +1,174 @@
+Manifiesto comprobado: 3057 archivos
+Ejecutando test_metodo.py
+test_nubosidad (__main__.TestAgregacion.test_nubosidad) ... ok
+test_suma_0618 (__main__.TestAgregacion.test_suma_0618) ... ok
+test_total_diario_falta_una_marca (__main__.TestAgregacion.test_total_diario_falta_una_marca) ... ok
+test_total_diario_pasada_06_con_nulos_iniciales (__main__.TestAgregacion.test_total_diario_pasada_06_con_nulos_iniciales) ... ok
+test_total_diario_usa_marcas_01_a_00 (__main__.TestAgregacion.test_total_diario_usa_marcas_01_a_00) ... ok
+test_bloques_L7_conservan_contiguidad (__main__.TestBootstrap.test_bloques_L7_conservan_contiguidad) ... ERROR
+test_bloques_contiguos_L1_es_iid (__main__.TestBootstrap.test_bloques_contiguos_L1_es_iid) ... ok
+test_pesos_suman_n (__main__.TestBootstrap.test_pesos_suman_n) ... ERROR
+test_reproducible (__main__.TestBootstrap.test_reproducible) ... ERROR
+test_efecto_signo (__main__.TestEfecto.test_efecto_signo) ... ok
+test_efecto_y_p (__main__.TestEfecto.test_efecto_y_p) ... ok
+test_p_bilateral (__main__.TestEfecto.test_p_bilateral) ... ok
+test_fao56_ejemplo (__main__.TestH0.test_fao56_ejemplo) ... ok
+test_h0_verano_espana (__main__.TestH0.test_h0_verano_espana) ... ok
+test_holm_dos (__main__.TestHolm.test_holm_dos) ... ok
+test_holm_monotono (__main__.TestHolm.test_holm_monotono) ... ok
+test_el_consumo_antiguo_se_rompia_en_posix (__main__.TestRutasPortables.test_el_consumo_antiguo_se_rompia_en_posix)
+Reproduce el defecto de v1.0.1 sin depender del sistema donde corre la prueba. ... ok
+test_el_lector_resuelve_todas_las_entradas_del_manifiesto (__main__.TestRutasPortables.test_el_lector_resuelve_todas_las_entradas_del_manifiesto)
+Resolver cada entrada con ruta() debe dar mas de un componente. Pasa con el ... ok
+test_manifiesto_heredado_es_posix (__main__.TestRutasPortables.test_manifiesto_heredado_es_posix)
+Ninguna ruta guardada puede llevar separador de Windows. ... ok
+test_ruta_acepta_los_dos_separadores (__main__.TestRutasPortables.test_ruta_acepta_los_dos_separadores) ... ok
+
+======================================================================
+ERROR: test_bloques_L7_conservan_contiguidad (__main__.TestBootstrap.test_bloques_L7_conservan_contiguidad)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproduccion\20260923T112225056099Z\code\test_metodo.py", line 68, in test_bloques_L7_conservan_contiguidad
+    np.testing.assert_array_equal(W, 1.0)
+    ^^^^^^^^^^
+  File "PYTHON\Lib\site-packages\numpy\__init__.py", line 749, in __getattr__
+    import numpy.testing as testing
+  File "PYTHON\Lib\site-packages\numpy\testing\__init__.py", line 12, in <module>
+    from ._private.utils import *
+  File "PYTHON\Lib\site-packages\numpy\testing\_private\utils.py", line 89, in <module>
+    IS_WASM = platform.machine() in ["wasm32", "wasm64"]
+              ^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 1024, in machine
+    return uname().machine
+           ^^^^^^^
+  File "PYTHON\Lib\platform.py", line 922, in uname
+    release, version, csd, ptype = win32_ver()
+                                   ^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 450, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 414, in _win32_ver
+    version = _syscmd_ver()[2]
+              ^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 283, in _syscmd_ver
+    info = subprocess.check_output(cmd,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 992, in __init__
+    errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1359, in _get_handles
+    p2cread = msvcrt.get_osfhandle(self._get_devnull())
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1137, in _get_devnull
+    self._devnull = os.open(os.devnull, os.O_RDWR)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproducir_offline.py", line 62, in audit
+    raise RuntimeError('Escritura fuera de copia de reproducción: ' + str(vals[0]))
+RuntimeError: Escritura fuera de copia de reproducción: nul
+
+======================================================================
+ERROR: test_pesos_suman_n (__main__.TestBootstrap.test_pesos_suman_n)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproduccion\20260923T112225056099Z\code\test_metodo.py", line 58, in test_pesos_suman_n
+    np.testing.assert_array_equal(W.sum(axis=1), 110.0)
+    ^^^^^^^^^^
+  File "PYTHON\Lib\site-packages\numpy\__init__.py", line 749, in __getattr__
+    import numpy.testing as testing
+  File "PYTHON\Lib\site-packages\numpy\testing\__init__.py", line 12, in <module>
+    from ._private.utils import *
+  File "PYTHON\Lib\site-packages\numpy\testing\_private\utils.py", line 89, in <module>
+    IS_WASM = platform.machine() in ["wasm32", "wasm64"]
+              ^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 1024, in machine
+    return uname().machine
+           ^^^^^^^
+  File "PYTHON\Lib\platform.py", line 922, in uname
+    release, version, csd, ptype = win32_ver()
+                                   ^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 450, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 414, in _win32_ver
+    version = _syscmd_ver()[2]
+              ^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 283, in _syscmd_ver
+    info = subprocess.check_output(cmd,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 992, in __init__
+    errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1359, in _get_handles
+    p2cread = msvcrt.get_osfhandle(self._get_devnull())
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1137, in _get_devnull
+    self._devnull = os.open(os.devnull, os.O_RDWR)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproducir_offline.py", line 62, in audit
+    raise RuntimeError('Escritura fuera de copia de reproducción: ' + str(vals[0]))
+RuntimeError: Escritura fuera de copia de reproducción: nul
+
+======================================================================
+ERROR: test_reproducible (__main__.TestBootstrap.test_reproducible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproduccion\20260923T112225056099Z\code\test_metodo.py", line 71, in test_reproducible
+    np.testing.assert_array_equal(pesos_bootstrap(30, 7, 100, 20260914), pesos_bootstrap(30, 7, 100, 20260914))
+    ^^^^^^^^^^
+  File "PYTHON\Lib\site-packages\numpy\__init__.py", line 749, in __getattr__
+    import numpy.testing as testing
+  File "PYTHON\Lib\site-packages\numpy\testing\__init__.py", line 12, in <module>
+    from ._private.utils import *
+  File "PYTHON\Lib\site-packages\numpy\testing\_private\utils.py", line 89, in <module>
+    IS_WASM = platform.machine() in ["wasm32", "wasm64"]
+              ^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 1024, in machine
+    return uname().machine
+           ^^^^^^^
+  File "PYTHON\Lib\platform.py", line 922, in uname
+    release, version, csd, ptype = win32_ver()
+                                   ^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 450, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 414, in _win32_ver
+    version = _syscmd_ver()[2]
+              ^^^^^^^^^^^^^
+  File "PYTHON\Lib\platform.py", line 283, in _syscmd_ver
+    info = subprocess.check_output(cmd,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 992, in __init__
+    errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1359, in _get_handles
+    p2cread = msvcrt.get_osfhandle(self._get_devnull())
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "PYTHON\Lib\subprocess.py", line 1137, in _get_devnull
+    self._devnull = os.open(os.devnull, os.O_RDWR)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "REPOSITORIO\work\presentacion_20260923\paquete\reproducir_offline.py", line 62, in audit
+    raise RuntimeError('Escritura fuera de copia de reproducción: ' + str(vals[0]))
+RuntimeError: Escritura fuera de copia de reproducción: nul
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.253s
+
+FAILED (errors=3)

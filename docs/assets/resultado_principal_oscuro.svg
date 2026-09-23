@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" role="img" aria-labelledby="title desc">
+<title id="title">El resultado cambia con la escala de referencia</title>
+<desc id="desc">Mejora relativa del MAE e intervalos del 95 por ciento con bloques de siete días. H1: 1,47 por ciento con SiAR publicada y 0,44 con O/0,95. H2: 7,57 y menos 5,64. La escala no identifica error del sensor.</desc>
+<rect width="960" height="580" fill="#0d1117"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="36" y="49" font-size="30" font-weight="700" fill="#e2edf0" text-anchor="start">El resultado cambia con la escala de referencia</text>
+<text x="36" y="84" font-size="18" font-weight="400" fill="#adc1c6" text-anchor="start">34 estaciones SiAR · 14 mayo–31 agosto de 2026 · intervalos del 95 %</text>
+<line x1="322.167" y1="159.000" x2="322.167" y2="255.000" stroke="#30434b" stroke-width="1" />
+<line x1="322.167" y1="330.000" x2="322.167" y2="427.000" stroke="#30434b" stroke-width="1" />
+<text x="322.1666666666667" y="465" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="middle">−10</text>
+<line x1="452.583" y1="159.000" x2="452.583" y2="255.000" stroke="#30434b" stroke-width="1" />
+<line x1="452.583" y1="330.000" x2="452.583" y2="427.000" stroke="#30434b" stroke-width="1" />
+<text x="452.58333333333337" y="465" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="middle">−5</text>
+<line x1="583.000" y1="159.000" x2="583.000" y2="255.000" stroke="#adc1c6" stroke-width="1.4" />
+<line x1="583.000" y1="330.000" x2="583.000" y2="427.000" stroke="#adc1c6" stroke-width="1.4" />
+<text x="583.0" y="465" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="middle">0</text>
+<line x1="713.417" y1="159.000" x2="713.417" y2="255.000" stroke="#30434b" stroke-width="1" />
+<line x1="713.417" y1="330.000" x2="713.417" y2="427.000" stroke="#30434b" stroke-width="1" />
+<text x="713.4166666666667" y="465" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="middle">5</text>
+<line x1="843.833" y1="159.000" x2="843.833" y2="255.000" stroke="#30434b" stroke-width="1" />
+<line x1="843.833" y1="330.000" x2="843.833" y2="427.000" stroke="#30434b" stroke-width="1" />
+<text x="843.8333333333333" y="465" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="middle">10</text>
+<text x="36" y="132" font-size="21" font-weight="700" fill="#e2edf0" text-anchor="start">H1 · Actualizar IFS de 00 a 06 UTC</text>
+<text x="36" y="303" font-size="21" font-weight="700" fill="#e2edf0" text-anchor="start">H2 · Cambiar de IFS 00 a AIFS 00 UTC</text>
+<text x="36" y="188" font-size="18" font-weight="400" fill="#adc1c6" text-anchor="start">SiAR publicada</text>
+<text x="621.3688348837966" y="167" font-size="20" font-weight="700" fill="#5bc0b8" text-anchor="middle">+1,47 %</text>
+<line x1="600.991" y1="182.000" x2="642.000" y2="182.000" stroke="#5bc0b8" stroke-width="3" />
+<line x1="600.991" y1="176.000" x2="600.991" y2="188.000" stroke="#5bc0b8" stroke-width="2" />
+<line x1="642.000" y1="176.000" x2="642.000" y2="188.000" stroke="#5bc0b8" stroke-width="2" />
+<circle cx="621.369" cy="182" r="6" fill="#5bc0b8"/>
+<text x="36" y="243" font-size="18" font-weight="400" fill="#adc1c6" text-anchor="start">Escenario O/0,95</text>
+<text x="594.5925970748456" y="222" font-size="20" font-weight="700" fill="#5bc0b8" text-anchor="middle">+0,44 %</text>
+<line x1="567.786" y1="237.000" x2="619.323" y2="237.000" stroke="#5bc0b8" stroke-width="3" />
+<line x1="567.786" y1="231.000" x2="567.786" y2="243.000" stroke="#5bc0b8" stroke-width="2" />
+<line x1="619.323" y1="231.000" x2="619.323" y2="243.000" stroke="#5bc0b8" stroke-width="2" />
+<rect x="589.093" y="231.5" width="11" height="11" fill="#0d1117" stroke="#5bc0b8" stroke-width="2.5"/>
+<text x="36" y="359" font-size="18" font-weight="400" fill="#adc1c6" text-anchor="start">SiAR publicada</text>
+<text x="780.4604783904741" y="338" font-size="20" font-weight="700" fill="#f09b7f" text-anchor="middle">+7,57 %</text>
+<line x1="702.963" y1="353.000" x2="856.467" y2="353.000" stroke="#f09b7f" stroke-width="3" />
+<line x1="702.963" y1="347.000" x2="702.963" y2="359.000" stroke="#f09b7f" stroke-width="2" />
+<line x1="856.467" y1="347.000" x2="856.467" y2="359.000" stroke="#f09b7f" stroke-width="2" />
+<circle cx="780.460" cy="353" r="6" fill="#f09b7f"/>
+<text x="36" y="414" font-size="18" font-weight="400" fill="#adc1c6" text-anchor="start">Escenario O/0,95</text>
+<text x="435.78949486509686" y="393" font-size="20" font-weight="700" fill="#f09b7f" text-anchor="middle">−5,64 %</text>
+<line x1="319.957" y1="408.000" x2="548.279" y2="408.000" stroke="#f09b7f" stroke-width="3" />
+<line x1="319.957" y1="402.000" x2="319.957" y2="414.000" stroke="#f09b7f" stroke-width="2" />
+<line x1="548.279" y1="402.000" x2="548.279" y2="414.000" stroke="#f09b7f" stroke-width="2" />
+<rect x="430.289" y="402.5" width="11" height="11" fill="#0d1117" stroke="#f09b7f" stroke-width="2.5"/>
+<text x="583.0" y="500" font-size="19" font-weight="400" fill="#e2edf0" text-anchor="middle">Reducción relativa del MAE (%)</text>
+<text x="36" y="539" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="start">A la derecha de cero: menor error. H1 pierde un intervalo positivo; H2 invierte el signo.</text>
+<text x="36" y="566" font-size="17" font-weight="400" fill="#adc1c6" text-anchor="start">O/0,95 es un escenario de sensibilidad: no estima el error real del sensor.</text>
+</g>
+</svg>

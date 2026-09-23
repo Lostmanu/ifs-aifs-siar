@@ -3,6 +3,8 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/CITATION.cff
+!/CONTRIBUTING.md
 !/LICENSE
 !/DERECHOS.md
 !/.github/

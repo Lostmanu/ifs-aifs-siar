@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Para citar este estudio, indique también la versión del paquete reproducible."
+type: software
+title: "IFS y AIFS frente a SiAR: comparación reproducible de radiación solar y sensibilidad de escala"
+authors:
+  - family-names: "Beardo Campo"
+    given-names: "Manuel"
+version: "1.0.2"
+date-released: "2026-09-19"
+repository-code: "https://github.com/Lostmanu/ifs-aifs-siar"
+url: "https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre"
+abstract: "Estudio cerrado de pronósticos IFS/AIFS servidos por Open-Meteo frente a 34 estaciones SiAR. Conserva datos, especificación, desviaciones y reproducción sin red; distingue mejora medida, sensibilidad de escala e interpretación física."
+keywords:
+  - solar radiation
+  - forecast verification
+  - reproducible research
+  - ECMWF
+  - IFS
+  - AIFS
+  - SiAR

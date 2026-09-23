@@ -2,6 +2,8 @@
 
 Documentación añadida al publicar, sin cambiar datos ni método. La tabla JSON conserva valores sin redondear y punteros RFC 6901.
 
+**Versiones de las comprobaciones.** Los 60.602 valores y las 16 pruebas de la tabla histórica corresponden al cierre original. La cadena actual incorpora 61.383 valores y 20 pruebas; el [registro del 23-09-2026](revision_20260923/informe.md) distingue la reproducción actual de los controles conservados.
+
 ## Diseño, pares y agregación
 
 La [especificación congelada](../estudio/metodo_fijado.json) y su [recibo](../estudio/state/metodo_fijado_recibo.json) fijan la selección por rejilla 1,5°, las 34 estaciones, los criterios de validez y las ventanas. El [listado de estaciones](../estudio/outputs/estaciones.json) incluye coordenadas, cobertura y exclusiones. La primaria son 110 días objetivo, 14-may–31-ago-2026; la secundaria son 40 días, 3-abr–12-may, y no se mezclan versiones. El 13 de mayo se excluye por ser mixto.
@@ -42,7 +44,7 @@ El determinista usa k común en {0,95; 1; 1,05}; reemplaza O por O/k y recalcula
 
 Los cruces de k son posteriores: rejilla 0,855…1,10 con paso 0,0025, búsqueda de cambios de signo e interpolación lineal entre nodos. La precisión reportada no es un intervalo de incertidumbre del k real. El cambio relativo de observación es 100 × (1/k − 1). Código: [diagnostico_posterior.py](../estudio/code/diagnostico_posterior.py); campos `cruce_k_comun`, `curva`, `k_cruce` y `discrepancia_equivalente_pct` del diagnóstico. No se usaron para elegir estaciones, fechas ni método.
 
-## Tabla única de cifras del cierre
+## Cifras científicas y verificaciones históricas del cierre
 
 Los valores se muestran sin reinterpretarlos; los porcentajes de supervivencia almacenados son fracciones. [Versión estructurada con todas las filas](cifras_fuentes.json).
 
@@ -86,7 +88,7 @@ Los valores se muestran sin reinterpretarlos; los porcentajes de supervivencia a
 
 ## Entorno, integridad y límites de la comprobación
 
-El registro de reproducción especifica Python 3.12.14, NumPy 2.3.5 y Windows 11; la comparación permite tolerancias absolutas 1e−10 y relativas 1e−11, pero la ejecución registrada obtuvo diferencia exactamente cero. Los cuatro motores numéricos coinciden por hash con los originales. Los cambios de rutas y presentación están en `estudio/revision/*.diff`. El ZIP guarda los hashes de cada entrada en `manifest_portable_sha256.json`; su propio SHA-256 y el de los archivos históricos están en [paquetes_release.json](paquetes_release.json).
+El registro de reproducción especifica Python 3.12.14, NumPy 2.3.5 y Windows 11; la comparación permite tolerancias absolutas 1e−10 y relativas 1e−11, pero la ejecución registrada obtuvo diferencia exactamente cero. La identidad por hash de los cuatro motores describe v1.0.0 y v1.0.1: **v1.0.2 modifica `analizar.py`** para corregir rutas y abortar ante el fallo del enlace 06–18 UTC. Las cifras y la especificación se conservan. Los parches de cierre están en `estudio/revision/*.diff` y las correcciones posteriores en [CHANGELOG.md](../CHANGELOG.md). El ZIP guarda los hashes de cada entrada en `manifest_portable_sha256.json`; su propio SHA-256 y los históricos están en [paquetes_release.json](paquetes_release.json).
 
 Para un control rápido: leer esta página y la tabla de estaciones; inspeccionar `sumas` y `analizar_ventana` en `analizar.py`; inspeccionar las cuatro funciones citadas de `metodo.py`; extraer el ZIP de cierre y ejecutar su lanzador. El recálculo numérico no constituye una auditoría física de los datos ni valida una interpretación causal. La auditoría textual recibida no inspeccionó estos archivos; se conserva su alcance en [AUDITORIA.md](AUDITORIA.md).
 

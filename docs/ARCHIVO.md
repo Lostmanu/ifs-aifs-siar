@@ -1,6 +1,6 @@
 # Archivo histórico
 
-Los paquetes se conservan con sus bytes originales. Los nombres se prefijan para evitar colisiones. Esta tabla conserva v1.0.0. El paquete recomendado tras la corrección es `datos_y_analisis_portable_v1.0.1.zip`, enlazado al final.
+Los paquetes se conservan con sus bytes originales. Los nombres se prefijan para evitar colisiones. La tabla histórica corresponde a v1.0.0. Para reproducir, use **v1.0.2** y la [guía actual](REPRODUCIR.md).
 
 [Descargar en la versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.0-cierre)
 
@@ -23,7 +23,7 @@ Los paquetes se conservan con sus bytes originales. Los nombres se prefijan para
 
 ## Informes originales
 
-Se copian sin editar; las advertencias y conclusiones vigentes están en el cierre revisado.
+Conservan el contenido histórico; v1.0.2 adaptó enlaces de las copias publicadas a rutas relativas y añadió sus figuras. Los originales completos de cada etapa siguen en sus ZIP. Las advertencias y conclusiones vigentes están en el cierre revisado.
 - [auditoria_fisica/informe_auditoria.md](historico/auditoria_fisica/informe_auditoria.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
 - [auditoria_referencia/informe_referencia.md](historico/auditoria_referencia/informe_referencia.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
 - [cruce_aod_nubes/informe_cruce.md](historico/cruce_aod_nubes/informe_cruce.md) — informe original; sus figuras y datos asociados están en el ZIP de su etapa.
@@ -43,3 +43,9 @@ Se copian sin editar; las advertencias y conclusiones vigentes están en el cier
 ## Corrección v1.0.1
 
 [Paquete corregido](https://github.com/Lostmanu/ifs-aifs-siar/releases/download/v1.0.1-cierre/datos_y_analisis_portable_v1.0.1.zip) — 114875018 bytes, SHA-256 `421d2af84c439009abee798f897e0c9a3f8dfe8bbe200be603c49948dde38795`. La versión v1.0.0 y sus 14 paquetes permanecen intactos.
+
+## Corrección v1.0.2: paquete recomendado
+
+[Descargar v1.0.2](https://github.com/Lostmanu/ifs-aifs-siar/releases/download/v1.0.2-cierre/datos_y_analisis_portable_v1.0.2.zip). SHA-256 `3a09f5b39f8e14595bf21c0f4e1fd6c60ddceadacd2d6e5393e4e00427996a91`. Corrige rutas multiplataforma e incorpora la selección al lanzador. Ninguna cifra científica cambia. [Registro de cambios](../CHANGELOG.md).
+
+La [revisión del 23-09-2026](revision_20260923/informe.md) añade guías y una entrada de compatibilidad para el lanzador conservado. No sustituye los paquetes descargables.

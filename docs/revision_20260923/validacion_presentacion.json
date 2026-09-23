@@ -1,0 +1,63 @@
+{
+  "figura": {
+    "returncode": 0,
+    "stdout": "PASS: cuatro variantes SVG y cuatro resultados con sus intervalos coinciden con la fuente.\n",
+    "stderr": ""
+  },
+  "enlaces": {
+    "returncode": 0,
+    "stdout": "36 ficheros Markdown, 285 enlaces revisados\nPASS: ningun enlace roto ni ruta absoluta\n",
+    "stderr": ""
+  },
+  "rechazo_version_incorrecta": {
+    "estado": "PASS",
+    "codigo_obtenido": 1,
+    "codigo_esperado": 1
+  },
+  "deteccion_recurso_html_roto": {
+    "estado": "PASS",
+    "codigo_obtenido": 1,
+    "codigo_esperado": 1
+  },
+  "contraste_texto_svg": {
+    "#183137 sobre #ffffff": 13.696,
+    "#465c62 sobre #ffffff": 7.076,
+    "#216e6a sobre #ffffff": 5.995,
+    "#a54c34 sobre #ffffff": 5.702,
+    "#e2edf0 sobre #0d1117": 15.866,
+    "#adc1c6 sobre #0d1117": 10.111,
+    "#5bc0b8 sobre #0d1117": 8.72,
+    "#f09b7f sobre #0d1117": 8.741
+  },
+  "vista_previa_local": [
+    {
+      "width": 1180,
+      "pageWidth": 1180,
+      "image": "resultado_principal.svg",
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "pageWidth": 390,
+      "image": "resultado_principal_movil.svg",
+      "imageLoaded": true
+    },
+    {
+      "width": 1180,
+      "pageWidth": 1180,
+      "image": "resultado_principal_oscuro.svg",
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "pageWidth": 390,
+      "image": "resultado_principal_movil_oscuro.svg",
+      "imageLoaded": true
+    }
+  ],
+  "integridad_estudio": {
+    "estado": "PASS",
+    "archivos": 73
+  },
+  "fecha_utc": "2026-09-23T17:17:43.900497+00:00"
+}

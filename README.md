@@ -1,69 +1,83 @@
-# IFS y AIFS frente a SiAR — estudio cerrado
+# IFS · AIFS · SiAR
 
-**Estado: cerrado el 19 de septiembre de 2026. Evidencia comparativa condicionada y reproducible.**
+**Pronosticar la radiación solar. Medir la mejora. Comprobar cuánto depende de la referencia.**
 
-En 34 estaciones SiAR y 110 días entre el 14 de mayo y el 31 de agosto de 2026, el producto horario de Open-Meteo mostró menor MAE relativo al actualizar IFS de 00 a 06 UTC y al sustituir IFS 00 por AIFS 00, usando las observaciones SiAR publicadas y pares completos dentro de cada contraste. Los resultados superan el ajuste de Holm bajo los tres largos de bloque fijados. Las mejoras no superan todos los escenarios comunes de escala preespecificados.
+[![CI](https://github.com/Lostmanu/ifs-aifs-siar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Lostmanu/ifs-aifs-siar/actions/workflows/ci.yml)
+[![Paquete v1.0.2](https://img.shields.io/badge/paquete-v1.0.2-216e6a)](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre)
 
-| Contraste | Pares estación-día | Reducción relativa del MAE normalizado | IC95, bloques de 7 días | Escenario O/0,95 |
-|---|---:|---:|---:|---|
-| IFS 00 → IFS 06 UTC | 3.664 | 1,47 % | [0,69; 2,26] | 0,44 %; IC95 [−0,58; 1,39] |
-| IFS 00 → AIFS 00 UTC | 3.697 | 7,57 % | [4,60; 10,48] | −5,64 %; IC95 [−10,08; −1,33] |
+[Leer el estudio](docs/LECTURA.md) · [Reproducir](docs/REPRODUCIR.md) · [Auditar el método](docs/TRAZABILIDAD.md) · [Descargar los datos](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre)
 
-Los ciclos corresponden al día anterior al día objetivo. La referencia, la muestra estacional, el producto servido y la sensibilidad de escala condicionan la conclusión. No se identifican errores de sensores, habilidad libre de error observacional, disponibilidad operacional, ahorro o rentabilidad. La evaluación de pronósticos frente a MeteoGalicia pertenece a otro encargo (`evaluacion_meteogalicia`), que quedó incompleto; nunca estuvo incluida en este estudio de 34 estaciones.
+Este estudio compara los pronósticos de radiación de **IFS y AIFS**, servidos por Open-Meteo, con **34 estaciones terrestres SiAR** en España. Evalúa dos decisiones: actualizar IFS de las 00 a las 06 UTC del día anterior y sustituir IFS por AIFS a igual ciclo.
 
-## Leer y comprobar
+**Hay una mejora medida frente a SiAR. Su magnitud y su interpretación cambian al modificar la escala de la referencia.** El proyecto está cerrado como investigación, con datos archivados, método documentado y reproducción sin conexión.
 
-- [Cierre y alcance](CIERRE.md).
-- [Informe completo revisado](estudio/outputs/informe.md) y [revisión de interpretación](estudio/revision/informe_revision.md).
-- [Trazabilidad: cifras, fórmulas, pares, bootstrap y Holm](docs/TRAZABILIDAD.md).
-- [Especificación congelada](estudio/metodo_fijado.json), [estaciones](estudio/outputs/estaciones.json) y [resultados completos](estudio/outputs/resultados.json).
-- [Verificación de entrega](estudio/outputs/verificacion_entrega.json): 60.602 valores reproducidos exactamente, 708 recibos comprobados y 16 pruebas del método superadas. La auditoría textual aportada por el usuario no hizo ese recálculo; [su alcance se conserva aquí](docs/AUDITORIA.md).
-- [Re-derivar la selección de estaciones](estudio/code/verificar_seleccion.py): `python estudio/code/verificar_seleccion.py` rehace las 34 estaciones desde el catálogo publicado (`estudio/datos/catalogo_siar_20260914T0741Z.csv`, SHA-256 comprobado contra la especificación congelada) y las compara con `estaciones.json`. No necesita el ZIP ni el árbol original.
-- [Integración continua](.github/workflows/ci.yml): en cada envío se compila el código, se ejecutan las pruebas, se re-deriva la selección de estaciones y se comprueban los enlaces internos, en Ubuntu y en Windows. La reproducción completa del paquete se lanza a mano o al publicar una versión.
-- [Archivo histórico y hashes](docs/ARCHIVO.md). Los informes anteriores son antecedentes y no sustituyen el cierre revisado.
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="docs/assets/resultado_principal_movil_oscuro.svg">
+  <source media="(max-width: 600px)" srcset="docs/assets/resultado_principal_movil.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/resultado_principal_oscuro.svg">
+  <img src="docs/assets/resultado_principal.svg" alt="En 110 días, actualizar IFS mejora un 1,47 % y AIFS un 7,57 %. Con O/0,95 pasan a 0,44 % y −5,64 %. Los intervalos son del 95 %; el de 0,44 % incluye cero.">
+</picture>
 
-![Sensibilidad de escala](estudio/outputs/figura_sensibilidad.png)
+## Qué encontramos
 
-## Reproducir sin red
+Ventana primaria: **14 de mayo a 31 de agosto de 2026**, 110 días. Positivo significa que la segunda serie tiene menor error absoluto medio (MAE), normalizado por estación. Los dos pronósticos de cada contraste usan los mismos pares válidos.
 
-Python 3.12.14 y NumPy 2.3.5 fueron el entorno verificado. Instale NumPy antes de desconectar. Las figuras PNG ya están incluidas; matplotlib es opcional si quiere regenerarlas.
+| Decisión | Pares estación-día | Mejora relativa del MAE | IC95, bloques de 7 días |
+|---|---:|---:|---:|
+| Actualizar IFS: 00 → 06 UTC | 3.664 | **1,47 %** | [0,69; 2,26] |
+| Cambiar de modelo: IFS 00 → AIFS 00 UTC | 3.697 | **7,57 %** | [4,60; 10,48] |
 
-Descargue `datos_y_analisis_portable_v1.0.2.zip` de la [versión de cierre](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre). El ZIP contiene las respuestas originales, recibos, código y manifiesto completo. El árbol de Git permite inspeccionar código y resultados; los cuerpos `raw/` se conservan en el ZIP.
+Ambas comparaciones superan Holm con los tres largos de bloque fijados (1, 7 y 14 días). Con **k = 0,95**, H1 baja a **0,44 %**, IC95 [−0,58; 1,39], y H2 cambia a **−5,64 %**, IC95 [−10,08; −1,33]. Ninguna supera todos los escenarios de escala preespecificados. Este ejercicio **no estima el error real del sensor**: en la métrica utilizada también equivale a multiplicar los pronósticos por k.
 
-Con GitHub CLI, o descargando el asset desde la página de la versión:
+La secundaria añade un matiz: con k = 0,95 sus efectos son **+2,36 % y +5,33 %**. Esa extensión de escala es posterior al resultado; el intervalo de H1 incluye cero. Cambian a la vez periodo y versiones. El [contexto completo](docs/LECTURA.md) recoge también la comparación histórica de Urraca y el contraste previo con MeteoGalicia.
 
-```powershell
-gh release download v1.0.2-cierre --repo Lostmanu/ifs-aifs-siar --pattern datos_y_analisis_portable_v1.0.2.zip --dir descarga
-Get-FileHash descarga/datos_y_analisis_portable_v1.0.2.zip -Algorithm SHA256
-Expand-Archive descarga/datos_y_analisis_portable_v1.0.2.zip -DestinationPath reproduccion_cierre
+## Tres formas de entrar
+
+| Quiero… | Empezar por… |
+|---|---|
+| Entender qué aporta y qué permite concluir | [Guía de lectura](docs/LECTURA.md): preguntas, diseño y límites |
+| Obtener los mismos resultados | [Guía de reproducción](docs/REPRODUCIR.md), para Windows, Linux y macOS |
+| Comprobar cifras, supuestos y procedencia | [Trazabilidad](docs/TRAZABILIDAD.md), [método congelado](estudio/metodo_fijado.json) e [informe completo](estudio/outputs/informe.md) |
+
+## Comprobar el repositorio
+
+Desde un clon, con Python 3.12, estos comandos comprueban el método, la selección y la documentación. Instalar NumPy requiere conexión o una copia local del paquete.
+
+```bash
 python -m pip install -r requirements.txt
-python reproduccion_cierre/reproducir_offline.py
+python estudio/code/test_metodo.py
+python estudio/code/verificar_seleccion.py
+python herramientas/comprobar_enlaces.py
+python herramientas/generar_figura_portada.py --check
 ```
 
-SHA-256 esperado del ZIP: `3a09f5b39f8e14595bf21c0f4e1fd6c60ddceadacd2d6e5393e4e00427996a91`.
+La **reproducción completa** necesita el ZIP de datos: las respuestas originales `raw/` se distribuyen en la [versión v1.0.2](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre). La [guía](docs/REPRODUCIR.md) explica cómo verificarlo y ejecutarlo sin red.
 
-El lanzador verifica el manifiesto y crea una copia de trabajo dentro de la carpeta extraída. Bloquea conexiones del proceso, reconstruye las salidas y compara números, estructura y huecos; excluye cuatro marcas de generación al comparar los siete archivos de v1.0.2. El registro verificado empleó aproximadamente un minuto de cálculo, aunque el tiempo depende del equipo. Consulte el [LEEME del paquete](estudio/LEEME.md).
+La [revisión local del 23 de septiembre](docs/revision_20260923/informe.md) distingue comprobaciones ejecutadas, correcciones documentales y límites pendientes. El estado de GitHub Actions se consulta en la insignia de CI; comprobar números no certifica causas físicas.
 
-## Fuentes y conservación
+## Qué se conserva
 
-Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las URL, fechas de recuperación y hashes originales. El repositorio conserva un trabajo de investigación, sin servicio desplegado ni nueva fase experimental.
+| Ruta | Contenido |
+|---|---|
+| [`estudio/code/`](estudio/code) | Análisis, pruebas y selección |
+| [`estudio/outputs/`](estudio/outputs) | Informe, resultados y panel emparejado |
+| [`estudio/datos/`](estudio/datos) | Observaciones y diagnósticos, incluidos los posteriores |
+| [`docs/`](docs) | Guías, trazabilidad, auditorías y archivo |
+| [Versiones descargables](https://github.com/Lostmanu/ifs-aifs-siar/releases) | Respuestas originales, recibos y paquetes conservados |
 
-**Licencias.** El código está bajo [MIT](LICENSE); el texto de los informes, la documentación y las figuras, bajo CC BY 4.0. Los datos de terceros conservan las condiciones de sus proveedores y esta publicación no les asigna una licencia nueva ni concede derechos adicionales sobre ellos. El desglose por fuente, con lo que está verificado y lo que no, está en [DERECHOS.md](DERECHOS.md).
+La especificación se congeló localmente antes de la descarga principal, **no mediante un prerregistro externo**. La exposición previa a parte de los datos y las desviaciones se declaran en el informe. El estudio no demuestra una causa de aerosoles, un fallo instrumental ni rentabilidad. La evaluación de pronósticos frente a MeteoGalicia era otro encargo, incompleto. [Decisión de cierre](CIERRE.md).
 
-## Proyecto hermano
+## Citar, reutilizar y señalar errores
 
-[`prereg-tmax`](https://github.com/Lostmanu/prereg-tmax) comparte el método de este estudio —especificación congelada por hash, desviaciones declaradas en lugar de corregidas en silencio y revisiones críticas cuyos hallazgos se comprueban antes de aceptarse— y lo aplica a otra pregunta: si un ensemble meteorológico corregido por estación asigna mejores probabilidades que el mercado a la temperatura máxima diaria, en tramos de 1 °C, y si esa ventaja daría dinero en una estrategia simulada en papel. Se cerró sin veredicto económico: la parte meteorológica, medida con un pronóstico determinista corregido, se sostiene fuera de muestra, pero la ventaja sobre el mercado no se pudo medir. No es una serie planificada: son dos encargos distintos que acabaron compartiendo método, no desenlace.
+Autor: **Manuel Beardo Campo**. Para citar la entrega, use [CITATION.cff](CITATION.cff) y conserve la versión del paquete. Código bajo [MIT](LICENSE); informes y figuras bajo CC BY 4.0. Los datos de terceros mantienen sus condiciones: [desglose por fuente](DERECHOS.md).
 
-## Corrección v1.0.2: reproducibilidad multiplataforma
+Las correcciones verificables son bienvenidas: [cómo comunicar un problema](CONTRIBUTING.md). Las versiones anteriores están en el [archivo](docs/ARCHIVO.md); los cambios, en [CHANGELOG.md](CHANGELOG.md).
 
-Hasta la v1.0.1 el manifiesto de datos heredados guardaba las rutas con el separador de Windows. En Linux y macOS la barra invertida no separa directorios, así que la sección 6.5 del informe, el enlace 06-18 UTC, no se podía reconstruir: quedaba como un error dentro de `resultados.json` mientras el programa terminaba con éxito y la reproducción daba FAIL. En Windows nunca se notó.
+Proyecto relacionado: [`prereg-tmax`](https://github.com/Lostmanu/prereg-tmax), otro encargo que aplica especificación congelada y evaluación temporal a la temperatura máxima. Comparte prácticas de investigación; sus conclusiones son independientes.
 
-Ahora el manifiesto usa `/`, el lector acepta los dos formatos y `analizar.py` **aborta** si esa sección falla, en lugar de publicar un resultado incompleto en silencio. Se añaden cuatro pruebas de rutas y una comprobación que resuelve las 1.461 entradas reales del manifiesto. **Ninguna cifra cambia**: en Windows el resultado era y sigue siendo el mismo, y la reproducción del paquete da PASS con 61.383 valores y diferencia máxima 0,0.
+<details>
+<summary>English summary</summary>
 
-Además: `verificar.py` termina con un mensaje explicativo si se ejecuta desde un clon de Git sin los cuerpos `raw/`; los informes archivados ya no enlazan rutas locales y sus figuras se publican junto a ellos; el paquete incluye `verificar_seleccion.py` y el catálogo, de modo que la reproducción re-deriva también las 34 estaciones. [Detalle en el registro de cambios](CHANGELOG.md).
+This reproducible study compares IFS and AIFS solar radiation forecasts served by Open-Meteo against 34 Spanish SiAR stations over 110 days. Updating IFS from 00 to 06 UTC reduces normalized MAE by 1.47%; replacing IFS 00 with AIFS 00 reduces it by 7.57%. Both pass the prespecified multiplicity procedure against published observations, but neither passes every prespecified common-scale sensitivity scenario. The scale test cannot identify whether discrepancies originate in observations or forecasts. The repository provides archived responses, a frozen specification, explicit deviations and offline reproduction. It does not establish operational availability or economic value.
 
-## Corrección v1.0.1
-
-Se restituyen el contexto histórico de Urraca, el contraste con MeteoGalicia y la descomposición descriptiva del MSE. El escenario k=0,95 conserva puntos positivos en la ventana secundaria: H1 +2,36 % y H2 +5,33 %; el intervalo de H1 incluye cero. Esta extensión de escala es posterior al resultado y no cambia el veredicto primario. El cambio de vocabulario respecto al método congelado queda declarado. [Detalle y límites de la corrección](docs/CORRECCION_v1.0.1.md).
-
-Verificación v1.0.1: **61.383 valores numéricos**. diferencia máxima 0.0. [Registro](estudio/outputs/verificacion_v1.0.1.json). Los 60.602 valores de la entrega anterior se conservan; la diferencia de recuento es el archivo de diagnóstico añadido.
+</details>

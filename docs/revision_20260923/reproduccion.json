@@ -1,0 +1,99 @@
+{
+  "inicio_utc": "2026-09-23T11:29:39.361221+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "manifest_archivos": 3057,
+  "pasos": [
+    {
+      "script": "test_metodo.py",
+      "segundos": 0.0470000000204891
+    },
+    {
+      "script": "verificar_seleccion.py",
+      "segundos": 0.03100000007543713
+    },
+    {
+      "script": "preparar_observaciones.py",
+      "segundos": 0.0779999999795109
+    },
+    {
+      "script": "analizar.py",
+      "segundos": 20.718999999924563
+    },
+    {
+      "script": "diagnostico_posterior.py",
+      "segundos": 7.047000000020489
+    },
+    {
+      "script": "sensibilidad_secundaria_posterior.py",
+      "segundos": 0.23400000005494803
+    },
+    {
+      "script": "verificar.py",
+      "segundos": 9.640999999945052
+    },
+    {
+      "script": "informe.py",
+      "segundos": 0.0470000000204891
+    }
+  ],
+  "comparaciones": {
+    "outputs/resultados.json": {
+      "numeros": 12330,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "outputs/estaciones.json": {
+      "numeros": 729,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "outputs/panel_analisis.json": {
+      "numeros": 25455,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/observaciones_diarias.json": {
+      "numeros": 20806,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/cobertura_observaciones.json": {
+      "numeros": 207,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/diagnostico_posterior.json": {
+      "numeros": 1075,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "datos/sensibilidad_secundaria_posterior.json": {
+      "numeros": 781,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    }
+  },
+  "control_red": "audit hook del proceso; no cortafuegos del sistema",
+  "intentos_red_o_subprocesos_bloqueados": [],
+  "verificacion_decimal_y_recibos": "PASS",
+  "estado": "PASS",
+  "fin_utc": "2026-09-23T11:30:17.338135+00:00",
+  "ejecucion": "herramientas/reproducir_paquete.py sobre arbol local validado contra manifiesto v1.0.2",
+  "alcance": "No es una nueva descarga ni verificacion del ZIP remoto. Se documenta por separado el fallo de la invocacion directa."
+}
