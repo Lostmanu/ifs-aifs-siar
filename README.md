@@ -50,6 +50,10 @@ Datos MAPA/SiAR y pronósticos ECMWF servidos por Open-Meteo. Se conservan las U
 
 **Licencias.** El código está bajo [MIT](LICENSE); el texto de los informes, la documentación y las figuras, bajo CC BY 4.0. Los datos de terceros conservan las condiciones de sus proveedores y esta publicación no les asigna una licencia nueva ni concede derechos adicionales sobre ellos. El desglose por fuente, con lo que está verificado y lo que no, está en [DERECHOS.md](DERECHOS.md).
 
+## Proyecto hermano
+
+[`prereg-tmax`](https://github.com/Lostmanu/prereg-tmax) comparte el método de este estudio —especificación congelada por hash, desviaciones declaradas en lugar de corregidas en silencio y revisiones críticas cuyos hallazgos se comprueban antes de aceptarse— y lo aplica a otra pregunta: si un ensemble meteorológico corregido por estación asigna mejores probabilidades que el mercado a la temperatura máxima diaria, en tramos de 1 °C, y si esa ventaja daría dinero en una estrategia simulada en papel. Se cerró sin veredicto económico: la parte meteorológica, medida con un pronóstico determinista corregido, se sostiene fuera de muestra, pero la ventaja sobre el mercado no se pudo medir. No es una serie planificada: son dos encargos distintos que acabaron compartiendo método, no desenlace.
+
 ## Corrección v1.0.2: reproducibilidad multiplataforma
 
 Hasta la v1.0.1 el manifiesto de datos heredados guardaba las rutas con el separador de Windows. En Linux y macOS la barra invertida no separa directorios, así que la sección 6.5 del informe, el enlace 06-18 UTC, no se podía reconstruir: quedaba como un error dentro de `resultados.json` mientras el programa terminaba con éxito y la reproducción daba FAIL. En Windows nunca se notó.
