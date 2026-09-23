@@ -1,0 +1,97 @@
+{
+  "inicio_utc": "2026-09-23T17:18:43.014781+00:00",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "numpy": "2.3.5",
+  "manifest_archivos": 3057,
+  "pasos": [
+    {
+      "script": "test_metodo.py",
+      "segundos": 0.07253350999999952
+    },
+    {
+      "script": "verificar_seleccion.py",
+      "segundos": 0.03999643599999558
+    },
+    {
+      "script": "preparar_observaciones.py",
+      "segundos": 0.07347286899999972
+    },
+    {
+      "script": "analizar.py",
+      "segundos": 10.261682687000018
+    },
+    {
+      "script": "diagnostico_posterior.py",
+      "segundos": 2.35927393999998
+    },
+    {
+      "script": "sensibilidad_secundaria_posterior.py",
+      "segundos": 0.23264476399998557
+    },
+    {
+      "script": "verificar.py",
+      "segundos": 0.68470297799999
+    },
+    {
+      "script": "informe.py",
+      "segundos": 0.07548652299999503
+    }
+  ],
+  "comparaciones": {
+    "outputs/resultados.json": {
+      "numeros": 12330,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "outputs/estaciones.json": {
+      "numeros": 729,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "outputs/panel_analisis.json": {
+      "numeros": 25455,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/observaciones_diarias.json": {
+      "numeros": 20806,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/cobertura_observaciones.json": {
+      "numeros": 207,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": []
+    },
+    "datos/diagnostico_posterior.json": {
+      "numeros": 1075,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    },
+    "datos/sensibilidad_secundaria_posterior.json": {
+      "numeros": 781,
+      "diferencia_maxima": 0.0,
+      "diferencias": [],
+      "excluidos": [
+        "/generado_utc"
+      ]
+    }
+  },
+  "control_red": "audit hook del proceso; no cortafuegos del sistema",
+  "intentos_red_o_subprocesos_bloqueados": [],
+  "verificacion_decimal_y_recibos": "PASS",
+  "estado": "PASS",
+  "fin_utc": "2026-09-23T17:18:56.896701+00:00"
+}

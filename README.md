@@ -53,7 +53,7 @@ python herramientas/generar_figura_portada.py --check
 
 La **reproducción completa** necesita el ZIP de datos: las respuestas originales `raw/` se distribuyen en la [versión v1.0.2](https://github.com/Lostmanu/ifs-aifs-siar/releases/tag/v1.0.2-cierre). La [guía](docs/REPRODUCIR.md) explica cómo verificarlo y ejecutarlo sin red.
 
-La [revisión local del 23 de septiembre](docs/revision_20260923/informe.md) distingue comprobaciones ejecutadas, correcciones documentales y límites pendientes. El estado de GitHub Actions se consulta en la insignia de CI; comprobar números no certifica causas físicas.
+La [revisión del 23 de septiembre](docs/revision_20260923/informe.md) documenta las correcciones y la reproducción completa en Windows y Ubuntu: **61.383 valores, diferencia máxima cero en ambos sistemas**. El estado de GitHub Actions se consulta en la insignia de CI; comprobar números no certifica causas físicas.
 
 ## Qué se conserva
 

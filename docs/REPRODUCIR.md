@@ -55,7 +55,7 @@ El lanzador valida **3.057 archivos más el manifiesto** y crea una copia dentro
 
 **Salida esperada:** `PASS` y una ruta a `comprobacion_offline.json`. Se comparan siete JSON, con intervalos y huecos; se excluyen cuatro marcas de generación. Son **61.383 valores**, con diferencia máxima cero en la [ejecución compatible documentada](revision_20260923/reproduccion.json). Las tolerancias son absoluta 1e−10 y relativa 1e−11; fuera de ellas se informa `FAIL`.
 
-Entorno de referencia: Python 3.12.14 y NumPy 2.3.5. La revisión local actual es de Windows; no acredita una nueva ejecución de Linux o macOS. Los resultados remotos se consultan en [GitHub Actions](https://github.com/Lostmanu/ifs-aifs-siar/actions).
+Entorno local de referencia: Python 3.12.14 y NumPy 2.3.5. La [verificación remota del 23 de septiembre](https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786) también reprodujo los 61.383 valores con diferencia máxima cero en Ubuntu (Python 3.12.14) y Windows (Python 3.12.10), ambos con NumPy 2.3.5. [Registros conservados y alcance](revision_20260923/validacion_github.json). macOS no se ejecutó en esta revisión.
 
 ## Figuras
 

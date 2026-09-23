@@ -25,8 +25,8 @@ Se añade una cita CFF y una guía breve para comunicar errores. Se mantiene Mar
 - [Acerca de los README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes): propósito, utilidad, inicio y orientación para el visitante.
 - [Acerca de los archivos CITATION](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files): metadatos de cita reconocidos por GitHub.
 
-## Lo que aún necesita la cuenta de GitHub
+## Presentación en GitHub
 
-Descripción sugerida: «Radiación solar: IFS y AIFS frente a 34 estaciones SiAR. Resultados, sensibilidad de escala y reproducción sin red.» Temas sugeridos: `solar-radiation`, `forecast-verification`, `ecmwf`, `aifs`, `reproducible-research`, `python`.
+Descripción publicada: «Radiación solar: IFS y AIFS frente a 34 estaciones SiAR. Resultados, sensibilidad de escala y reproducción sin red.» Se añadió `solar-radiation` a los temas existentes, conservando los anteriores.
 
-Son propuestas, no cambios remotos realizados. Antes de dar la presentación por publicada hay que revisar el README en GitHub y confirmar la ejecución de CI con el nuevo commit. No se afirma que estas mejoras garanticen estrellas o audiencia.
+El README se comprobó en GitHub en móvil y escritorio, con tema claro y oscuro. Las pruebas y la reproducción completa pasaron en Windows y Ubuntu: [registro de publicación](validacion_github.json). No se afirma que estas mejoras garanticen estrellas o audiencia.

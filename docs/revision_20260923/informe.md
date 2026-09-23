@@ -53,4 +53,13 @@ En esa primera fase no se pudo publicar por las restricciones de escritura y red
 
 Al recuperar el acceso el 23 de septiembre, se descargó el ZIP v1.0.2 de GitHub: **115.443.833 bytes**, SHA-256 `3a09f5b39f8e14595bf21c0f4e1fd6c60ddceadacd2d6e5393e4e00427996a91`, coincidente con el registro conservado y el digest del asset remoto. No se sustituyó la versión publicada.
 
-La reproducción remota de esta revisión se ejecuta con el nuevo workflow en Windows y Ubuntu. Su estado y los registros descargables se consultan en [GitHub Actions](https://github.com/Lostmanu/ifs-aifs-siar/actions/workflows/ci.yml). Las vistas previas locales no equivalen a una ejecución remota; cada registro identifica qué se comprobó y en qué entorno.
+La [ejecución remota 35894661786](https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786), sobre el commit `ed18b9162f1ff0b31163a06286474267ee5703cf`, terminó con **los cuatro trabajos correctos**: pruebas y reproducción completa en Ubuntu y Windows. Ambos descargaron el paquete publicado, verificaron su SHA-256 y completaron ocho pasos, con **61.383 valores comparados y diferencia máxima cero por sistema**.
+
+| Entorno remoto | Python | NumPy | Registro conservado |
+|---|---|---|---|
+| Ubuntu | 3.12.14 | 2.3.5 | [Reproducción Ubuntu](reproduccion_ubuntu.json) |
+| Windows | 3.12.10 | 2.3.5 | [Reproducción Windows](reproduccion_windows.json) |
+
+Se conservan los registros sin la ruta temporal absoluta del runner y con el hash de sus originales. La [validación de GitHub](validacion_github.json) reúne ejecución, entornos, paquete, metadatos y conservación de los 109 archivos originales. macOS no se ejecutó en esta revisión.
+
+También se comprobó la página publicada con un navegador: las cuatro variantes de la figura cargan correctamente a 390 y 1.280 píxeles, en modo claro y oscuro, sin desbordamiento horizontal de la página. GitHub reconoce la opción de cita en la vista de escritorio. La descripción remota y el tema `solar-radiation` quedaron actualizados. Estos controles verifican presentación y reproducción; no amplían las conclusiones científicas.

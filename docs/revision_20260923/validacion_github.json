@@ -1,0 +1,155 @@
+{
+  "fecha_utc": "2026-09-23T17:20:32.063813+00:00",
+  "commit_verificado": "ed18b9162f1ff0b31163a06286474267ee5703cf",
+  "workflow": "https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786",
+  "estado": "PASS",
+  "jobs": [
+    {
+      "name": "Pruebas (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786/job/107295479874"
+    },
+    {
+      "name": "Pruebas (windows-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786/job/107295479979"
+    },
+    {
+      "name": "Reproduccion completa del paquete (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786/job/107295480063"
+    },
+    {
+      "name": "Reproduccion completa del paquete (windows-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/Lostmanu/ifs-aifs-siar/actions/runs/35894661786/job/107295480442"
+    }
+  ],
+  "reproducciones": {
+    "ubuntu": {
+      "registro": "reproduccion_ubuntu.json",
+      "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+      "numpy": "2.3.5",
+      "numeros_comparados": 61383,
+      "diferencia_maxima": 0.0,
+      "pasos": 8,
+      "sha256_registro_original": "96919b7f91cb8419b29b4786e5335e08a844d86c4a9c8b6d604af5a5a5dcd313",
+      "normalizacion": "Se omite solo la ruta absoluta de la carpeta temporal del runner."
+    },
+    "windows": {
+      "registro": "reproduccion_windows.json",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "numpy": "2.3.5",
+      "numeros_comparados": 61383,
+      "diferencia_maxima": 0.0,
+      "pasos": 8,
+      "sha256_registro_original": "de9c71fa5b3b8e6e99ef120e6eb5a4ce1d02440530b5ac50bb2d3e7502ce98c9",
+      "normalizacion": "Se omite solo la ruta absoluta de la carpeta temporal del runner."
+    }
+  },
+  "paquete_descargado": {
+    "version": "v1.0.2",
+    "bytes": 115443833,
+    "sha256": "3a09f5b39f8e14595bf21c0f4e1fd6c60ddceadacd2d6e5393e4e00427996a91",
+    "url": "https://github.com/Lostmanu/ifs-aifs-siar/releases/download/v1.0.2-cierre/datos_y_analisis_portable_v1.0.2.zip"
+  },
+  "renderizado_github": {
+    "date": "2026-09-23T17:19:14.033Z",
+    "checks": [
+      {
+        "name": "escritorio",
+        "status": 200,
+        "width": 1280,
+        "pageWidth": 1280,
+        "image": "https://github.com/Lostmanu/ifs-aifs-siar/raw/main/docs/assets/resultado_principal.svg",
+        "imageLoaded": true,
+        "sources": 3,
+        "title": "IFS · AIFS · SiAR",
+        "citationOffered": true
+      },
+      {
+        "name": "movil",
+        "status": 200,
+        "width": 390,
+        "pageWidth": 390,
+        "image": "https://github.com/Lostmanu/ifs-aifs-siar/raw/main/docs/assets/resultado_principal_movil.svg",
+        "imageLoaded": true,
+        "sources": 3,
+        "title": "IFS · AIFS · SiAR",
+        "citationOffered": false
+      },
+      {
+        "name": "oscuro",
+        "status": 200,
+        "width": 1280,
+        "pageWidth": 1280,
+        "image": "https://github.com/Lostmanu/ifs-aifs-siar/raw/main/docs/assets/resultado_principal_oscuro.svg",
+        "imageLoaded": true,
+        "sources": 3,
+        "title": "IFS · AIFS · SiAR",
+        "citationOffered": true
+      },
+      {
+        "name": "movil_oscuro",
+        "status": 200,
+        "width": 390,
+        "pageWidth": 390,
+        "image": "https://github.com/Lostmanu/ifs-aifs-siar/raw/main/docs/assets/resultado_principal_movil_oscuro.svg",
+        "imageLoaded": true,
+        "sources": 3,
+        "title": "IFS · AIFS · SiAR",
+        "citationOffered": false
+      }
+    ]
+  },
+  "repositorio": {
+    "description": "Radiación solar: IFS y AIFS frente a 34 estaciones SiAR. Resultados, sensibilidad de escala y reproducción sin red.",
+    "repositoryTopics": [
+      {
+        "name": "aifs"
+      },
+      {
+        "name": "ecmwf"
+      },
+      {
+        "name": "forecast-verification"
+      },
+      {
+        "name": "ifs"
+      },
+      {
+        "name": "machine-learning"
+      },
+      {
+        "name": "numerical-weather-prediction"
+      },
+      {
+        "name": "open-meteo"
+      },
+      {
+        "name": "python"
+      },
+      {
+        "name": "reproducible-research"
+      },
+      {
+        "name": "siar"
+      },
+      {
+        "name": "time-series"
+      },
+      {
+        "name": "weather-forecasting"
+      },
+      {
+        "name": "solar-radiation"
+      }
+    ],
+    "visibility": "PUBLIC"
+  },
+  "conservacion": {
+    "archivos_originales": 109,
+    "estado": "PASS",
+    "referencia": "comprobaciones.json"
+  }
+}
